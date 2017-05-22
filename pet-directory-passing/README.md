@@ -1,7 +1,7 @@
 PET Directory Passing Example
 =============================
 
-This example illustrates passing a directory between components, as well as archiving the contents of the directory as an artifact by saving its contents as a ZIP file.
+This example illustrates passing a directory between components, where the number and names of the files within the directory are not known a priori.  It also archives the contents of the directory as an artifact by saving its contents as a ZIP file.
 
 Contents
 --------
