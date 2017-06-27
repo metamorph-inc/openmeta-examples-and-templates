@@ -1,0 +1,19 @@
+*conf.ini
+*.ses.*
+config.pro
+trail.txt.*
+std.out
+config/
+requirements/
+designs/
+dashboard/
+log/
+test-benches/
+stats/
+results/
+Example\ Components/
+index.html
+*.mga
+manifest.project.json
+export_for_dashboard_scoring.py
+material_library.json
