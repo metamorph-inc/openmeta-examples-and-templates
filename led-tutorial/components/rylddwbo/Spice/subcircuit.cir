@@ -1,0 +1,5 @@
+* Simple LED Model
+.subckt simpleLED 1 2
+Dledx 1 2  DLed_test
+.model Dled_test D (IS=575u  RS=25 N=6.79 BV=5 IBV=30U CJO=50P VJ=.75 M=150 )
+.ends
