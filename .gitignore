@@ -11,9 +11,13 @@ log/
 test-benches/
 stats/
 results/
+merged/
+design-space/
+tmp/
 Example\ Components/
 index.html
 *.mga
 manifest.project.json
 export_for_dashboard_scoring.py
 material_library.json
+*.pyc
