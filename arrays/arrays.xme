@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE project SYSTEM "mga.dtd">
 
-<project guid="{21212D69-CF8D-4B77-9CD5-6D40517E8D12}" cdate="Mon Nov 20 15:23:38 2017" mdate="Mon Nov 20 15:23:38 2017" version="" metaguid="{5D2A4064-A61E-09EF-33E6-21BDA243AE60}" metaversion="14.13-t28" metaname="CyPhyML">
+<project guid="{DF5A8DBB-D67E-40EB-9499-62B9C6D0BAD4}" cdate="Mon Nov 20 15:23:38 2017" mdate="Mon Nov 20 15:23:38 2017" version="" metaguid="{5D2A4064-A61E-09EF-33E6-21BDA243AE60}" metaversion="14.13-t28" metaname="CyPhyML">
 	<name>RootFolder</name>
 	<comment></comment>
 	<author></author>
@@ -23539,11 +23539,11 @@
 		</folder>
 		<folder id="id-006a-00000018" relid="0x6" childrelidcntr="0x1" kind="Testing" guid="{c16154e4-cef3-4026-b7a8-fd5e1ff00cc1}">
 			<name>Testing</name>
-			<folder id="id-006a-00000019" relid="0x1" childrelidcntr="0x4" kind="ParametricExplorationFolder" guid="{7facb810-b743-4dd8-afa5-c792f2e20c08}">
+			<folder id="id-006a-00000019" relid="0x1" childrelidcntr="0x5" kind="ParametricExplorationFolder" guid="{7facb810-b743-4dd8-afa5-c792f2e20c08}">
 				<name>ParametricExploration</name>
-				<model id="id-0065-00000260" kind="ParametricExploration" guid="{ed955a4d-73d0-48c7-8437-bb1641063766}" relid="0x1" childrelidcntr="0xf">
-					<name>ArrayDemo</name>
-					<model id="id-0065-00000261" kind="ParameterStudy" role="ParameterStudy" guid="{fcee298a-14a7-4386-97a2-37ad780b21d6}" relid="0x1" childrelidcntr="0x6">
+				<model id="id-0065-00000260" kind="ParametricExploration" guid="{ed955a4d-73d0-48c7-8437-bb1641063766}" relid="0x1" childrelidcntr="0x16">
+					<name>MatlabArrayDemo</name>
+					<model id="id-0065-00000261" kind="ParameterStudy" role="ParameterStudy" guid="{fcee298a-14a7-4386-97a2-37ad780b21d6}" relid="0x1" childrelidcntr="0x7">
 						<name>ParameterStudyDriver</name>
 						<regnode name="PartRegs" status="undefined">
 							<value></value>
@@ -23634,6 +23634,18 @@
 							<attribute kind="Range">
 								<value>0.0,10.0</value>
 							</attribute>
+						</reference>
+						<reference id="id-0067-00000393" kind="Objective" role="Objective" guid="{5dc69cf7-1b5d-4281-865c-0f406353e22b}" relid="0x7">
+							<name>MatlabMean</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="TestBenchCompositionAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>1001,252</value>
+									</regnode>
+								</regnode>
+							</regnode>
 						</reference>
 					</model>
 					<model id="id-0065-00000262" kind="PythonWrapper" role="PythonWrapper" guid="{1f030af3-1c85-4eff-875a-02d6dffbe3b7}" relid="0x2" childrelidcntr="0x3">
@@ -24128,6 +24140,228 @@
 							</attribute>
 						</reference>
 					</model>
+					<model id="id-0065-00000284" kind="MATLABWrapper" role="MATLABWrapper" guid="{829b310f-2f1d-4667-9b6a-0852fb543fd4}" relid="0x11" childrelidcntr="0x3">
+						<name>MatlabSum</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="TestBenchCompositionAspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>756,581</value>
+								</regnode>
+							</regnode>
+						</regnode>
+						<attribute kind="MFilename">
+							<value>matlab\MatlabArraySum.m</value>
+						</attribute>
+						<reference id="id-0067-0000038e" kind="Metric" role="Metric" guid="{6ecaa360-99d2-43c8-9638-e92807600a4c}" relid="0x1">
+							<name>sum</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="ValueFlowAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>800,65</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<regnode name="pass_by_obj" isopaque="yes">
+								<value>True</value>
+							</regnode>
+							<attribute kind="Description" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="ManagedGUID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Value" status="meta">
+								<value></value>
+							</attribute>
+						</reference>
+						<reference id="id-0067-0000038f" kind="Parameter" role="Parameter" guid="{a3dae67f-15b2-4847-aa9b-9424c109f5b3}" relid="0x2">
+							<name>input1</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="ValueFlowAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>20,65</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<regnode name="pass_by_obj" isopaque="yes">
+								<value>True</value>
+							</regnode>
+							<attribute kind="ComputationType" status="meta">
+								<value>Addition</value>
+							</attribute>
+							<attribute kind="DataType" status="meta">
+								<value>String</value>
+							</attribute>
+							<attribute kind="DefaultValue" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Description" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Dimension" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Disable" status="meta">
+								<value>false</value>
+							</attribute>
+							<attribute kind="ID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="ManagedGUID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Range" status="meta">
+								<value>-inf..inf</value>
+							</attribute>
+							<attribute kind="Type" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Value" status="meta">
+								<value></value>
+							</attribute>
+						</reference>
+						<reference id="id-0067-00000390" kind="Parameter" role="Parameter" guid="{b80369b5-d2b6-4194-9abe-462e69572e2d}" relid="0x3">
+							<name>input2</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="ValueFlowAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>20,130</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<regnode name="pass_by_obj" isopaque="yes">
+								<value>True</value>
+							</regnode>
+							<attribute kind="ComputationType" status="meta">
+								<value>Addition</value>
+							</attribute>
+							<attribute kind="DataType" status="meta">
+								<value>String</value>
+							</attribute>
+							<attribute kind="DefaultValue" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Description" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Dimension" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Disable" status="meta">
+								<value>false</value>
+							</attribute>
+							<attribute kind="ID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="ManagedGUID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Range" status="meta">
+								<value>-inf..inf</value>
+							</attribute>
+							<attribute kind="Type" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Value" status="meta">
+								<value></value>
+							</attribute>
+						</reference>
+					</model>
+					<model id="id-0065-00000285" kind="PythonWrapper" role="PythonWrapper" guid="{b8434b3b-d15f-4929-abd8-55beb1cbd2b6}" relid="0x12" childrelidcntr="0x2">
+						<name>ArrayMean2</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="TestBenchCompositionAspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>1036,581</value>
+								</regnode>
+							</regnode>
+						</regnode>
+						<attribute kind="PyFilename">
+							<value>python\ArrayMean.py</value>
+						</attribute>
+						<reference id="id-0067-00000391" kind="Parameter" role="Parameter" guid="{0abd3dab-0751-4ba0-958c-af485b1a28dc}" relid="0x2">
+							<name>array</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="ValueFlowAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>20,65</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<regnode name="pass_by_obj" isopaque="yes">
+								<value>True</value>
+							</regnode>
+							<attribute kind="ComputationType" status="meta">
+								<value>Addition</value>
+							</attribute>
+							<attribute kind="DataType" status="meta">
+								<value>String</value>
+							</attribute>
+							<attribute kind="DefaultValue" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Description" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Dimension" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Disable" status="meta">
+								<value>false</value>
+							</attribute>
+							<attribute kind="ID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="ManagedGUID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Range" status="meta">
+								<value>-inf..inf</value>
+							</attribute>
+							<attribute kind="Type" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Value" status="meta">
+								<value></value>
+							</attribute>
+						</reference>
+						<reference id="id-0067-00000392" kind="Metric" role="Metric" guid="{d457961b-21cc-4693-aebb-7b07b2c21e9e}" relid="0x1">
+							<name>mean</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="ValueFlowAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>800,65</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<regnode name="pass_by_obj" isopaque="yes">
+								<value>False</value>
+							</regnode>
+							<attribute kind="Description" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="ManagedGUID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Value">
+								<value>0.0</value>
+							</attribute>
+						</reference>
+					</model>
 					<connection id="id-0068-0000002d" kind="VariableSweep" role="VariableSweep" guid="{06e67687-cff8-4ad7-a4b1-6445188eeec9}" relid="0x4">
 						<name>VariableSweep</name>
 						<regnode name="color" isopaque="yes">
@@ -24197,6 +24431,32 @@
 						<name>ResultFlow</name>
 						<connpoint role="dst" target="id-0067-0000033e"/>
 						<connpoint role="src" target="id-0067-00000348"/>
+					</connection>
+					<connection id="id-0068-00000066" kind="ResultFlow" role="ResultFlow" guid="{6a68fd68-901b-49ea-b611-9322ea93f0b5}" relid="0x13">
+						<name>ResultFlow</name>
+						<connpoint role="src" target="id-0067-0000033a"/>
+						<connpoint role="dst" target="id-0067-0000038f"/>
+					</connection>
+					<connection id="id-0068-00000067" kind="ResultFlow" role="ResultFlow" guid="{f3111583-a6ac-4e92-9f66-cfd54dee9c30}" relid="0x14">
+						<name>ResultFlow</name>
+						<connpoint role="src" target="id-0067-00000347"/>
+						<connpoint role="dst" target="id-0067-00000390"/>
+					</connection>
+					<connection id="id-0068-00000068" kind="ResultFlow" role="ResultFlow" guid="{91e77b85-5bdf-49fc-9205-be5ffbe774ea}" relid="0x15">
+						<name>ResultFlow</name>
+						<connpoint role="src" target="id-0067-0000038e"/>
+						<connpoint role="dst" target="id-0067-00000391"/>
+					</connection>
+					<connection id="id-0068-00000069" kind="ObjectiveMapping" role="ObjectiveMapping" guid="{31ff24dc-68a0-453f-9525-494af6a320ad}" relid="0x16">
+						<name>ObjectiveMapping</name>
+						<regnode name="color" isopaque="yes">
+							<value>0x7cadde</value>
+						</regnode>
+						<regnode name="dstStyle" isopaque="yes">
+							<value>arrow</value>
+						</regnode>
+						<connpoint role="src" target="id-0067-00000392"/>
+						<connpoint role="dst" target="id-0067-00000393"/>
 					</connection>
 				</model>
 				<model id="id-0065-00000267" kind="ParametricExploration" guid="{b30bc38f-c695-4f15-ad4a-3cea30986373}" relid="0x3" childrelidcntr="0x13">
@@ -25695,6 +25955,664 @@
 						<name>ProblemOutputFlowTargetConnection</name>
 						<connpoint role="src" target="id-0066-000000ed"/>
 						<connpoint role="dst" target="id-0067-0000035f"/>
+					</connection>
+				</model>
+				<model id="id-0065-0000027e" kind="ParametricExploration" guid="{dbf4c655-267c-4537-8b6e-3b4d594f96ed}" relid="0x5" childrelidcntr="0x10">
+					<name>ArrayDemo</name>
+					<model id="id-0065-0000027f" kind="PythonWrapper" role="PythonWrapper" guid="{b6705862-b8fb-458d-8ce2-18e27f45f3b2}" relid="0xc" childrelidcntr="0x3">
+						<name>ArraySum</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="TestBenchCompositionAspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>749,441</value>
+								</regnode>
+							</regnode>
+						</regnode>
+						<attribute kind="PyFilename">
+							<value>python\ArraySum.py</value>
+						</attribute>
+						<reference id="id-0067-0000037e" kind="Parameter" role="Parameter" guid="{c78f187b-7941-49b7-b156-f9bd93c3a994}" relid="0x3">
+							<name>array2</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="ValueFlowAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>20,130</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<regnode name="pass_by_obj" isopaque="yes">
+								<value>True</value>
+							</regnode>
+							<attribute kind="ComputationType" status="meta">
+								<value>Addition</value>
+							</attribute>
+							<attribute kind="DataType" status="meta">
+								<value>String</value>
+							</attribute>
+							<attribute kind="DefaultValue" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Description" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Dimension" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Disable" status="meta">
+								<value>false</value>
+							</attribute>
+							<attribute kind="ID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="ManagedGUID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Range" status="meta">
+								<value>-inf..inf</value>
+							</attribute>
+							<attribute kind="Type" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Value" status="meta">
+								<value></value>
+							</attribute>
+						</reference>
+						<reference id="id-0067-0000037f" kind="Metric" role="Metric" guid="{891350b1-d824-48ac-a860-05878cd8255d}" relid="0x1">
+							<name>sumArray</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="ValueFlowAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>800,65</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<regnode name="pass_by_obj" isopaque="yes">
+								<value>False</value>
+							</regnode>
+							<attribute kind="Description" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="ManagedGUID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Value">
+								<value>0.0</value>
+							</attribute>
+						</reference>
+						<reference id="id-0067-00000380" kind="Parameter" role="Parameter" guid="{ad6a1db2-eb85-43ea-89b8-2d4706080b5b}" relid="0x2">
+							<name>array1</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="ValueFlowAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>20,65</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<regnode name="pass_by_obj" isopaque="yes">
+								<value>True</value>
+							</regnode>
+							<attribute kind="ComputationType" status="meta">
+								<value>Addition</value>
+							</attribute>
+							<attribute kind="DataType" status="meta">
+								<value>String</value>
+							</attribute>
+							<attribute kind="DefaultValue" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Description" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Dimension" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Disable" status="meta">
+								<value>false</value>
+							</attribute>
+							<attribute kind="ID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="ManagedGUID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Range" status="meta">
+								<value>-inf..inf</value>
+							</attribute>
+							<attribute kind="Type" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Value" status="meta">
+								<value></value>
+							</attribute>
+						</reference>
+					</model>
+					<model id="id-0065-00000280" kind="PythonWrapper" role="PythonWrapper" guid="{b30d993a-b18f-4421-8482-b919f7c21ec1}" relid="0x8" childrelidcntr="0x3">
+						<name>ScalarToArray2</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="TestBenchCompositionAspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>448,581</value>
+								</regnode>
+							</regnode>
+						</regnode>
+						<attribute kind="PyFilename">
+							<value>python\ScalarToArray.py</value>
+						</attribute>
+						<reference id="id-0067-00000381" kind="Parameter" role="Parameter" guid="{1fd58eb7-e7c8-4bab-a861-9870b53608a0}" relid="0x3">
+							<name>value</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="ValueFlowAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>20,130</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<regnode name="pass_by_obj" isopaque="yes">
+								<value>False</value>
+							</regnode>
+							<attribute kind="ComputationType" status="meta">
+								<value>Addition</value>
+							</attribute>
+							<attribute kind="DataType" status="meta">
+								<value>String</value>
+							</attribute>
+							<attribute kind="DefaultValue" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Description" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Dimension" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Disable" status="meta">
+								<value>false</value>
+							</attribute>
+							<attribute kind="ID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="ManagedGUID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Range" status="meta">
+								<value>-inf..inf</value>
+							</attribute>
+							<attribute kind="Type" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Value" status="meta">
+								<value></value>
+							</attribute>
+						</reference>
+						<reference id="id-0067-00000382" kind="Metric" role="Metric" guid="{6148d350-9239-4ab1-a8e2-f2b4762d7604}" relid="0x1">
+							<name>array</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="ValueFlowAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>800,65</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<regnode name="pass_by_obj" isopaque="yes">
+								<value>True</value>
+							</regnode>
+							<attribute kind="Description" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="ManagedGUID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Value">
+								<value>numpy.asarray([ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.])</value>
+							</attribute>
+						</reference>
+						<reference id="id-0067-00000383" kind="Parameter" role="Parameter" guid="{89b74a32-d4e3-4e2a-a2b8-385b904362d3}" relid="0x2">
+							<name>increment</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="ValueFlowAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>20,65</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<regnode name="pass_by_obj" isopaque="yes">
+								<value>False</value>
+							</regnode>
+							<attribute kind="ComputationType" status="meta">
+								<value>Addition</value>
+							</attribute>
+							<attribute kind="DataType" status="meta">
+								<value>String</value>
+							</attribute>
+							<attribute kind="DefaultValue" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Description" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Dimension" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Disable" status="meta">
+								<value>false</value>
+							</attribute>
+							<attribute kind="ID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="ManagedGUID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Range" status="meta">
+								<value>-inf..inf</value>
+							</attribute>
+							<attribute kind="Type" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Value" status="meta">
+								<value></value>
+							</attribute>
+						</reference>
+					</model>
+					<model id="id-0065-00000281" kind="PythonWrapper" role="PythonWrapper" guid="{a28722a5-5109-4d24-a15e-7b909b83f872}" relid="0x3" childrelidcntr="0x2">
+						<name>ArrayMean</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="TestBenchCompositionAspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>1029,441</value>
+								</regnode>
+							</regnode>
+						</regnode>
+						<attribute kind="PyFilename">
+							<value>python\ArrayMean.py</value>
+						</attribute>
+						<reference id="id-0067-00000384" kind="Parameter" role="Parameter" guid="{ce8a3d20-2de2-4775-a4b7-707257db4104}" relid="0x2">
+							<name>array</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="ValueFlowAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>20,65</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<regnode name="pass_by_obj" isopaque="yes">
+								<value>True</value>
+							</regnode>
+							<attribute kind="ComputationType" status="meta">
+								<value>Addition</value>
+							</attribute>
+							<attribute kind="DataType" status="meta">
+								<value>String</value>
+							</attribute>
+							<attribute kind="DefaultValue" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Description" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Dimension" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Disable" status="meta">
+								<value>false</value>
+							</attribute>
+							<attribute kind="ID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="ManagedGUID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Range" status="meta">
+								<value>-inf..inf</value>
+							</attribute>
+							<attribute kind="Type" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Value" status="meta">
+								<value></value>
+							</attribute>
+						</reference>
+						<reference id="id-0067-00000385" kind="Metric" role="Metric" guid="{895438af-6944-4493-b14c-a8ac18d2a6db}" relid="0x1">
+							<name>mean</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="ValueFlowAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>800,65</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<regnode name="pass_by_obj" isopaque="yes">
+								<value>False</value>
+							</regnode>
+							<attribute kind="Description" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="ManagedGUID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Value">
+								<value>0.0</value>
+							</attribute>
+						</reference>
+					</model>
+					<model id="id-0065-00000282" kind="PythonWrapper" role="PythonWrapper" guid="{11c8d3a0-b999-4306-90c6-33fabb28c48e}" relid="0x2" childrelidcntr="0x3">
+						<name>ScalarToArray</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="TestBenchCompositionAspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>448,329</value>
+								</regnode>
+							</regnode>
+						</regnode>
+						<attribute kind="PyFilename">
+							<value>python\ScalarToArray.py</value>
+						</attribute>
+						<reference id="id-0067-00000386" kind="Parameter" role="Parameter" guid="{fbffc2f3-21df-4845-b4c8-6b5003479e91}" relid="0x3">
+							<name>value</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="ValueFlowAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>20,130</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<regnode name="pass_by_obj" isopaque="yes">
+								<value>False</value>
+							</regnode>
+							<attribute kind="ComputationType" status="meta">
+								<value>Addition</value>
+							</attribute>
+							<attribute kind="DataType" status="meta">
+								<value>String</value>
+							</attribute>
+							<attribute kind="DefaultValue" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Description" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Dimension" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Disable" status="meta">
+								<value>false</value>
+							</attribute>
+							<attribute kind="ID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="ManagedGUID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Range" status="meta">
+								<value>-inf..inf</value>
+							</attribute>
+							<attribute kind="Type" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Value" status="meta">
+								<value></value>
+							</attribute>
+						</reference>
+						<reference id="id-0067-00000387" kind="Parameter" role="Parameter" guid="{0ec9b6c5-f958-4fb6-bb1d-1ea2e2dedd22}" relid="0x2">
+							<name>increment</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="ValueFlowAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>20,65</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<regnode name="pass_by_obj" isopaque="yes">
+								<value>False</value>
+							</regnode>
+							<attribute kind="ComputationType" status="meta">
+								<value>Addition</value>
+							</attribute>
+							<attribute kind="DataType" status="meta">
+								<value>String</value>
+							</attribute>
+							<attribute kind="DefaultValue" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Description" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Dimension" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Disable" status="meta">
+								<value>false</value>
+							</attribute>
+							<attribute kind="ID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="ManagedGUID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Range" status="meta">
+								<value>-inf..inf</value>
+							</attribute>
+							<attribute kind="Type" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Value" status="meta">
+								<value></value>
+							</attribute>
+						</reference>
+						<reference id="id-0067-00000388" kind="Metric" role="Metric" guid="{e2020a2c-8515-4ce8-88fc-fe2bb212f51c}" relid="0x1">
+							<name>array</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="ValueFlowAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>800,65</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<regnode name="pass_by_obj" isopaque="yes">
+								<value>True</value>
+							</regnode>
+							<attribute kind="Description" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="ManagedGUID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Value">
+								<value>numpy.asarray([ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.])</value>
+							</attribute>
+						</reference>
+					</model>
+					<model id="id-0065-00000283" kind="ParameterStudy" role="ParameterStudy" guid="{f14104c0-fd99-49ba-ae83-9add2b6efe2f}" relid="0x1" childrelidcntr="0x6">
+						<name>ParameterStudyDriver</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="TestBenchCompositionAspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>735,70</value>
+								</regnode>
+							</regnode>
+						</regnode>
+						<attribute kind="Code">
+							<value>num_samples=20</value>
+						</attribute>
+						<attribute kind="DOEType">
+							<value>Uniform</value>
+						</attribute>
+						<attribute kind="SurrogateType" status="meta">
+							<value>None</value>
+						</attribute>
+						<reference id="id-0067-00000389" kind="DesignVariable" role="DesignVariable" guid="{7793d518-4a63-44db-ab93-7b617975450a}" relid="0x5">
+							<name>value2</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="TestBenchCompositionAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>273,329</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<attribute kind="Range">
+								<value>0.0,10.0</value>
+							</attribute>
+						</reference>
+						<reference id="id-0067-0000038a" kind="Objective" role="Objective" guid="{89ebcd9b-ba58-460b-a3d6-6af26960ed04}" relid="0x4">
+							<name>Mean</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="TestBenchCompositionAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>1001,133</value>
+									</regnode>
+								</regnode>
+							</regnode>
+						</reference>
+						<reference id="id-0067-0000038b" kind="DesignVariable" role="DesignVariable" guid="{a2b16a3b-194e-4f51-83ab-d533f06faf98}" relid="0x2">
+							<name>increment</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="TestBenchCompositionAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>287,196</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<attribute kind="Range">
+								<value>0.0,10.0</value>
+							</attribute>
+						</reference>
+						<reference id="id-0067-0000038c" kind="DesignVariable" role="DesignVariable" guid="{e8ad7308-f3cb-4633-b48b-19f383085781}" relid="0x6">
+							<name>increment2</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="TestBenchCompositionAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>273,455</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<attribute kind="Range">
+								<value>0.0,10.0</value>
+							</attribute>
+						</reference>
+						<reference id="id-0067-0000038d" kind="DesignVariable" role="DesignVariable" guid="{1f901cfb-ca3c-4abc-933b-7341900be291}" relid="0x1">
+							<name>value</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="TestBenchCompositionAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>287,70</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<attribute kind="Range">
+								<value>0.0,10.0</value>
+							</attribute>
+						</reference>
+					</model>
+					<connection id="id-0068-0000005e" kind="ResultFlow" role="ResultFlow" guid="{5b9d2ad0-9906-4817-b8b9-edec72779370}" relid="0xf">
+						<name>ResultFlow</name>
+						<connpoint role="src" target="id-0067-0000037f"/>
+						<connpoint role="dst" target="id-0067-00000384"/>
+					</connection>
+					<connection id="id-0068-0000005f" kind="ResultFlow" role="ResultFlow" guid="{8ae23b96-8bca-4050-b405-5d7873d6d8da}" relid="0xe">
+						<name>ResultFlow</name>
+						<connpoint role="dst" target="id-0067-0000037e"/>
+						<connpoint role="src" target="id-0067-00000382"/>
+					</connection>
+					<connection id="id-0068-00000060" kind="ResultFlow" role="ResultFlow" guid="{b3bafd32-907e-4014-8195-49637d232e42}" relid="0xd">
+						<name>ResultFlow</name>
+						<connpoint role="dst" target="id-0067-00000380"/>
+						<connpoint role="src" target="id-0067-00000388"/>
+					</connection>
+					<connection id="id-0068-00000061" kind="VariableSweep" role="VariableSweep" guid="{97315d96-9486-44e2-b7db-9276c5d3132e}" relid="0xb">
+						<name>VariableSweep</name>
+						<regnode name="color" isopaque="yes">
+							<value>0xff80c0</value>
+						</regnode>
+						<regnode name="dstStyle" isopaque="yes">
+							<value>arrow</value>
+						</regnode>
+						<connpoint role="dst" target="id-0067-00000383"/>
+						<connpoint role="src" target="id-0067-0000038c"/>
+					</connection>
+					<connection id="id-0068-00000062" kind="VariableSweep" role="VariableSweep" guid="{7abf1815-d933-4c31-9822-520f507fc27c}" relid="0xa">
+						<name>VariableSweep</name>
+						<regnode name="color" isopaque="yes">
+							<value>0xff80c0</value>
+						</regnode>
+						<regnode name="dstStyle" isopaque="yes">
+							<value>arrow</value>
+						</regnode>
+						<connpoint role="dst" target="id-0067-00000381"/>
+						<connpoint role="src" target="id-0067-00000389"/>
+					</connection>
+					<connection id="id-0068-00000063" kind="ObjectiveMapping" role="ObjectiveMapping" guid="{85c101ce-2b3f-411d-9232-aa625629020e}" relid="0x7">
+						<name>ObjectiveMapping</name>
+						<regnode name="color" isopaque="yes">
+							<value>0x7cadde</value>
+						</regnode>
+						<regnode name="dstStyle" isopaque="yes">
+							<value>arrow</value>
+						</regnode>
+						<connpoint role="src" target="id-0067-00000385"/>
+						<connpoint role="dst" target="id-0067-0000038a"/>
+					</connection>
+					<connection id="id-0068-00000064" kind="VariableSweep" role="VariableSweep" guid="{411657d3-d438-408f-9cbf-f55dbe9f7bb4}" relid="0x5">
+						<name>VariableSweep</name>
+						<regnode name="color" isopaque="yes">
+							<value>0xff80c0</value>
+						</regnode>
+						<regnode name="dstStyle" isopaque="yes">
+							<value>arrow</value>
+						</regnode>
+						<connpoint role="dst" target="id-0067-00000387"/>
+						<connpoint role="src" target="id-0067-0000038b"/>
+					</connection>
+					<connection id="id-0068-00000065" kind="VariableSweep" role="VariableSweep" guid="{18ecd0f1-f46b-4d85-9393-d1319bc39c00}" relid="0x4">
+						<name>VariableSweep</name>
+						<regnode name="color" isopaque="yes">
+							<value>0xff80c0</value>
+						</regnode>
+						<regnode name="dstStyle" isopaque="yes">
+							<value>arrow</value>
+						</regnode>
+						<connpoint role="dst" target="id-0067-00000386"/>
+						<connpoint role="src" target="id-0067-0000038d"/>
 					</connection>
 				</model>
 			</folder>
