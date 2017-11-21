@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE project SYSTEM "mga.dtd">
 
-<project guid="{258F4A5A-6C5C-4EB4-89C3-B79F41D35BCA}" cdate="Mon Nov 20 14:47:01 2017" mdate="Mon Nov 20 14:47:01 2017" version="" metaguid="{5D2A4064-A61E-09EF-33E6-21BDA243AE60}" metaversion="14.13-t28" metaname="CyPhyML">
+<project guid="{EC5BA573-415C-48F3-9EAB-60AAFB0930C9}" cdate="Mon Nov 20 14:47:01 2017" mdate="Mon Nov 20 14:47:01 2017" version="" metaguid="{5D2A4064-A61E-09EF-33E6-21BDA243AE60}" metaversion="14.13-t28" metaname="CyPhyML">
 	<name>RootFolder</name>
 	<comment></comment>
 	<author></author>
@@ -24,8 +24,8 @@
 								</regnode>
 							</regnode>
 						</regnode>
-						<attribute kind="Code" status="meta">
-							<value></value>
+						<attribute kind="Code">
+							<value>num_samples = 1</value>
 						</attribute>
 						<attribute kind="DOEType" status="meta">
 							<value>Full Factorial</value>
@@ -584,8 +584,8 @@
 								</regnode>
 							</regnode>
 						</regnode>
-						<attribute kind="Code" status="meta">
-							<value></value>
+						<attribute kind="Code">
+							<value>num_samples = 1</value>
 						</attribute>
 						<attribute kind="DOEType" status="meta">
 							<value>Full Factorial</value>
@@ -1076,8 +1076,8 @@
 								</regnode>
 							</regnode>
 						</regnode>
-						<attribute kind="Code" status="meta">
-							<value></value>
+						<attribute kind="Code">
+							<value>num_samples = 1</value>
 						</attribute>
 						<attribute kind="DOEType" status="meta">
 							<value>Full Factorial</value>
@@ -1341,8 +1341,8 @@
 								</regnode>
 							</regnode>
 						</regnode>
-						<attribute kind="Code" status="meta">
-							<value></value>
+						<attribute kind="Code">
+							<value>num_samples = 1</value>
 						</attribute>
 						<attribute kind="DOEType" status="meta">
 							<value>Full Factorial</value>
@@ -1575,8 +1575,8 @@
 								</regnode>
 							</regnode>
 						</regnode>
-						<attribute kind="Code" status="meta">
-							<value></value>
+						<attribute kind="Code">
+							<value>num_samples = 1</value>
 						</attribute>
 						<attribute kind="DOEType" status="meta">
 							<value>Full Factorial</value>
@@ -1677,8 +1677,8 @@
 								</regnode>
 							</regnode>
 						</regnode>
-						<attribute kind="Code" status="meta">
-							<value></value>
+						<attribute kind="Code">
+							<value>num_samples = 1</value>
 						</attribute>
 						<attribute kind="DOEType" status="meta">
 							<value>Full Factorial</value>
@@ -2019,8 +2019,8 @@
 						<connpoint role="dst" target="id-0067-0000038d"/>
 					</connection>
 				</model>
-				<model id="id-0065-000004d9" kind="ParametricExploration" guid="{7834ed5e-d664-49c2-b985-18b359e7e5fe}" relid="0x3" childrelidcntr="0x6">
-					<name>VectorExamples</name>
+				<model id="id-0065-000004d9" kind="ParametricExploration" guid="{7834ed5e-d664-49c2-b985-18b359e7e5fe}" relid="0x3" childrelidcntr="0x9">
+					<name>VectorsExample</name>
 					<model id="id-0065-000004da" kind="ParameterStudy" role="ParameterStudy" guid="{17bda596-9743-4bbb-a736-4bc005222c68}" relid="0x1" childrelidcntr="0x7">
 						<name>ParameterStudyDriver</name>
 						<regnode name="PartRegs" status="undefined">
@@ -2032,11 +2032,11 @@
 								</regnode>
 							</regnode>
 						</regnode>
-						<attribute kind="Code" status="meta">
-							<value></value>
+						<attribute kind="Code">
+							<value>num_samples = 20</value>
 						</attribute>
-						<attribute kind="DOEType" status="meta">
-							<value>Full Factorial</value>
+						<attribute kind="DOEType">
+							<value>Uniform</value>
 						</attribute>
 						<attribute kind="SurrogateType" status="meta">
 							<value>None</value>
@@ -2070,7 +2070,7 @@
 						</reference>
 					</model>
 					<model id="id-0065-000004db" kind="PythonWrapper" role="PythonWrapper" guid="{ac5bee3c-7f68-4a2c-98a4-e00590854895}" relid="0x2" childrelidcntr="0x3">
-						<name>PythonWrapper</name>
+						<name>TwoRandomVectors</name>
 						<regnode name="PartRegs" status="undefined">
 							<value></value>
 							<regnode name="TestBenchCompositionAspect" status="undefined">
@@ -2180,29 +2180,149 @@
 							</attribute>
 						</reference>
 					</model>
-					<model id="id-0065-000004dc" kind="MATLABWrapper" role="MATLABWrapper" guid="{a76152bf-41df-43bb-9de0-ae0394b87af2}" relid="0x4" childrelidcntr="0x0">
-						<name>MATLABWrapper</name>
+					<model id="id-0065-000004dc" kind="MATLABWrapper" role="MATLABWrapper" guid="{a76152bf-41df-43bb-9de0-ae0394b87af2}" relid="0x4" childrelidcntr="0x3">
+						<name>Cross</name>
 						<regnode name="PartRegs" status="undefined">
 							<value></value>
 							<regnode name="TestBenchCompositionAspect" status="undefined">
 								<value></value>
 								<regnode name="Position" isopaque="yes">
-									<value>420,280</value>
+									<value>343,273</value>
 								</regnode>
 							</regnode>
 						</regnode>
-						<attribute kind="MFilename" status="meta">
-							<value></value>
+						<attribute kind="MFilename">
+							<value>scripts\Cross.m</value>
 						</attribute>
+						<reference id="id-0067-000006d1" kind="Metric" role="Metric" guid="{0f482edd-3e39-48ae-9fe7-3b8ace6f3aa1}" relid="0x1">
+							<name>V3</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="ValueFlowAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>800,65</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<regnode name="pass_by_obj" isopaque="yes">
+								<value>True</value>
+							</regnode>
+							<attribute kind="Description" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="ManagedGUID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Value" status="meta">
+								<value></value>
+							</attribute>
+						</reference>
+						<reference id="id-0067-000006d2" kind="Parameter" role="Parameter" guid="{ec9720b6-be70-4e0c-8bf2-6ff97591b54a}" relid="0x2">
+							<name>V1</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="ValueFlowAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>20,65</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<regnode name="pass_by_obj" isopaque="yes">
+								<value>True</value>
+							</regnode>
+							<attribute kind="ComputationType" status="meta">
+								<value>Addition</value>
+							</attribute>
+							<attribute kind="DataType" status="meta">
+								<value>String</value>
+							</attribute>
+							<attribute kind="DefaultValue" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Description" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Dimension" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Disable" status="meta">
+								<value>false</value>
+							</attribute>
+							<attribute kind="ID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="ManagedGUID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Range" status="meta">
+								<value>-inf..inf</value>
+							</attribute>
+							<attribute kind="Type" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Value" status="meta">
+								<value></value>
+							</attribute>
+						</reference>
+						<reference id="id-0067-000006d3" kind="Parameter" role="Parameter" guid="{720c75dd-efbf-4a9e-b6d2-7f3f0a824af8}" relid="0x3">
+							<name>V2</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="ValueFlowAspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>20,130</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<regnode name="pass_by_obj" isopaque="yes">
+								<value>True</value>
+							</regnode>
+							<attribute kind="ComputationType" status="meta">
+								<value>Addition</value>
+							</attribute>
+							<attribute kind="DataType" status="meta">
+								<value>String</value>
+							</attribute>
+							<attribute kind="DefaultValue" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Description" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Dimension" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Disable" status="meta">
+								<value>false</value>
+							</attribute>
+							<attribute kind="ID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="ManagedGUID" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Range" status="meta">
+								<value>-inf..inf</value>
+							</attribute>
+							<attribute kind="Type" status="meta">
+								<value></value>
+							</attribute>
+							<attribute kind="Value" status="meta">
+								<value></value>
+							</attribute>
+						</reference>
 					</model>
 					<model id="id-0065-000004dd" kind="PythonWrapper" role="PythonWrapper" guid="{d820c6a9-f6d5-47bb-93c6-912323187c9a}" relid="0x5" childrelidcntr="0x2">
-						<name>PythonWrapper</name>
+						<name>Magnitude</name>
 						<regnode name="PartRegs" status="undefined">
 							<value></value>
 							<regnode name="TestBenchCompositionAspect" status="undefined">
 								<value></value>
 								<regnode name="Position" isopaque="yes">
-									<value>658,280</value>
+									<value>553,273</value>
 								</regnode>
 							</regnode>
 						</regnode>
@@ -2303,6 +2423,21 @@
 						</regnode>
 						<connpoint role="dst" target="id-0067-000006c9"/>
 						<connpoint role="src" target="id-0067-000006cf"/>
+					</connection>
+					<connection id="id-0068-00000093" kind="ResultFlow" role="ResultFlow" guid="{99f76525-5caa-4e52-8794-680f5e6a7b0c}" relid="0x7">
+						<name>ResultFlow</name>
+						<connpoint role="src" target="id-0067-000006cc"/>
+						<connpoint role="dst" target="id-0067-000006d2"/>
+					</connection>
+					<connection id="id-0068-00000094" kind="ResultFlow" role="ResultFlow" guid="{da480216-23d8-401b-84b5-df15b2fedb6e}" relid="0x8">
+						<name>ResultFlow</name>
+						<connpoint role="src" target="id-0067-000006cd"/>
+						<connpoint role="dst" target="id-0067-000006d3"/>
+					</connection>
+					<connection id="id-0068-00000095" kind="ResultFlow" role="ResultFlow" guid="{26b996fb-712f-49ff-824a-d2bcc3bc3164}" relid="0x9">
+						<name>ResultFlow</name>
+						<connpoint role="dst" target="id-0067-000006d0"/>
+						<connpoint role="src" target="id-0067-000006d1"/>
 					</connection>
 				</model>
 			</folder>
