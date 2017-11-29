@@ -25,7 +25,7 @@ class GenerateAssortedData(Component):
         m = max(int(params["m"]), 1)
         n = max(int(params["n"]), 1)
         unknowns["scalar_out"] = m * n
-        unknowns["scalararray_out"] = [[y for y in xrange(x * m, x * m + n)] for x in xrange(m)]
+        unknowns["scalararray_out"] = [[y for y in xrange(x * n, x * n + n)] for x in xrange(m)]
         unknowns["npscalararray_out"] = np.array(xrange(m * n)).reshape(m, n) 
         unknowns["string_out"] = "m = " + str(m) + "; n = " + str(n)
         unknowns["stringarray_out"] = [str(m), str(n)]
