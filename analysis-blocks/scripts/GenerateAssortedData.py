@@ -34,6 +34,9 @@ class GenerateAssortedData(Component):
         unknowns["float_out"] = float(m * n)
         unknowns["floatarray_out"] = [[float(y) for y in xrange(x * n, x * n + n)] for x in xrange(m)]
         unknowns["npfloatarray_out"] = np.array(xrange(m * n), dtype=np.float).reshape(m, n)
+        unknowns["int_out"] = int(m * n)
+        unknowns["intarray_out"] = [[int(y) for y in xrange(x * n, x * n + n)] for x in xrange(m)]
+        unknowns["npintarray_out"] = np.array(xrange(m * n)).reshape(m, n)
         unknowns["string_out"] = "m = " + str(m) + "; n = " + str(n)
         unknowns["stringarray_out"] = [str(m), str(n)]
         unknowns["npstringarray_out"] = np.array([str(m), str(n)])
