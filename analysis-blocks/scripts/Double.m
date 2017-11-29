@@ -1,13 +1,17 @@
-% variable: output1 double output
-% variable: output2 double[] output
-% variable: output3 string output
-% variable: output4 string[] output
-% variable: input1 double input
-% variable: input2 double[] input
-% variable: input3 string input
-% variable: input4 string[] input
+% variable: double_out double output
+% variable: doublearray_out double[] output
+% variable: string_out string output
+% variable: stringarray_out string[] output
+% variable: object_out object output
+% variable: double_in double input
+% variable: doublearray_in double[] input
+% variable: string_in string input
+% variable: stringarray_in string[] input
+% variable: object_in object input
 
-output1 = input1 * 2
-output2 = input2 * 2
-output3 = strcat(input3, input3)
-output4 = [input4, input4]
+
+double_out = double_in * 2
+doublearray_out = doublearray_in * 2
+string_out = strcat(string_in, string_in)
+stringarray_out = [stringarray_in, stringarray_in]
+object_out = structfun(@(x) (x * 2), object_in, 'uni', 0)
