@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE project SYSTEM "mga.dtd">
 
-<project guid="{D33A94F2-8596-48DB-B0F6-B3EFD447297D}" cdate="Thu Nov 30 15:21:52 2017" mdate="Thu Nov 30 15:21:52 2017" version="" metaguid="{AC3BCE35-D718-04B7-0E49-91DE59A2EDA1}" metaversion="14.13-t29" metaname="CyPhyML">
+<project guid="{34964C3A-54A7-4A53-986A-22B45EE5C598}" cdate="Thu Nov 30 15:21:52 2017" mdate="Thu Nov 30 15:21:52 2017" version="" metaguid="{AC3BCE35-D718-04B7-0E49-91DE59A2EDA1}" metaversion="14.13-t29" metaname="CyPhyML">
 	<name>RootFolder</name>
 	<comment></comment>
 	<author></author>
@@ -23616,8 +23616,7 @@
 							</regnode>
 						</regnode>
 						<attribute kind="Code">
-							<value>num_samples = 6
-</value>
+							<value>num_samples = 6</value>
 						</attribute>
 						<attribute kind="DOEType" status="meta">
 							<value>Full Factorial</value>
@@ -23637,7 +23636,7 @@
 								</regnode>
 							</regnode>
 							<attribute kind="Range">
-								<value>1,5</value>
+								<value>1,6</value>
 							</attribute>
 						</reference>
 						<reference id="id-0067-0000036c" kind="Objective" role="Objective" guid="{7ab190e7-7686-4afd-bdf4-9ccf2d7d9eea}" relid="0x2">
@@ -23739,7 +23738,7 @@
 						<value>Must Not Exceed</value>
 					</attribute>
 					<attribute kind="TargetValue">
-						<value>20</value>
+						<value>10</value>
 					</attribute>
 				</atom>
 				<reference id="id-0067-0000033a" kind="WorkflowRef" role="WorkflowRef" guid="{627cc22f-5b66-4f75-89ab-311672f5b8b3}" relid="0x1" referred="id-0065-00000263">
