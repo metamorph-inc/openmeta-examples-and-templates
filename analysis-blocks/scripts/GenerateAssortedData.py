@@ -1,3 +1,4 @@
+# coding=utf-8
 from __future__ import print_function
 import collections
 
@@ -20,12 +21,12 @@ class GenerateAssortedData(Component):
         self.add_output("string_out", val="String", pass_by_obj=True)
         self.add_output("stringarray_out", val=["String 1", "String 2"], pass_by_obj=True)
         self.add_output("npstringarray_out", val=np.array(["String 1", "String 2"]), pass_by_obj=True)
-        self.add_output("unicode_out", val=u"Unicode", pass_by_obj=True)
-        self.add_output("unicodearray_out", val=[u"Unicode 1", u"Unicode 2"], pass_by_obj=True)
-        self.add_output("npunicodearray_out", val=np.array([u"Unicode 1", u"Unicode 2"]), pass_by_obj=True)
+        self.add_output("unicode_out", val=u"Unicøde", pass_by_obj=True)
+        self.add_output("unicodearray_out", val=[u"Unicøde 1", u"Unicøde 2"], pass_by_obj=True)
+        self.add_output("npunicodearray_out", val=np.array([u"Unicøde 1", u"Unicøde 2"]), pass_by_obj=True)
         self.add_output("bool_out", val=True, pass_by_obj=True)
         self.add_output("dict_strkey_homo_out", val={'apples': 3, 'oranges': 2, 'bananas': 1}, pass_by_obj=True)
-        self.add_output("dict_unikey_homo_out", val={u'apples': 3, u'oranges': 2, u'bananas': 1}, pass_by_obj=True)
+        self.add_output("dict_unikey_homo_out", val={u'apples': 3, u'oranges': 2, u'bananas': 1, u'crêpes': 0}, pass_by_obj=True)
         self.add_output("dict_hetero_out", val={'name': 'alice', 'age': 50, 'children': ['bob', 'caleb']}, pass_by_obj=True)
 
     def solve_nonlinear(self, params, unknowns, resids):
@@ -40,12 +41,12 @@ class GenerateAssortedData(Component):
         unknowns["string_out"] = "m = " + str(m) + "; n = " + str(n)
         unknowns["stringarray_out"] = [str(m), str(n)]
         unknowns["npstringarray_out"] = np.array([str(m), str(n)])
-        unknowns["unicode_out"] = "m = " + unicode(m) + "; n = " + unicode(n)
-        unknowns["unicodearray_out"] = [unicode(m), unicode(n)]
-        unknowns["npunicodearray_out"] = np.array([unicode(m), unicode(n)])
+        unknowns["unicode_out"] = unicode(m) + u" bÿ " + unicode(n)
+        unknowns["unicodearray_out"] = [unicode(m) + u"ï", unicode(n) + u"ï"]
+        unknowns["npunicodearray_out"] = np.array([unicode(m) + u"ï", unicode(n) + u"ï"])
         unknowns["bool_out"] = m > n
         unknowns["dict_strkey_homo_out"]["apples"], unknowns["dict_strkey_homo_out"]["oranges"] = m, n
-        unknowns["dict_unikey_homo_out"]["apples"], unknowns["dict_unikey_homo_out"]["oranges"] = m, n
+        unknowns["dict_unikey_homo_out"]["apples"], unknowns["dict_unikey_homo_out"][u"crêpes"] = m, n
         unknowns["dict_hetero_out"]["children"] = ['bob', 'caleb']
         for name in ["other_child_{0}".format(num+1) for num in xrange(min(m+n,10))]:
             unknowns["dict_hetero_out"]["children"].append(name)

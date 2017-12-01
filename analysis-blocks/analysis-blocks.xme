@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE project SYSTEM "mga.dtd">
 
-<project guid="{9D2E29B9-AC4C-4BE8-B4F1-EC852ACEC3C8}" cdate="Fri Dec 01 09:46:37 2017" mdate="Fri Dec 01 09:46:37 2017" version="" metaguid="{5D2A4064-A61E-09EF-33E6-21BDA243AE60}" metaversion="14.13-t28" metaname="CyPhyML">
+<project guid="{3BCA9D0F-5DF8-4485-AA84-1D19CB525258}" cdate="Fri Dec 01 09:46:37 2017" mdate="Fri Dec 01 09:46:37 2017" version="" metaguid="{5D2A4064-A61E-09EF-33E6-21BDA243AE60}" metaversion="14.13-t28" metaname="CyPhyML">
 	<name>RootFolder</name>
 	<comment></comment>
 	<author></author>
@@ -2265,7 +2265,7 @@
 					</connection>
 				</model>
 			</folder>
-			<folder id="id-006a-00000004" relid="0x2" childrelidcntr="0xc" kind="ParametricExplorationFolder" guid="{4cd7c75f-1827-4a8d-b156-b22ca6b17f9a}">
+			<folder id="id-006a-00000004" relid="0x2" childrelidcntr="0xe" kind="ParametricExplorationFolder" guid="{4cd7c75f-1827-4a8d-b156-b22ca6b17f9a}">
 				<name>ComplexExamples</name>
 				<model id="id-0065-00000018" kind="ParametricExploration" guid="{b7c8efc9-0346-4e16-a3bb-0f70803686b7}" relid="0x1" childrelidcntr="0x19">
 					<name>MatlabMultipleOutputs</name>
