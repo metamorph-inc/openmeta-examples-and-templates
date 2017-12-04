@@ -15,7 +15,7 @@ class GenerateAssortedData(Component):
         self.add_output("float_out", val=0.0)
         self.add_output("floatarray_out", val=[0.0, 0.0], pass_by_obj=True)
         self.add_output("npfloatarray_out", val=np.array([[0.0, 0.0], [0.0, 0.0]]), pass_by_obj=True)
-        self.add_output("int_out", val=0)
+        self.add_output("int_out", val=0, pass_by_obj=True)
         self.add_output("intarray_out", val=[0, 0], pass_by_obj=True)
         self.add_output("npintarray_out", val=np.array([[0, 0], [0, 0]]), pass_by_obj=True)
         self.add_output("string_out", val="String", pass_by_obj=True)
@@ -25,8 +25,11 @@ class GenerateAssortedData(Component):
         self.add_output("unicodearray_out", val=[u"Unicøde 1", u"Unicøde 2"], pass_by_obj=True)
         self.add_output("npunicodearray_out", val=np.array([u"Unicøde 1", u"Unicøde 2"]), pass_by_obj=True)
         self.add_output("bool_out", val=True, pass_by_obj=True)
-        self.add_output("dict_strkey_homo_out", val={'apples': 3, 'oranges': 2, 'bananas': 1}, pass_by_obj=True)
-        self.add_output("dict_unikey_homo_out", val={u'apples': 3, u'oranges': 2, u'bananas': 1, u'crêpes': 0}, pass_by_obj=True)
+        self.add_output("dict_strkey_intval_homo_out", val={'apples': 3, 'oranges': 2, 'bananas': 1}, pass_by_obj=True)
+        self.add_output("dict_unikey_intval_homo_out", val={u'apples': 3, u'oranges': 2, u'bananas': 1, u'crêpes': 0}, pass_by_obj=True)
+        self.add_output("dict_strkey_strval_homo_out", val={'Chief Executive Officer': 'Ralph', 'Company Secretary': 'Lenny'}, pass_by_obj=True)
+        self.add_output("dict_strkey_unival_homo_out", val={'Chief Executive Officer': 'Raphaël', 'Company Secretary': 'Léo'}, pass_by_obj=True)
+        self.add_output("dict_unikey_unival_homo_out", val={'Président Directeur Général': 'Raphaël', 'Secrétaire Général': 'Léo'}, pass_by_obj=True)
         self.add_output("dict_hetero_out", val={'name': 'alice', 'age': 50, 'children': ['bob', 'caleb']}, pass_by_obj=True)
 
     def solve_nonlinear(self, params, unknowns, resids):
@@ -45,8 +48,8 @@ class GenerateAssortedData(Component):
         unknowns["unicodearray_out"] = [unicode(m) + u"ï", unicode(n) + u"😂"]
         unknowns["npunicodearray_out"] = np.array([unicode(m) + u"ï", unicode(n) + u"😂"])
         unknowns["bool_out"] = m > n
-        unknowns["dict_strkey_homo_out"]["apples"], unknowns["dict_strkey_homo_out"]["oranges"] = m, n
-        unknowns["dict_unikey_homo_out"]["apples"], unknowns["dict_unikey_homo_out"][u"crêpes"] = m, n
+        unknowns["dict_strkey_intval_homo_out"]["apples"], unknowns["dict_strkey_intval_homo_out"]["oranges"] = m, n
+        unknowns["dict_unikey_intval_homo_out"]["apples"], unknowns["dict_unikey_intval_homo_out"][u"crêpes"] = m, n
         unknowns["dict_hetero_out"]["children"] = ['bob', 'caleb']
         for name in ["other_child_{0}".format(num+1) for num in xrange(min(m+n,10))]:
             unknowns["dict_hetero_out"]["children"].append(name)
@@ -79,8 +82,11 @@ def main():
     print('unicodearray_out =', root.Generator.unknowns['unicodearray_out'])
     print('npunicodearray_out =', root.Generator.unknowns['npunicodearray_out'])
     print('bool_out =', root.Generator.unknowns['bool_out'])
-    print('dict_strkey_homo_out =', root.Generator.unknowns['dict_strkey_homo_out'])
-    print('dict_unikey_homo_out =', root.Generator.unknowns['dict_unikey_homo_out'])
+    print('dict_strkey_intval_homo_out =', root.Generator.unknowns['dict_strkey_intval_homo_out'])
+    print('dict_unikey_intval_homo_out =', root.Generator.unknowns['dict_unikey_intval_homo_out'])
+    print('dict_strkey_strval_homo_out =', root.Generator.unknowns['dict_strkey_strval_homo_out'])
+    print('dict_strkey_unival_homo_out =', root.Generator.unknowns['dict_strkey_unival_homo_out'])
+    print('dict_unikey_unival_homo_out =', root.Generator.unknowns['dict_unikey_unival_homo_out'])
     print('dict_hetero_out =', root.Generator.unknowns['dict_hetero_out'])
 
 if __name__ == "__main__":

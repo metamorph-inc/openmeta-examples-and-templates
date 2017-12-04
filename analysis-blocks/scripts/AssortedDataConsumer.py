@@ -1,3 +1,4 @@
+# coding=utf-8
 from __future__ import print_function
 import collections
 
@@ -22,8 +23,11 @@ class AssortedDataConsumer(Component):
         self.add_param("unicodearray_in", val=[u"", u""], pass_by_obj=True)
         self.add_param("npunicodearray_in", val=np.array([u"", u""]), pass_by_obj=True)
         self.add_param("bool_in", val=True, pass_by_obj=True)
-        self.add_param("dict_strkey_homo_in", val={'apples': 3, 'oranges': 2, 'bananas': 1}, pass_by_obj=True)
-        self.add_param("dict_unikey_homo_in", val={u'apples': 3, u'oranges': 2, u'bananas': 1}, pass_by_obj=True)
+        self.add_param("dict_strkey_intval_homo_out", val={'apples': 3, 'oranges': 2, 'bananas': 1}, pass_by_obj=True)
+        self.add_param("dict_unikey_intval_homo_out", val={u'apples': 3, u'oranges': 2, u'bananas': 1, u'crêpes': 0}, pass_by_obj=True)
+        self.add_param("dict_strkey_strval_homo_out", val={'Chief Executive Officer': 'Ralph', 'Company Secretary': 'Lenny'}, pass_by_obj=True)
+        self.add_param("dict_strkey_unival_homo_out", val={'Chief Executive Officer': 'Raphaël', 'Company Secretary': 'Léo'}, pass_by_obj=True)
+        self.add_param("dict_unikey_unival_homo_out", val={'Président Directeur Général': 'Raphaël', 'Secrétaire Général': 'Léo'}, pass_by_obj=True)
         self.add_param("dict_hetero_in", val={'name': 'alice', 'age': 50, 'children': ['bob', 'caleb']}, pass_by_obj=True)
 
     def solve_nonlinear(self, params, unknowns, resids):
@@ -51,8 +55,11 @@ def main():
                                     ('unicodearray_in', [u"Two", u"Tests"], {"pass_by_obj": True}),
                                     ('npunicodearray_in', np.array([u"Two", u"Tests"]), {"pass_by_obj": True}),
                                     ('bool_in', True, {"pass_by_obj": True}),
-                                    ('dict_strkey_homo_in', {"Hearts": 2, "Spades": 3, "Diamonds": 5, "Clubs": 0}, {"pass_by_obj": True}),
-                                    ('dict_unikey_homo_in', {u"Hearts": 2, u"Spades": 3, u"Diamonds": 5, u"Clubs": 0}, {"pass_by_obj": True}),
+                                    ('dict_strkey_intval_homo_out', {"Hearts": 2, "Spades": 3, "Diamonds": 5, "Clubs": 0}, {"pass_by_obj": True}),
+                                    ('dict_unikey_intval_homo_out', {u"Hearts": 2, u"Spades": 3, u"Diamonds": 5, u"Clubs": 0}, {"pass_by_obj": True}),
+                                    ('dict_strkey_strval_homo_out', {'Chief Executive Officer': 'Leah', 'Company Secretary': 'Chloe'}, {"pass_by_obj": True}),
+                                    ('dict_strkey_unival_homo_out', {'Chief Executive Officer': 'Léa', 'Company Secretary': 'Chloé'}, {"pass_by_obj": True}),
+                                    ('dict_unikey_unival_homo_out', {'Président Directeur Général': 'Léa', 'Secrétaire Général': 'Chloé'}, {"pass_by_obj": True}),
                                     ('dict_hetero_in', {'name': 'bob', 'age': 25, 'children': ['catherine', 'david']}, {"pass_by_obj": True})]))
     root.add('Consumer', AssortedDataConsumer())
     root.connect('Input.float_in', 'Consumer.float_in')
@@ -68,8 +75,11 @@ def main():
     root.connect('Input.unicodearray_in', 'Consumer.unicodearray_in')
     root.connect('Input.npunicodearray_in', 'Consumer.npunicodearray_in')
     root.connect('Input.bool_in', 'Consumer.bool_in')
-    root.connect('Input.dict_strkey_homo_in', 'Consumer.dict_strkey_homo_in')
-    root.connect('Input.dict_unikey_homo_in', 'Consumer.dict_unikey_homo_in')
+    root.connect('Input.dict_strkey_intval_homo_out', 'Consumer.dict_strkey_intval_homo_out')
+    root.connect('Input.dict_unikey_intval_homo_out', 'Consumer.dict_unikey_intval_homo_out')
+    root.connect('Input.dict_strkey_strval_homo_out', 'Consumer.dict_strkey_strval_homo_out')
+    root.connect('Input.dict_strkey_unival_homo_out', 'Consumer.dict_strkey_unival_homo_out')
+    root.connect('Input.dict_unikey_unival_homo_out', 'Consumer.dict_unikey_unival_homo_out')
     root.connect('Input.dict_hetero_in', 'Consumer.dict_hetero_in')
 
     top.setup()
