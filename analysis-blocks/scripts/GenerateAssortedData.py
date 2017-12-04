@@ -41,9 +41,9 @@ class GenerateAssortedData(Component):
         unknowns["string_out"] = "m = " + str(m) + "; n = " + str(n)
         unknowns["stringarray_out"] = [str(m), str(n)]
         unknowns["npstringarray_out"] = np.array([str(m), str(n)])
-        unknowns["unicode_out"] = unicode(m) + u" bÿ " + unicode(n)
-        unknowns["unicodearray_out"] = [unicode(m) + u"ï", unicode(n) + u"ï"]
-        unknowns["npunicodearray_out"] = np.array([unicode(m) + u"ï", unicode(n) + u"ï"])
+        unknowns["unicode_out"] = unicode(m) + u" bÿ " + unicode(n) + u" 😂"
+        unknowns["unicodearray_out"] = [unicode(m) + u"ï", unicode(n) + u"😂"]
+        unknowns["npunicodearray_out"] = np.array([unicode(m) + u"ï", unicode(n) + u"😂"])
         unknowns["bool_out"] = m > n
         unknowns["dict_strkey_homo_out"]["apples"], unknowns["dict_strkey_homo_out"]["oranges"] = m, n
         unknowns["dict_unikey_homo_out"]["apples"], unknowns["dict_unikey_homo_out"][u"crêpes"] = m, n
