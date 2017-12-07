@@ -28,8 +28,8 @@ class GenerateAssortedData(Component):
         self.add_output("dict_strkey_intval_homo_out", val={'apples': 3, 'oranges': 2, 'bananas': 1}, pass_by_obj=True)
         self.add_output("dict_unikey_intval_homo_out", val={u'apples': 3, u'oranges': 2, u'bananas': 1, u'crêpes': 0}, pass_by_obj=True)
         self.add_output("dict_strkey_strval_homo_out", val={'Chief Executive Officer': 'Ralph', 'Company Secretary': 'Lenny'}, pass_by_obj=True)
-        self.add_output("dict_strkey_unival_homo_out", val={'Chief Executive Officer': 'Raphaël', 'Company Secretary': 'Léo'}, pass_by_obj=True)
-        self.add_output("dict_unikey_unival_homo_out", val={'Président Directeur Général': 'Raphaël', 'Secrétaire Général': 'Léo'}, pass_by_obj=True)
+        self.add_output("dict_strkey_unival_homo_out", val={'Chief Executive Officer': u'Raphaël', 'Company Secretary': u'Léo'}, pass_by_obj=True)
+        self.add_output("dict_unikey_unival_homo_out", val={u'Président Directeur Général': u'Raphaël', u'Secrétaire Général': u'Léo'}, pass_by_obj=True)
         self.add_output("dict_hetero_out", val={'name': 'alice', 'age': 50, 'children': ['bob', 'caleb']}, pass_by_obj=True)
 
     def solve_nonlinear(self, params, unknowns, resids):

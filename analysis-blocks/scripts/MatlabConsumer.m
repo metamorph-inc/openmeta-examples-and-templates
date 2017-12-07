@@ -1,4 +1,5 @@
 % variable: bool_in bool input
+% variable: dict_hetero_in object input
 % variable: dict_str_int_in object input
 % variable: float_in double input
 % variable: npfloatarray_in double[] input
@@ -7,7 +8,7 @@
 % variable: unicode_in string input
 % variable: unicodearray_in string[] input
 
-fileID = fopen('matlabdebug.txt','w');
+fileID = fopen('consumermatlab.txt','w');
 
 if bool_in
     fprintf(fileID,'bool_in: True\r\n');
@@ -15,12 +16,21 @@ else
     fprintf(fileID,'bool_in: False\r\n');
 end
 
+fprintf(fileID,'dict_hetero_in: (%s)\r\n', class(dict_hetero_in));
+cellfun(@(x) (fprintf(fileID,'%s,',x)), fieldnames(dict_hetero_in));
+fprintf(fileID,'\r\n');
+structfun(@(x) (fprintf(fileID,'%s,',ItemToString(x))), dict_hetero_in, 'uni', 0);
+fprintf(fileID,'\r\n');
+% You could also use the method below to output a struct to a txt file.
+%writetable(struct2table(dict_hetero_in), 'dict_hetero_in.txt');
+
 fprintf(fileID,'dict_str_int_in: (%s)\r\n', class(dict_str_int_in));
 cellfun(@(x) (fprintf(fileID,'%s,',x)), fieldnames(dict_str_int_in));
 fprintf(fileID,'\r\n');
 structfun(@(x) (fprintf(fileID,'%d,',x)), dict_str_int_in, 'uni', 0);
 fprintf(fileID,'\r\n');
-writetable(struct2table(dict_str_int_in), 'dict_str_int_in.txt');
+% You could also use the method below to output a struct to a txt file.
+%writetable(struct2table(dict_str_int_in), 'dict_str_int_in.txt');
 
 fprintf(fileID,'float_in: %f (%s)\r\n', float_in, class(float_in));
 
