@@ -14,7 +14,7 @@ OpenMETA can be downloaded from the product website: http://openmeta.metamorphso
 The OpenMETA Plugin is available only by request. Please feel free to contact us at support@metamorphsoftware.com.
 
 Once you've installed the OpenMETA Plugin, you can access its documentation through the Cameo Help menu.
-![MasterInterpreter](/path-to-cameo-plugin-docs.png "Opening the OpenMETA Plugin User Guide from within Cameo")
+![User Guide](path-to-cameo-plugin-docs.png "Opening the OpenMETA Plugin User Guide from within Cameo")
 
 ## Projects
 
