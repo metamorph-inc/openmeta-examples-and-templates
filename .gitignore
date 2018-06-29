@@ -19,6 +19,7 @@ tmp/
 Example\ Components/
 index.html
 *.mga
+*.adm
 manifest.project.json
 export_for_dashboard_scoring.py
 material_library.json

@@ -25,3 +25,13 @@ To give it a try yourself:
 2. Open the `00_Operational::MissionInstanceTables`.
 3. Click the *Run* button at the end of the diagram window toolbar.
 
+### cad
+
+This set of projects demonstrates the ability to execute an OpenMETA PET with CAD Model Assembly from within Cameo by executing an instance table using the System Structure of Cameo to build a new OpenMETA Component Assembly to use as the Top-Level System Under Test.
+
+To give it a try yourself:
+
+1. Open the `cad/spacecraft_composition.mdxml` project.
+2. Open the `01-Spacecraft::Instances::Instance Table`.
+3. Click the *Run* button at the end of the diagram window toolbar.
+
