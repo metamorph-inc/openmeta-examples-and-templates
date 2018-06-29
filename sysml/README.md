@@ -15,12 +15,13 @@ The OpenMETA Plugin is available only by request. Please feel free to contact us
 
 ## Projects
 
-### pet
+### python
 
-This set of projects demonstrates the ability to execute OpenMETA PETs from within Cameo by executing an instance table.
+This set of projects demonstrates the ability to execute an OpenMETA PET with a Python analysis block from within Cameo by executing an instance table.
 
 To give it a try yourself:
 
-1. Open the spacecraft.mdxml project.
-2. Open the 00_Operational::MissionInstanceTables
-3. Click the "Run" button at the end of the diagram window toolbar.
+1. Open the `python/spacecraft.mdxml` project.
+2. Open the `00_Operational::MissionInstanceTables`.
+3. Click the *Run* button at the end of the diagram window toolbar.
+
