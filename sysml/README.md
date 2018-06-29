@@ -22,7 +22,7 @@ This set of projects demonstrates the ability to execute an OpenMETA PET with a 
 To give it a try yourself:
 
 1. Open the `python/spacecraft.mdxml` project.
-2. Open the `00_Operational::MissionInstanceTables`.
+2. Open the `00_Operational::MissionInstanceTable`.
 3. Click the *Run* button at the end of the diagram window toolbar.
 
 ### cad
