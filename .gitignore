@@ -9,6 +9,7 @@ requirements/
 designs/
 dashboard/
 log/
+logs/
 test-benches/
 stats/
 results/
@@ -23,3 +24,6 @@ export_for_dashboard_scoring.py
 material_library.json
 *.pyc
 nosetests.xml
+*.mdxml.bak
+*.mdzip
+*.mdzip.bak
