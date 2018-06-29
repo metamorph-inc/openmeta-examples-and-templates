@@ -13,6 +13,9 @@ These project require the No Magic's Cameo Systems Modeler and "OpenMETA Plugin"
 OpenMETA can be downloaded from the product website: http://openmeta.metamorphsoftware.com/
 The OpenMETA Plugin is available only by request. Please feel free to contact us at support@metamorphsoftware.com.
 
+Once you've installed the OpenMETA Plugin, you can access its documentation through the Cameo Help menu.
+![MasterInterpreter](/path-to-cameo-plugin-docs.png "Opening the OpenMETA Plugin User Guide from within Cameo")
+
 ## Projects
 
 ### python
