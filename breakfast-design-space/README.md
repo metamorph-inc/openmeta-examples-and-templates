@@ -13,8 +13,8 @@ This OpenMETA project demonstrates the variability structures and constraints av
 
 This yields 16 possible combinations of decisions.
 
+As viewed in the interactive design space interface:
 ![design space](images/design-space-ui.png)
-*design space structure as viewed in the user interface*
 
 ## Properties
 Each food or beverage item includes nutrition values for:
