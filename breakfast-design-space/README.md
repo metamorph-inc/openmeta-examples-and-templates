@@ -13,7 +13,8 @@ This OpenMETA project demonstrates the variability structures and constraints av
 
 This yields 16 possible combinations of decisions.
 
-![design space](images/design-space-ui.png "design space structure as viewed in the user interface")
+![design space](images/design-space-ui.png)
+*design space structure as viewed in the user interface*
 
 ## Properties
 Each food or beverage item includes nutrition values for:
@@ -29,7 +30,8 @@ https://www.myfitnesspal.com/food/calorie-chart-nutrition-facts
 
 The top-level Breakfast design space container combines the nutrition values of each item. For each configuration, there will be an overall count available for each of these nutrition values.
 
-![design space](images/design-space-container.png "overall breakfast design space, aggregation of nutrition values, and one constraint, as shown in the OpenMETA model editor") 
+![design space](images/design-space-container.png) 
+*overall breakfast design space, aggregation of nutrition values, and constraint, as shown in the OpenMETA model editor*
 
 ## Constraints
 Current constraints includes:
