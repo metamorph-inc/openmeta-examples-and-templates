@@ -44,3 +44,10 @@ More ideas for constraints:
 - Low-Carb breakfast (under 5 grams)
 - If coffee or cereal is chosen, milk must also be chosen
 - Price thresholds based on cost of each item
+
+## Building Trade-Off Visualizations
+OpenMETA's execution capability can calculate the nutrition details for each selected configuration, and its visualizer can produce plots of this data.
+
+The scatterplot matrix shows each nutrition variable plotted against each other variable. Each plot point is a distinct breakfast menu (combination of decisions). The points are colored, with green being low-calorie and red being high-calorie.
+
+![plots](images/plots.png)
