@@ -12,7 +12,8 @@ This OpenMETA project demonstrates the variability structures and constraints av
 - Water (required)
 
 This yields 16 possible combinations of decisions.
->>>>>>> add content to breakfast model README
+
+![design space](images/design-space-ui.png "design space structure as viewed in the user interface")
 
 ## Properties
 Each food or beverage item includes nutrition values for:
@@ -28,7 +29,7 @@ https://www.myfitnesspal.com/food/calorie-chart-nutrition-facts
 
 The top-level Breakfast design space container combines the nutrition values of each item. For each configuration, there will be an overall count available for each of these nutrition values.
 
-![design space](images/design-space-container.png): overall breakfast design space, aggregation of nutrition values, and one constraint
+![design space](images/design-space-container.png "overall breakfast design space, aggregation of nutrition values, and one constraint, as shown in the OpenMETA model editor") 
 
 ## Constraints
 Current constraints includes:
@@ -36,3 +37,8 @@ Current constraints includes:
 
 Constraints may be written against overall nutrition targets, compatibility preferences, or other criteria.
 The application of individual constraints is up to the user to decide -- they can apply as many or as few constraints as they like.
+
+More ideas for constraints:
+- Low-Carb breakfast (under 5 grams)
+- If coffee or cereal is chosen, milk must also be chosen
+- Price thresholds based on cost of each item
