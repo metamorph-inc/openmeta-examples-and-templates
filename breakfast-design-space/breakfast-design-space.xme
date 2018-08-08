@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE project SYSTEM "mga.dtd">
 
-<project guid="{E26CB209-4DB5-4348-B0C1-4D86B5DE2EAB}" cdate="Tue Aug  7 09:27:20 2018" mdate="Tue Aug  7 09:27:20 2018" version="" metaguid="{08AF6D47-590B-0A7D-137D-21B4C1D2DFCD}" metaversion="14.13-t34" metaname="CyPhyML">
+<project guid="{D204F4F4-5AAA-4F76-A351-32E10EAF8E44}" cdate="Tue Aug  7 09:27:20 2018" mdate="Tue Aug  7 09:27:20 2018" version="" metaguid="{08AF6D47-590B-0A7D-137D-21B4C1D2DFCD}" metaversion="14.13-t34" metaname="CyPhyML">
 	<name>RootFolder</name>
 	<comment></comment>
 	<author></author>
-	<folder id="id-006a-00000001" relid="0x1" childrelidcntr="0x8" kind="RootFolder" guid="{2605284b-f193-467a-ba74-03d73616f250}">
+	<folder id="id-006a-00000001" relid="0x1" childrelidcntr="0x9" kind="RootFolder" guid="{2605284b-f193-467a-ba74-03d73616f250}">
 		<name>RootFolder</name>
 		<folder id="id-006a-00000002" relid="0x1" childrelidcntr="0xd" libref="UnitLibrary QUDT" kind="RootFolder" guid="{930ea234-c97f-40fd-aa87-a272824dfa19}">
 			<name>UnitLibrary QUDT</name>
@@ -23716,7 +23716,7 @@
 		</folder>
 		<folder id="id-006a-0000001a" relid="0x6" childrelidcntr="0x3" kind="Components" guid="{976a10f8-31f3-4f39-bf92-387c106c7a99}">
 			<name>Components</name>
-			<folder id="id-006a-0000001b" relid="0x2" childrelidcntr="0x4" kind="Components" guid="{1e50acf2-7e2c-4241-be05-be92f166fca5}">
+			<folder id="id-006a-0000001b" relid="0x2" childrelidcntr="0x5" kind="Components" guid="{1e50acf2-7e2c-4241-be05-be92f166fca5}">
 				<name>Beverages</name>
 				<model id="id-0065-00000267" kind="Component" guid="{98afb8f4-8f40-4921-8e49-344d3b012a94}" derivedfrom="id-0065-00000266" isinstance="no" isprimary="yes" relid="0x1" childrelidcntr="0x0">
 					<name>Orange Juice</name>
@@ -24810,6 +24810,279 @@
 						</attribute>
 					</reference>
 				</model>
+				<model id="id-0065-00000484" kind="Component" guid="{f6c4d587-0d65-4729-bd88-ab588d1d6515}" derivedfrom="id-0065-00000266" isinstance="no" isprimary="yes" relid="0x5" childrelidcntr="0x0">
+					<name>Water</name>
+					<attribute kind="AVMID">
+						<value>968c1086-0130-4e89-87a0-1572ab1202b9</value>
+					</attribute>
+					<attribute kind="Cardinality" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="Classifications" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="Description" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="ID">
+						<value>63</value>
+					</attribute>
+					<attribute kind="InstanceGUID">
+						<value>f6c4d587-0d65-4729-bd88-ab588d1d6515</value>
+					</attribute>
+					<attribute kind="ManagedGUID" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="NumAssociatedConfigs" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="Path">
+						<value>./components/iicjdw1b/</value>
+					</attribute>
+					<attribute kind="Revision" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="Supercedes" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="Version" status="meta">
+						<value></value>
+					</attribute>
+					<reference id="id-0067-000010c6" kind="Property" role="Property" guid="{0756bdca-8dd6-4940-a436-0387e9b04890}" derivedfrom="id-0067-0000033a" isinstance="no" isprimary="no" isbound="yes">
+						<name>Calories</name>
+						<attribute kind="ComputationType" status="meta">
+							<value>Addition</value>
+						</attribute>
+						<attribute kind="DataType" status="meta">
+							<value>String</value>
+						</attribute>
+						<attribute kind="DefaultValue" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Description" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Dimension" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Disable" status="meta">
+							<value>false</value>
+						</attribute>
+						<attribute kind="ID">
+							<value>id-0756bdca-8dd6-4940-a436-0387e9b04890</value>
+						</attribute>
+						<attribute kind="IsProminent" status="inherited">
+							<value>true</value>
+						</attribute>
+						<attribute kind="ManagedGUID" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Tolerance" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Type" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Value">
+							<value>0</value>
+						</attribute>
+					</reference>
+					<reference id="id-0067-000010c7" kind="Property" role="Property" guid="{71fa79fd-6590-4747-916a-719749ef9739}" derivedfrom="id-0067-0000033f" isinstance="no" isprimary="no" referred="id-0065-000000d4" isbound="yes">
+						<name>Fat</name>
+						<attribute kind="ComputationType" status="meta">
+							<value>Addition</value>
+						</attribute>
+						<attribute kind="DataType" status="meta">
+							<value>String</value>
+						</attribute>
+						<attribute kind="DefaultValue" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Description" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Dimension" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Disable" status="meta">
+							<value>false</value>
+						</attribute>
+						<attribute kind="ID">
+							<value>id-71fa79fd-6590-4747-916a-719749ef9739</value>
+						</attribute>
+						<attribute kind="IsProminent" status="inherited">
+							<value>true</value>
+						</attribute>
+						<attribute kind="ManagedGUID" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Tolerance" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Type" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Value">
+							<value>0</value>
+						</attribute>
+					</reference>
+					<reference id="id-0067-000010c8" kind="Property" role="Property" guid="{6e7ebee3-78a4-4970-bd68-e42519105335}" derivedfrom="id-0067-00000344" isinstance="no" isprimary="no" referred="id-0065-000000d4" isbound="yes">
+						<name>SaturatedFat</name>
+						<attribute kind="ComputationType" status="meta">
+							<value>Addition</value>
+						</attribute>
+						<attribute kind="DataType" status="meta">
+							<value>String</value>
+						</attribute>
+						<attribute kind="DefaultValue" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Description" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Dimension" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Disable" status="meta">
+							<value>false</value>
+						</attribute>
+						<attribute kind="ID">
+							<value>id-6e7ebee3-78a4-4970-bd68-e42519105335</value>
+						</attribute>
+						<attribute kind="IsProminent" status="inherited">
+							<value>true</value>
+						</attribute>
+						<attribute kind="ManagedGUID" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Tolerance" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Type" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Value">
+							<value>0</value>
+						</attribute>
+					</reference>
+					<reference id="id-0067-000010c9" kind="Property" role="Property" guid="{172c8720-13e7-4ffe-8497-99a34410502d}" derivedfrom="id-0067-00000349" isinstance="no" isprimary="no" referred="id-0065-000000d4" isbound="yes">
+						<name>Carbs</name>
+						<attribute kind="ComputationType" status="meta">
+							<value>Addition</value>
+						</attribute>
+						<attribute kind="DataType" status="meta">
+							<value>String</value>
+						</attribute>
+						<attribute kind="DefaultValue" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Description" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Dimension" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Disable" status="meta">
+							<value>false</value>
+						</attribute>
+						<attribute kind="ID">
+							<value>id-172c8720-13e7-4ffe-8497-99a34410502d</value>
+						</attribute>
+						<attribute kind="IsProminent" status="inherited">
+							<value>true</value>
+						</attribute>
+						<attribute kind="ManagedGUID" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Tolerance" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Type" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Value">
+							<value>0</value>
+						</attribute>
+					</reference>
+					<reference id="id-0067-000010ca" kind="Property" role="Property" guid="{96266c9d-b600-4d6a-95a3-a9a6335a1c41}" derivedfrom="id-0067-0000034e" isinstance="no" isprimary="no" referred="id-0065-000000d4" isbound="yes">
+						<name>Protein</name>
+						<attribute kind="ComputationType" status="meta">
+							<value>Addition</value>
+						</attribute>
+						<attribute kind="DataType" status="meta">
+							<value>String</value>
+						</attribute>
+						<attribute kind="DefaultValue" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Description" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Dimension" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Disable" status="meta">
+							<value>false</value>
+						</attribute>
+						<attribute kind="ID">
+							<value>id-96266c9d-b600-4d6a-95a3-a9a6335a1c41</value>
+						</attribute>
+						<attribute kind="IsProminent" status="inherited">
+							<value>true</value>
+						</attribute>
+						<attribute kind="ManagedGUID" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Tolerance" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Type" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Value">
+							<value>0</value>
+						</attribute>
+					</reference>
+					<reference id="id-0067-000010cb" kind="Property" role="Property" guid="{19c8f16b-6ef0-45a1-9756-31adf6d504e3}" derivedfrom="id-0067-00000353" isinstance="no" isprimary="no" referred="id-0065-000000d4" isbound="yes">
+						<name>Sugars</name>
+						<attribute kind="ComputationType" status="meta">
+							<value>Addition</value>
+						</attribute>
+						<attribute kind="DataType" status="meta">
+							<value>String</value>
+						</attribute>
+						<attribute kind="DefaultValue" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Description" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Dimension" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Disable" status="meta">
+							<value>false</value>
+						</attribute>
+						<attribute kind="ID">
+							<value>id-19c8f16b-6ef0-45a1-9756-31adf6d504e3</value>
+						</attribute>
+						<attribute kind="IsProminent" status="inherited">
+							<value>true</value>
+						</attribute>
+						<attribute kind="ManagedGUID" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Tolerance" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Type" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="Value">
+							<value>0</value>
+						</attribute>
+					</reference>
+				</model>
 			</folder>
 			<folder id="id-006a-0000001d" relid="0x3" childrelidcntr="0x1" kind="Components" guid="{cf8f69fe-32b4-49cf-9688-6a87bb23e697}">
 				<name>Meat</name>
@@ -25633,7 +25906,7 @@
 		</folder>
 		<folder id="id-006a-0000001c" relid="0x7" childrelidcntr="0x1" kind="DesignSpace" guid="{aeeead96-5dee-42b9-b025-cfb93d524d37}">
 			<name>DesignSpaces</name>
-			<model id="id-0065-0000026b" kind="DesignContainer" guid="{51513fad-1a5a-4f66-855b-a5ac3dd4e97c}" relid="0x1" childrelidcntr="0x30">
+			<model id="id-0065-0000026b" kind="DesignContainer" guid="{51513fad-1a5a-4f66-855b-a5ac3dd4e97c}" relid="0x1" childrelidcntr="0x39">
 				<name>Breakfast</name>
 				<attribute kind="Cardinality" status="meta">
 					<value></value>
@@ -25653,7 +25926,7 @@
 				<attribute kind="NumAssociatedConfigs">
 					<value>16/16</value>
 				</attribute>
-				<model id="id-0065-0000026c" kind="DesignContainer" role="DesignContainer" guid="{862f1e72-4307-417a-9dc6-e40b26a015b1}" relid="0x1" childrelidcntr="0x10">
+				<model id="id-0065-0000026c" kind="DesignContainer" role="DesignContainer" guid="{862f1e72-4307-417a-9dc6-e40b26a015b1}" relid="0x1" childrelidcntr="0x12">
 					<name>Milk</name>
 					<regnode name="PartRegs" status="undefined">
 						<value></value>
@@ -25769,7 +26042,7 @@
 					<attribute kind="NumAssociatedConfigs">
 						<value>16/16</value>
 					</attribute>
-					<model id="id-0065-0000026d" kind="DesignContainer" role="DesignContainer" guid="{c250b346-0959-44c5-a259-54a37732a16a}" relid="0x1" childrelidcntr="0x33">
+					<model id="id-0065-0000026d" kind="DesignContainer" role="DesignContainer" guid="{c250b346-0959-44c5-a259-54a37732a16a}" relid="0x1" childrelidcntr="0x35">
 						<name>TypesOfMilk</name>
 						<regnode name="PartRegs" status="undefined">
 							<value></value>
@@ -26497,7 +26770,7 @@
 								<value>4/16</value>
 							</attribute>
 						</reference>
-						<reference id="id-0067-000008df" kind="CWCReference" role="CWCReference" guid="{92508ef6-63cb-4e7a-a26d-5b444a3ae253}" relid="0x32" referred="id-0065-00000348">
+						<reference id="id-0067-000011f4" kind="CWCReference" role="CWCReference" guid="{c3ca7206-b831-4ccf-89d9-fa596f57de4e}" relid="0x35" referred="id-0065-000004a6">
 							<name>configurations ref</name>
 						</reference>
 						<connection id="id-0068-00000696" kind="ValueFlow" role="ValueFlow" guid="{f8a1c5b1-09f0-4295-8a58-1710333ebac0}" relid="0x1e">
@@ -27236,7 +27509,7 @@
 							<value></value>
 						</attribute>
 					</reference>
-					<reference id="id-0067-000008dd" kind="CWCReference" role="CWCReference" guid="{2afdb05e-f113-4018-8d3e-01c8500eebee}" relid="0xf" referred="id-0065-00000348">
+					<reference id="id-0067-000011f2" kind="CWCReference" role="CWCReference" guid="{a2e968b4-13dc-4ee0-90ce-73861e49a04b}" relid="0x12" referred="id-0065-000004a6">
 						<name>configurations ref</name>
 					</reference>
 					<connection id="id-0068-0000003f" kind="ValueFlow" role="ValueFlow" guid="{67fdb2b0-0090-42f9-a167-34c32192895c}" relid="0x8">
@@ -27306,7 +27579,7 @@
 						<connpoint role="dst" target="id-0067-00000371"/>
 					</connection>
 				</model>
-				<model id="id-0065-00000271" kind="DesignContainer" role="DesignContainer" guid="{8b763d79-c215-4a89-8934-1d42ab4d7141}" relid="0x2" childrelidcntr="0x10">
+				<model id="id-0065-00000271" kind="DesignContainer" role="DesignContainer" guid="{8b763d79-c215-4a89-8934-1d42ab4d7141}" relid="0x2" childrelidcntr="0x12">
 					<name>Orange Juice</name>
 					<regnode name="PartRegs" status="undefined">
 						<value></value>
@@ -28070,7 +28343,7 @@
 							<value></value>
 						</attribute>
 					</reference>
-					<reference id="id-0067-000008e1" kind="CWCReference" role="CWCReference" guid="{605e4edc-5254-4208-864b-dce582b0cbe9}" relid="0xf" referred="id-0065-00000348">
+					<reference id="id-0067-000011f6" kind="CWCReference" role="CWCReference" guid="{96f6a65f-6fa9-492b-b856-ec8da6480155}" relid="0x12" referred="id-0065-000004a6">
 						<name>configurations ref</name>
 					</reference>
 					<connection id="id-0068-00000045" kind="ValueFlow" role="ValueFlow" guid="{b501daed-b4d5-45bd-8829-91b968246f77}" relid="0x8">
@@ -28140,7 +28413,7 @@
 						<connpoint role="dst" target="id-0067-0000037a"/>
 					</connection>
 				</model>
-				<model id="id-0065-00000273" kind="DesignContainer" role="DesignContainer" guid="{c6ee312c-d993-430c-afec-d3488450c15e}" relid="0x21" childrelidcntr="0x10">
+				<model id="id-0065-00000273" kind="DesignContainer" role="DesignContainer" guid="{c6ee312c-d993-430c-afec-d3488450c15e}" relid="0x21" childrelidcntr="0x12">
 					<name>Bacon_dc</name>
 					<regnode name="PartRegs" status="undefined">
 						<value></value>
@@ -28904,7 +29177,7 @@
 							<value></value>
 						</attribute>
 					</reference>
-					<reference id="id-0067-000008e3" kind="CWCReference" role="CWCReference" guid="{525b7964-f6f5-4f6d-84fe-9e037ed67fa7}" relid="0xf" referred="id-0065-00000348">
+					<reference id="id-0067-000011fd" kind="CWCReference" role="CWCReference" guid="{80c7dd05-cdd9-4082-a443-6c36318718e5}" relid="0x12" referred="id-0065-000004a6">
 						<name>configurations ref</name>
 					</reference>
 					<connection id="id-0068-0000005d" kind="ValueFlow" role="ValueFlow" guid="{baeeb2d9-f98b-4443-af96-f3e7ea595456}" relid="0x8">
@@ -28974,14 +29247,14 @@
 						<connpoint role="dst" target="id-0067-0000038d"/>
 					</connection>
 				</model>
-				<model id="id-0065-00000348" kind="Configurations" role="Configurations" guid="{ecd0807a-aee4-4273-b994-712f80e29ae9}" relid="0x2d" childrelidcntr="0x10">
-					<name>AllConfigs--08-07--10-05-22</name>
+				<model id="id-0065-000004a6" kind="Configurations" role="Configurations" guid="{3ea0001e-6a72-4076-aef3-50ec7fc7d617}" relid="0x39" childrelidcntr="0x10">
+					<name>All-Configurations-at--08-08--11-14-50</name>
 					<regnode name="PartRegs" status="undefined">
 						<value></value>
 						<regnode name="DesignSpaceAspect" status="undefined">
 							<value></value>
 							<regnode name="Position" isopaque="yes">
-								<value>98,644</value>
+								<value>658,560</value>
 							</regnode>
 						</regnode>
 					</regnode>
@@ -29000,490 +29273,376 @@
 					<attribute kind="isDirty">
 						<value>false</value>
 					</attribute>
-					<model id="id-0065-00000349" kind="CWC" role="CWC" guid="{f3316e62-403c-4071-92e6-61e2aa872485}" relid="0x1" childrelidcntr="0x4">
+					<model id="id-0065-000004a7" kind="CWC" role="CWC" guid="{8953565b-da28-4f4c-b236-2f718c34b10e}" relid="0x1" childrelidcntr="0x5">
 						<name>cfg1</name>
-						<regnode name="PartRegs" status="undefined">
-							<value></value>
-							<regnode name="ConfigurationAspect" status="undefined">
-								<value></value>
-								<regnode name="Position" isopaque="yes">
-									<value>427,427</value>
-								</regnode>
-							</regnode>
-						</regnode>
 						<attribute kind="CfgID">
-							<value>DDA3F71F</value>
+							<value>8167B8FB</value>
 						</attribute>
 						<attribute kind="ID">
-							<value>f3316e62-403c-4071-92e6-61e2aa872485</value>
+							<value>8953565b-da28-4f4c-b236-2f718c34b10e</value>
 						</attribute>
-						<reference id="id-0067-000008dc" kind="DesignEntityRef" role="DesignEntityRef" guid="{1276f452-790b-4c84-8f75-9d74dff79d96}" relid="0x1" referred="id-0065-0000026d">
+						<reference id="id-0067-000011f1" kind="DesignEntityRef" role="DesignEntityRef" guid="{b4a0db0d-9b60-44f9-8742-4856fcb9b3fa}" relid="0x1" referred="id-0065-0000026d">
 							<name>TypesOfMilk_ref</name>
 						</reference>
-						<reference id="id-0067-000008de" kind="DesignEntityRef" role="DesignEntityRef" guid="{812a4cfe-02d3-405e-8243-cdb17e5d12d8}" relid="0x2" referred="id-0067-000008da">
-							<name>Milk (Whole)_ref</name>
+						<reference id="id-0067-000011f3" kind="DesignEntityRef" role="DesignEntityRef" guid="{3a983f7f-e159-47bb-96f8-c9e4b8882d16}" relid="0x2" referred="id-0067-000008db">
+							<name>Milk (2%)_ref</name>
 						</reference>
-						<reference id="id-0067-000008e0" kind="DesignEntityRef" role="DesignEntityRef" guid="{19e1c781-232c-4cef-8c38-97644f3fa077}" relid="0x3" referred="id-0067-00000376">
+						<reference id="id-0067-000011f5" kind="DesignEntityRef" role="DesignEntityRef" guid="{e12073a5-14cf-46e9-a480-ff86b02607a1}" relid="0x3" referred="id-0067-00000376">
 							<name>Orange Juice_ref</name>
 						</reference>
-						<reference id="id-0067-000008e2" kind="DesignEntityRef" role="DesignEntityRef" guid="{cc6723ba-66a3-4d65-a29b-3c1132eb57fc}" relid="0x4" referred="id-0067-00000389">
-							<name>Bacon_ref</name>
+						<reference id="id-0067-000011f7" kind="NullOptionRef" role="NullOptionRef" guid="{53554438-a206-47f5-aa7d-8a3d3037c727}" relid="0x4" referred="id-0065-00000273">
+							<name>Bacon_dc_null_ref</name>
+						</reference>
+						<reference id="id-0067-000011f8" kind="DesignEntityRef" role="DesignEntityRef" guid="{e03679dd-c565-47d3-8aac-14a69c26dbad}" relid="0x5" referred="id-0067-000010cc">
+							<name>Water_ref</name>
 						</reference>
 					</model>
-					<model id="id-0065-0000034a" kind="CWC" role="CWC" guid="{9fb072d8-fa92-460e-80cb-7cac58eb73dd}" relid="0x2" childrelidcntr="0x3">
+					<model id="id-0065-000004a8" kind="CWC" role="CWC" guid="{3dc8648e-7893-4bf8-9b03-b94b0b114d1d}" relid="0x2" childrelidcntr="0x5">
 						<name>cfg2</name>
-						<regnode name="PartRegs" status="undefined">
-							<value></value>
-							<regnode name="ConfigurationAspect" status="undefined">
-								<value></value>
-								<regnode name="Position" isopaque="yes">
-									<value>406,259</value>
-								</regnode>
-							</regnode>
-						</regnode>
 						<attribute kind="CfgID">
-							<value>09C14911</value>
+							<value>3501F9E6</value>
 						</attribute>
 						<attribute kind="ID">
-							<value>9fb072d8-fa92-460e-80cb-7cac58eb73dd</value>
+							<value>3dc8648e-7893-4bf8-9b03-b94b0b114d1d</value>
 						</attribute>
-						<reference id="id-0067-000008e4" kind="NullOptionRef" role="NullOptionRef" guid="{9f131458-a2a5-412d-bbfa-77f356cd5ee4}" relid="0x1" referred="id-0065-0000026c">
-							<name>Milk_null_ref</name>
+						<reference id="id-0067-000011f9" kind="DesignEntityRef" role="DesignEntityRef" guid="{8ce4571c-d0b0-49b2-b243-df8f897f32ae}" relid="0x1" referred="id-0065-0000026d">
+							<name>TypesOfMilk_ref</name>
 						</reference>
-						<reference id="id-0067-000008e5" kind="NullOptionRef" role="NullOptionRef" guid="{ccebed06-f6c5-4772-ac43-ed08dfb96848}" relid="0x2" referred="id-0065-00000271">
-							<name>Orange Juice_null_ref</name>
+						<reference id="id-0067-000011fa" kind="DesignEntityRef" role="DesignEntityRef" guid="{5ea21d1e-674b-494e-8866-b090bc6692a9}" relid="0x2" referred="id-0067-000008db">
+							<name>Milk (2%)_ref</name>
 						</reference>
-						<reference id="id-0067-000008e6" kind="DesignEntityRef" role="DesignEntityRef" guid="{97545eec-234c-45e0-bf0c-82554d50898a}" relid="0x3" referred="id-0067-00000389">
+						<reference id="id-0067-000011fb" kind="DesignEntityRef" role="DesignEntityRef" guid="{001db304-cc08-46f4-901e-513ee00677d0}" relid="0x3" referred="id-0067-00000376">
+							<name>Orange Juice_ref</name>
+						</reference>
+						<reference id="id-0067-000011fc" kind="DesignEntityRef" role="DesignEntityRef" guid="{74e27216-ac18-4e37-a204-79223b2eefab}" relid="0x4" referred="id-0067-00000389">
 							<name>Bacon_ref</name>
 						</reference>
+						<reference id="id-0067-000011fe" kind="DesignEntityRef" role="DesignEntityRef" guid="{f5e27f94-0a47-47c7-a910-a1c8d5124403}" relid="0x5" referred="id-0067-000010cc">
+							<name>Water_ref</name>
+						</reference>
 					</model>
-					<model id="id-0065-0000034b" kind="CWC" role="CWC" guid="{df7a5dd4-b930-4f3a-8311-5f63f7176c17}" relid="0x3" childrelidcntr="0x3">
+					<model id="id-0065-000004a9" kind="CWC" role="CWC" guid="{9b1d8a8b-91ca-4bd2-a804-0addc5c167a9}" relid="0x3" childrelidcntr="0x5">
 						<name>cfg3</name>
-						<regnode name="PartRegs" status="undefined">
-							<value></value>
-							<regnode name="ConfigurationAspect" status="undefined">
-								<value></value>
-								<regnode name="Position" isopaque="yes">
-									<value>385,91</value>
-								</regnode>
-							</regnode>
-						</regnode>
 						<attribute kind="CfgID">
-							<value>9C06DA4D</value>
+							<value>DA93DF59</value>
 						</attribute>
 						<attribute kind="ID">
-							<value>df7a5dd4-b930-4f3a-8311-5f63f7176c17</value>
+							<value>9b1d8a8b-91ca-4bd2-a804-0addc5c167a9</value>
 						</attribute>
-						<reference id="id-0067-000008e7" kind="NullOptionRef" role="NullOptionRef" guid="{d0c504d8-6741-4be1-b476-19accc8e0775}" relid="0x1" referred="id-0065-0000026c">
-							<name>Milk_null_ref</name>
+						<reference id="id-0067-000011ff" kind="DesignEntityRef" role="DesignEntityRef" guid="{ec9ad72e-3992-4a12-a27b-1d7ba5e48f5e}" relid="0x1" referred="id-0065-0000026d">
+							<name>TypesOfMilk_ref</name>
 						</reference>
-						<reference id="id-0067-000008e8" kind="DesignEntityRef" role="DesignEntityRef" guid="{c519daac-601e-4169-b154-daf526bf99a4}" relid="0x2" referred="id-0067-00000376">
-							<name>Orange Juice_ref</name>
+						<reference id="id-0067-00001200" kind="DesignEntityRef" role="DesignEntityRef" guid="{59539aa2-035a-4605-91ce-af109f79a470}" relid="0x2" referred="id-0067-000008d9">
+							<name>Milk (Skim)_ref</name>
 						</reference>
-						<reference id="id-0067-000008e9" kind="DesignEntityRef" role="DesignEntityRef" guid="{25cce5ce-4a75-40fa-8bc2-ee8b2857eb79}" relid="0x3" referred="id-0067-00000389">
+						<reference id="id-0067-00001201" kind="NullOptionRef" role="NullOptionRef" guid="{7fc9a75e-a4f5-4495-8378-dd4c072718ff}" relid="0x3" referred="id-0065-00000271">
+							<name>Orange Juice_null_ref</name>
+						</reference>
+						<reference id="id-0067-00001202" kind="DesignEntityRef" role="DesignEntityRef" guid="{8d88cd7d-e3ad-4f7e-8c52-d3785bdf8ccd}" relid="0x4" referred="id-0067-00000389">
 							<name>Bacon_ref</name>
 						</reference>
+						<reference id="id-0067-00001203" kind="DesignEntityRef" role="DesignEntityRef" guid="{472ece9c-bd4a-4998-9d94-deb6409103cf}" relid="0x5" referred="id-0067-000010cc">
+							<name>Water_ref</name>
+						</reference>
 					</model>
-					<model id="id-0065-0000034c" kind="CWC" role="CWC" guid="{728d6dcb-788c-42d2-b8e7-9cf7096c65f0}" relid="0x4" childrelidcntr="0x3">
+					<model id="id-0065-000004aa" kind="CWC" role="CWC" guid="{a8716b40-eb2e-4842-96d0-2c79886de5f3}" relid="0x4" childrelidcntr="0x5">
 						<name>cfg4</name>
-						<regnode name="PartRegs" status="undefined">
-							<value></value>
-							<regnode name="ConfigurationAspect" status="undefined">
-								<value></value>
-								<regnode name="Position" isopaque="yes">
-									<value>154,343</value>
-								</regnode>
-							</regnode>
-						</regnode>
 						<attribute kind="CfgID">
-							<value>EFECC2D3</value>
+							<value>F6C1562E</value>
 						</attribute>
 						<attribute kind="ID">
-							<value>728d6dcb-788c-42d2-b8e7-9cf7096c65f0</value>
+							<value>a8716b40-eb2e-4842-96d0-2c79886de5f3</value>
 						</attribute>
-						<reference id="id-0067-000008ea" kind="NullOptionRef" role="NullOptionRef" guid="{e06b2733-bc75-4dc4-a92c-fb3386292021}" relid="0x1" referred="id-0065-0000026c">
-							<name>Milk_null_ref</name>
+						<reference id="id-0067-00001204" kind="DesignEntityRef" role="DesignEntityRef" guid="{f05bcfae-619f-4c44-97bd-cd2758ccfcce}" relid="0x1" referred="id-0065-0000026d">
+							<name>TypesOfMilk_ref</name>
 						</reference>
-						<reference id="id-0067-000008eb" kind="DesignEntityRef" role="DesignEntityRef" guid="{239bc2eb-2cf8-4520-a503-d8495431d00e}" relid="0x2" referred="id-0067-00000376">
-							<name>Orange Juice_ref</name>
+						<reference id="id-0067-00001205" kind="DesignEntityRef" role="DesignEntityRef" guid="{6e3455e0-f9de-4d57-ae32-ff8afb7504c7}" relid="0x2" referred="id-0067-000008db">
+							<name>Milk (2%)_ref</name>
 						</reference>
-						<reference id="id-0067-000008ec" kind="NullOptionRef" role="NullOptionRef" guid="{d0553afe-c12d-42ed-a997-ecaf1682aa75}" relid="0x3" referred="id-0065-00000273">
-							<name>Bacon_null_ref</name>
+						<reference id="id-0067-00001206" kind="NullOptionRef" role="NullOptionRef" guid="{31a35ee8-0f90-47ee-a884-16f1b38de29d}" relid="0x3" referred="id-0065-00000271">
+							<name>Orange Juice_null_ref</name>
+						</reference>
+						<reference id="id-0067-00001207" kind="NullOptionRef" role="NullOptionRef" guid="{78428f20-31b8-474c-a7cc-8473deb842d2}" relid="0x4" referred="id-0065-00000273">
+							<name>Bacon_dc_null_ref</name>
+						</reference>
+						<reference id="id-0067-00001208" kind="DesignEntityRef" role="DesignEntityRef" guid="{c50272af-869e-4b05-a167-0f9c159eea5b}" relid="0x5" referred="id-0067-000010cc">
+							<name>Water_ref</name>
 						</reference>
 					</model>
-					<model id="id-0065-0000034d" kind="CWC" role="CWC" guid="{1a6ed48d-108f-49b6-b7e8-7de07add7438}" relid="0x5" childrelidcntr="0x3">
+					<model id="id-0065-000004ab" kind="CWC" role="CWC" guid="{c0a5d87d-3f85-4c70-bf37-224535662f3c}" relid="0x5" childrelidcntr="0x5">
 						<name>cfg5</name>
-						<regnode name="PartRegs" status="undefined">
-							<value></value>
-							<regnode name="ConfigurationAspect" status="undefined">
-								<value></value>
-								<regnode name="Position" isopaque="yes">
-									<value>7,343</value>
-								</regnode>
-							</regnode>
-						</regnode>
 						<attribute kind="CfgID">
-							<value>97351C1B</value>
+							<value>4EC9E1E5</value>
 						</attribute>
 						<attribute kind="ID">
-							<value>1a6ed48d-108f-49b6-b7e8-7de07add7438</value>
+							<value>c0a5d87d-3f85-4c70-bf37-224535662f3c</value>
 						</attribute>
-						<reference id="id-0067-000008ed" kind="NullOptionRef" role="NullOptionRef" guid="{086b3385-a33b-4390-bb1a-9f8bf071ccae}" relid="0x1" referred="id-0065-0000026c">
-							<name>Milk_null_ref</name>
-							<regnode name="PartRegs" status="undefined">
-								<value></value>
-								<regnode name="ConfigurationAspect" status="undefined">
-									<value></value>
-									<regnode name="Position" isopaque="yes">
-										<value>238,84</value>
-									</regnode>
-								</regnode>
-							</regnode>
+						<reference id="id-0067-00001209" kind="DesignEntityRef" role="DesignEntityRef" guid="{eda4e8e0-0b7c-4b70-a4bc-184dc1795890}" relid="0x1" referred="id-0065-0000026d">
+							<name>TypesOfMilk_ref</name>
 						</reference>
-						<reference id="id-0067-000008ee" kind="NullOptionRef" role="NullOptionRef" guid="{7ad9c2c2-369c-4393-bf51-f6b262314063}" relid="0x2" referred="id-0065-00000271">
-							<name>Orange Juice_null_ref</name>
-							<regnode name="PartRegs" status="undefined">
-								<value></value>
-								<regnode name="ConfigurationAspect" status="undefined">
-									<value></value>
-									<regnode name="Position" isopaque="yes">
-										<value>126,273</value>
-									</regnode>
-								</regnode>
-							</regnode>
+						<reference id="id-0067-0000120a" kind="DesignEntityRef" role="DesignEntityRef" guid="{37ca8ed5-2b22-4e58-a7b8-db0436f7d219}" relid="0x2" referred="id-0067-000008d9">
+							<name>Milk (Skim)_ref</name>
 						</reference>
-						<reference id="id-0067-000008ef" kind="NullOptionRef" role="NullOptionRef" guid="{1f59bd73-a6b4-451d-9799-ad4b6efe68fd}" relid="0x3" referred="id-0065-00000273">
-							<name>Bacon_null_ref</name>
-							<regnode name="PartRegs" status="undefined">
-								<value></value>
-								<regnode name="ConfigurationAspect" status="undefined">
-									<value></value>
-									<regnode name="Position" isopaque="yes">
-										<value>42,49</value>
-									</regnode>
-								</regnode>
-							</regnode>
+						<reference id="id-0067-0000120b" kind="DesignEntityRef" role="DesignEntityRef" guid="{b695cd34-b36e-4c6d-972c-c9b52c98da9c}" relid="0x3" referred="id-0067-00000376">
+							<name>Orange Juice_ref</name>
+						</reference>
+						<reference id="id-0067-0000120c" kind="NullOptionRef" role="NullOptionRef" guid="{3066ba52-5c90-482a-af4b-c729eea86fd3}" relid="0x4" referred="id-0065-00000273">
+							<name>Bacon_dc_null_ref</name>
+						</reference>
+						<reference id="id-0067-0000120d" kind="DesignEntityRef" role="DesignEntityRef" guid="{2cd80908-1199-4fa4-b739-6932c3b2af43}" relid="0x5" referred="id-0067-000010cc">
+							<name>Water_ref</name>
 						</reference>
 					</model>
-					<model id="id-0065-0000034e" kind="CWC" role="CWC" guid="{b8e7b8f4-ffa7-4ea7-93e9-a01bf78c1f44}" relid="0x6" childrelidcntr="0x4">
+					<model id="id-0065-000004ac" kind="CWC" role="CWC" guid="{17bd3382-5bb8-46df-84f6-28ed6cd69907}" relid="0x6" childrelidcntr="0x5">
 						<name>cfg6</name>
-						<regnode name="PartRegs" status="undefined">
-							<value></value>
-							<regnode name="ConfigurationAspect" status="undefined">
-								<value></value>
-								<regnode name="Position" isopaque="yes">
-									<value>343,343</value>
-								</regnode>
-							</regnode>
-						</regnode>
 						<attribute kind="CfgID">
-							<value>F6B3F922</value>
+							<value>B07E4899</value>
 						</attribute>
 						<attribute kind="ID">
-							<value>b8e7b8f4-ffa7-4ea7-93e9-a01bf78c1f44</value>
+							<value>17bd3382-5bb8-46df-84f6-28ed6cd69907</value>
 						</attribute>
-						<reference id="id-0067-000008f0" kind="DesignEntityRef" role="DesignEntityRef" guid="{fb1812a7-7efd-4600-9cc9-bd781a1c8f09}" relid="0x1" referred="id-0065-0000026d">
+						<reference id="id-0067-0000120e" kind="DesignEntityRef" role="DesignEntityRef" guid="{928d2635-e917-465c-8d9e-f23127c91103}" relid="0x1" referred="id-0065-0000026d">
 							<name>TypesOfMilk_ref</name>
 						</reference>
-						<reference id="id-0067-000008f1" kind="DesignEntityRef" role="DesignEntityRef" guid="{e333123b-6184-417b-903b-88c1b414a9a4}" relid="0x2" referred="id-0067-000008db">
-							<name>Milk (2%)_ref</name>
+						<reference id="id-0067-0000120f" kind="DesignEntityRef" role="DesignEntityRef" guid="{c0d76d6d-fe56-4a1d-8d46-afd2d7eff560}" relid="0x2" referred="id-0067-000008d9">
+							<name>Milk (Skim)_ref</name>
 						</reference>
-						<reference id="id-0067-000008f2" kind="DesignEntityRef" role="DesignEntityRef" guid="{4097bf63-be3a-4aa5-8a71-3fc814606aa5}" relid="0x3" referred="id-0067-00000376">
+						<reference id="id-0067-00001210" kind="DesignEntityRef" role="DesignEntityRef" guid="{09f47184-1f8f-436f-8ccf-6642f20f5201}" relid="0x3" referred="id-0067-00000376">
 							<name>Orange Juice_ref</name>
 						</reference>
-						<reference id="id-0067-000008f3" kind="NullOptionRef" role="NullOptionRef" guid="{f64ffe33-8f2b-4eb0-9151-727944227d1b}" relid="0x4" referred="id-0065-00000273">
-							<name>Bacon_null_ref</name>
+						<reference id="id-0067-00001211" kind="DesignEntityRef" role="DesignEntityRef" guid="{e777ede9-1fc9-4edc-8290-8d4b8f55d483}" relid="0x4" referred="id-0067-00000389">
+							<name>Bacon_ref</name>
+						</reference>
+						<reference id="id-0067-00001212" kind="DesignEntityRef" role="DesignEntityRef" guid="{be04f1a7-ab0b-44f8-912d-373e8cec4df7}" relid="0x5" referred="id-0067-000010cc">
+							<name>Water_ref</name>
 						</reference>
 					</model>
-					<model id="id-0065-0000034f" kind="CWC" role="CWC" guid="{b6f87204-bf97-4941-8bbf-d80e1e5fbae0}" relid="0x7" childrelidcntr="0x4">
+					<model id="id-0065-000004ad" kind="CWC" role="CWC" guid="{c1aa9e3c-c987-4512-9e1c-ba596dc232e3}" relid="0x7" childrelidcntr="0x5">
 						<name>cfg7</name>
-						<regnode name="PartRegs" status="undefined">
-							<value></value>
-							<regnode name="ConfigurationAspect" status="undefined">
-								<value></value>
-								<regnode name="Position" isopaque="yes">
-									<value>322,175</value>
-								</regnode>
-							</regnode>
-						</regnode>
 						<attribute kind="CfgID">
-							<value>59A7BD8C</value>
+							<value>EA28EA1C</value>
 						</attribute>
 						<attribute kind="ID">
-							<value>b6f87204-bf97-4941-8bbf-d80e1e5fbae0</value>
+							<value>c1aa9e3c-c987-4512-9e1c-ba596dc232e3</value>
 						</attribute>
-						<reference id="id-0067-000008f4" kind="DesignEntityRef" role="DesignEntityRef" guid="{95966fb6-b033-4e68-93bb-7faffac906ad}" relid="0x1" referred="id-0065-0000026d">
+						<reference id="id-0067-00001213" kind="DesignEntityRef" role="DesignEntityRef" guid="{1f5ed7ba-6ef8-466c-8c1e-d1e90e2e684e}" relid="0x1" referred="id-0065-0000026d">
 							<name>TypesOfMilk_ref</name>
 						</reference>
-						<reference id="id-0067-000008f5" kind="DesignEntityRef" role="DesignEntityRef" guid="{3cb77124-3a46-43aa-9e79-c7900e0a67c2}" relid="0x2" referred="id-0067-000008d9">
-							<name>Milk (Skim)_ref</name>
+						<reference id="id-0067-00001214" kind="DesignEntityRef" role="DesignEntityRef" guid="{a2f5036d-4f83-42e3-b79d-68bfede4a1e7}" relid="0x2" referred="id-0067-000008db">
+							<name>Milk (2%)_ref</name>
 						</reference>
-						<reference id="id-0067-000008f6" kind="DesignEntityRef" role="DesignEntityRef" guid="{4db4f503-8544-4867-91d2-0249263f0d42}" relid="0x3" referred="id-0067-00000376">
-							<name>Orange Juice_ref</name>
+						<reference id="id-0067-00001215" kind="NullOptionRef" role="NullOptionRef" guid="{fdef691e-0b40-491a-a5d0-c88571c11762}" relid="0x3" referred="id-0065-00000271">
+							<name>Orange Juice_null_ref</name>
 						</reference>
-						<reference id="id-0067-000008f7" kind="DesignEntityRef" role="DesignEntityRef" guid="{70584366-7ff2-49ba-9428-1e3e42de2349}" relid="0x4" referred="id-0067-00000389">
+						<reference id="id-0067-00001216" kind="DesignEntityRef" role="DesignEntityRef" guid="{9642c59b-d517-4b33-8f40-ad4be3c9d67a}" relid="0x4" referred="id-0067-00000389">
 							<name>Bacon_ref</name>
 						</reference>
+						<reference id="id-0067-00001217" kind="DesignEntityRef" role="DesignEntityRef" guid="{aeda191b-199c-4bcd-b79b-a631c6540e71}" relid="0x5" referred="id-0067-000010cc">
+							<name>Water_ref</name>
+						</reference>
 					</model>
-					<model id="id-0065-00000350" kind="CWC" role="CWC" guid="{932f508f-3d6b-4911-8a44-4abe35856386}" relid="0x8" childrelidcntr="0x4">
+					<model id="id-0065-000004ae" kind="CWC" role="CWC" guid="{4c0fa26f-e795-4d5b-9ae2-a143a830cf45}" relid="0x8" childrelidcntr="0x5">
 						<name>cfg8</name>
-						<regnode name="PartRegs" status="undefined">
-							<value></value>
-							<regnode name="ConfigurationAspect" status="undefined">
-								<value></value>
-								<regnode name="Position" isopaque="yes">
-									<value>301,7</value>
-								</regnode>
-							</regnode>
-						</regnode>
 						<attribute kind="CfgID">
-							<value>D9FC38BF</value>
+							<value>F5346866</value>
 						</attribute>
 						<attribute kind="ID">
-							<value>932f508f-3d6b-4911-8a44-4abe35856386</value>
+							<value>4c0fa26f-e795-4d5b-9ae2-a143a830cf45</value>
 						</attribute>
-						<reference id="id-0067-000008f8" kind="DesignEntityRef" role="DesignEntityRef" guid="{d6e638ee-d54f-4550-94e4-209fabb090ab}" relid="0x1" referred="id-0065-0000026d">
+						<reference id="id-0067-00001218" kind="DesignEntityRef" role="DesignEntityRef" guid="{704fcbfb-2a26-49bb-b4ec-52ba09087ac7}" relid="0x1" referred="id-0065-0000026d">
 							<name>TypesOfMilk_ref</name>
 						</reference>
-						<reference id="id-0067-000008f9" kind="DesignEntityRef" role="DesignEntityRef" guid="{6a33599e-8b37-4665-86ae-1e127c9808b6}" relid="0x2" referred="id-0067-000008db">
-							<name>Milk (2%)_ref</name>
+						<reference id="id-0067-00001219" kind="DesignEntityRef" role="DesignEntityRef" guid="{d231376c-4396-444e-8e61-27a20d0fc4cc}" relid="0x2" referred="id-0067-000008d9">
+							<name>Milk (Skim)_ref</name>
 						</reference>
-						<reference id="id-0067-000008fa" kind="NullOptionRef" role="NullOptionRef" guid="{0917e4c9-0156-4bca-8f28-bcb333d9fa62}" relid="0x3" referred="id-0065-00000271">
+						<reference id="id-0067-0000121a" kind="NullOptionRef" role="NullOptionRef" guid="{f434f406-4ea3-4a6e-9c5a-25b83eb68e52}" relid="0x3" referred="id-0065-00000271">
 							<name>Orange Juice_null_ref</name>
 						</reference>
-						<reference id="id-0067-000008fb" kind="DesignEntityRef" role="DesignEntityRef" guid="{52c97df4-63d2-450a-93d9-dd59ef0a9f72}" relid="0x4" referred="id-0067-00000389">
-							<name>Bacon_ref</name>
+						<reference id="id-0067-0000121b" kind="NullOptionRef" role="NullOptionRef" guid="{16a08e41-4a79-4ce8-9bd0-9b6a335e8c7a}" relid="0x4" referred="id-0065-00000273">
+							<name>Bacon_dc_null_ref</name>
+						</reference>
+						<reference id="id-0067-0000121c" kind="DesignEntityRef" role="DesignEntityRef" guid="{c9f4b2b9-ac3e-40a6-9ca8-78641d9a69be}" relid="0x5" referred="id-0067-000010cc">
+							<name>Water_ref</name>
 						</reference>
 					</model>
-					<model id="id-0065-00000351" kind="CWC" role="CWC" guid="{decd50e5-eedd-4cd0-91e1-b8bd9d4a59fb}" relid="0x9" childrelidcntr="0x4">
+					<model id="id-0065-000004af" kind="CWC" role="CWC" guid="{f7f4b264-f2b8-4124-93d1-6d4244e0b112}" relid="0x9" childrelidcntr="0x4">
 						<name>cfg9</name>
-						<regnode name="PartRegs" status="undefined">
-							<value></value>
-							<regnode name="ConfigurationAspect" status="undefined">
-								<value></value>
-								<regnode name="Position" isopaque="yes">
-									<value>7,259</value>
-								</regnode>
-							</regnode>
-						</regnode>
 						<attribute kind="CfgID">
-							<value>8115C794</value>
+							<value>170069DF</value>
 						</attribute>
 						<attribute kind="ID">
-							<value>decd50e5-eedd-4cd0-91e1-b8bd9d4a59fb</value>
+							<value>f7f4b264-f2b8-4124-93d1-6d4244e0b112</value>
 						</attribute>
-						<reference id="id-0067-000008fc" kind="DesignEntityRef" role="DesignEntityRef" guid="{3074ff7c-b9c8-4dc0-9074-f831920ab57d}" relid="0x1" referred="id-0065-0000026d">
-							<name>TypesOfMilk_ref</name>
+						<reference id="id-0067-0000121d" kind="NullOptionRef" role="NullOptionRef" guid="{b2b175a9-5895-420b-9ef1-e5f3b4fde4d5}" relid="0x1" referred="id-0065-0000026c">
+							<name>Milk_null_ref</name>
 						</reference>
-						<reference id="id-0067-000008fd" kind="DesignEntityRef" role="DesignEntityRef" guid="{a482070b-0adb-4a56-bed7-67d634313721}" relid="0x2" referred="id-0067-000008d9">
-							<name>Milk (Skim)_ref</name>
+						<reference id="id-0067-0000121e" kind="DesignEntityRef" role="DesignEntityRef" guid="{57effe5e-8aaf-480c-95c9-f571f51bc81a}" relid="0x2" referred="id-0067-00000376">
+							<name>Orange Juice_ref</name>
 						</reference>
-						<reference id="id-0067-000008fe" kind="NullOptionRef" role="NullOptionRef" guid="{95248392-db0e-4e98-8a42-9eb08c958664}" relid="0x3" referred="id-0065-00000271">
-							<name>Orange Juice_null_ref</name>
+						<reference id="id-0067-0000121f" kind="NullOptionRef" role="NullOptionRef" guid="{d4c6692c-f64f-4da9-a194-f360f9cccae7}" relid="0x3" referred="id-0065-00000273">
+							<name>Bacon_dc_null_ref</name>
 						</reference>
-						<reference id="id-0067-000008ff" kind="DesignEntityRef" role="DesignEntityRef" guid="{6f4eea2c-c586-4314-9920-dfced40f8531}" relid="0x4" referred="id-0067-00000389">
-							<name>Bacon_ref</name>
+						<reference id="id-0067-00001220" kind="DesignEntityRef" role="DesignEntityRef" guid="{14d91cf5-3789-4a11-8215-f307fe7548f1}" relid="0x4" referred="id-0067-000010cc">
+							<name>Water_ref</name>
 						</reference>
 					</model>
-					<model id="id-0065-00000352" kind="CWC" role="CWC" guid="{5fb9f7df-7ebd-49c0-bd1b-2f35292d2f7e}" relid="0xa" childrelidcntr="0x4">
+					<model id="id-0065-000004b0" kind="CWC" role="CWC" guid="{309873b5-bb61-446f-a81c-3df093015f02}" relid="0xa" childrelidcntr="0x4">
 						<name>cfg10</name>
-						<regnode name="PartRegs" status="undefined">
-							<value></value>
-							<regnode name="ConfigurationAspect" status="undefined">
-								<value></value>
-								<regnode name="Position" isopaque="yes">
-									<value>259,259</value>
-								</regnode>
-							</regnode>
-						</regnode>
 						<attribute kind="CfgID">
-							<value>CA5245FE</value>
+							<value>699E5525</value>
 						</attribute>
 						<attribute kind="ID">
-							<value>5fb9f7df-7ebd-49c0-bd1b-2f35292d2f7e</value>
+							<value>309873b5-bb61-446f-a81c-3df093015f02</value>
 						</attribute>
-						<reference id="id-0067-00000900" kind="DesignEntityRef" role="DesignEntityRef" guid="{f8af381f-5308-431d-8e93-172f4ce0b990}" relid="0x1" referred="id-0065-0000026d">
-							<name>TypesOfMilk_ref</name>
+						<reference id="id-0067-00001221" kind="NullOptionRef" role="NullOptionRef" guid="{a4179e50-c3e2-4f32-9ed8-42de1dd4ac71}" relid="0x1" referred="id-0065-0000026c">
+							<name>Milk_null_ref</name>
 						</reference>
-						<reference id="id-0067-00000901" kind="DesignEntityRef" role="DesignEntityRef" guid="{e11e808b-8d5e-4a71-badc-530154e769b3}" relid="0x2" referred="id-0067-000008db">
-							<name>Milk (2%)_ref</name>
-						</reference>
-						<reference id="id-0067-00000902" kind="NullOptionRef" role="NullOptionRef" guid="{0bfea608-8926-4b6f-8a51-d729d94001a8}" relid="0x3" referred="id-0065-00000271">
+						<reference id="id-0067-00001222" kind="NullOptionRef" role="NullOptionRef" guid="{4ad5b9c7-81e3-4fba-bd7d-d8c0ab7316b1}" relid="0x2" referred="id-0065-00000271">
 							<name>Orange Juice_null_ref</name>
 						</reference>
-						<reference id="id-0067-00000903" kind="NullOptionRef" role="NullOptionRef" guid="{b3bd6b80-68f5-4bd0-bbbb-246daad58b68}" relid="0x4" referred="id-0065-00000273">
-							<name>Bacon_null_ref</name>
+						<reference id="id-0067-00001223" kind="NullOptionRef" role="NullOptionRef" guid="{4c56eeaa-e2c3-4d82-af2e-3d2ebabc79d9}" relid="0x3" referred="id-0065-00000273">
+							<name>Bacon_dc_null_ref</name>
+						</reference>
+						<reference id="id-0067-00001224" kind="DesignEntityRef" role="DesignEntityRef" guid="{40639a4d-d2e5-482b-b34d-158262c46960}" relid="0x4" referred="id-0067-000010cc">
+							<name>Water_ref</name>
 						</reference>
 					</model>
-					<model id="id-0065-00000353" kind="CWC" role="CWC" guid="{fd62f89a-a3ad-41d1-b4f6-6e16f81f7877}" relid="0xb" childrelidcntr="0x4">
+					<model id="id-0065-000004b1" kind="CWC" role="CWC" guid="{d26d0942-1833-4cc3-b10d-650c066a6df4}" relid="0xb" childrelidcntr="0x5">
 						<name>cfg11</name>
-						<regnode name="PartRegs" status="undefined">
-							<value></value>
-							<regnode name="ConfigurationAspect" status="undefined">
-								<value></value>
-								<regnode name="Position" isopaque="yes">
-									<value>238,91</value>
-								</regnode>
-							</regnode>
-						</regnode>
 						<attribute kind="CfgID">
-							<value>56A547FC</value>
+							<value>90C08AC0</value>
 						</attribute>
 						<attribute kind="ID">
-							<value>fd62f89a-a3ad-41d1-b4f6-6e16f81f7877</value>
+							<value>d26d0942-1833-4cc3-b10d-650c066a6df4</value>
 						</attribute>
-						<reference id="id-0067-00000904" kind="DesignEntityRef" role="DesignEntityRef" guid="{13ac28e1-5d56-4c7d-9228-d185b24836f5}" relid="0x1" referred="id-0065-0000026d">
+						<reference id="id-0067-00001225" kind="DesignEntityRef" role="DesignEntityRef" guid="{850bcaae-b49d-4086-8906-8aa1e4876673}" relid="0x1" referred="id-0065-0000026d">
 							<name>TypesOfMilk_ref</name>
 						</reference>
-						<reference id="id-0067-00000905" kind="DesignEntityRef" role="DesignEntityRef" guid="{9b657094-b462-4b4c-9be6-24018a40c479}" relid="0x2" referred="id-0067-000008db">
-							<name>Milk (2%)_ref</name>
+						<reference id="id-0067-00001226" kind="DesignEntityRef" role="DesignEntityRef" guid="{374b6bad-2b50-4d91-b373-956db6ab1690}" relid="0x2" referred="id-0067-000008da">
+							<name>Milk (Whole)_ref</name>
 						</reference>
-						<reference id="id-0067-00000906" kind="DesignEntityRef" role="DesignEntityRef" guid="{eb656322-cb03-4ae1-9e13-f6929c82e33a}" relid="0x3" referred="id-0067-00000376">
-							<name>Orange Juice_ref</name>
+						<reference id="id-0067-00001227" kind="NullOptionRef" role="NullOptionRef" guid="{de6ec322-156d-4438-8e84-e4e1f08e3431}" relid="0x3" referred="id-0065-00000271">
+							<name>Orange Juice_null_ref</name>
 						</reference>
-						<reference id="id-0067-00000907" kind="DesignEntityRef" role="DesignEntityRef" guid="{9dd3526b-659f-44be-af92-6832b6334054}" relid="0x4" referred="id-0067-00000389">
-							<name>Bacon_ref</name>
+						<reference id="id-0067-00001228" kind="NullOptionRef" role="NullOptionRef" guid="{0e99f606-3905-475e-8c8c-c28f09ba4347}" relid="0x4" referred="id-0065-00000273">
+							<name>Bacon_dc_null_ref</name>
+						</reference>
+						<reference id="id-0067-00001229" kind="DesignEntityRef" role="DesignEntityRef" guid="{38aacb30-3c7f-403a-a9e9-1cc926814665}" relid="0x5" referred="id-0067-000010cc">
+							<name>Water_ref</name>
 						</reference>
 					</model>
-					<model id="id-0065-00000354" kind="CWC" role="CWC" guid="{13ca7808-f558-4289-9cda-3872568315b0}" relid="0xc" childrelidcntr="0x4">
+					<model id="id-0065-000004b2" kind="CWC" role="CWC" guid="{a9ebe0cd-df58-413a-bff5-249bb9d7bed2}" relid="0xc" childrelidcntr="0x5">
 						<name>cfg12</name>
-						<regnode name="PartRegs" status="undefined">
-							<value></value>
-							<regnode name="ConfigurationAspect" status="undefined">
-								<value></value>
-								<regnode name="Position" isopaque="yes">
-									<value>7,175</value>
-								</regnode>
-							</regnode>
-						</regnode>
 						<attribute kind="CfgID">
-							<value>F4B0BD6B</value>
+							<value>E4CAA5D3</value>
 						</attribute>
 						<attribute kind="ID">
-							<value>13ca7808-f558-4289-9cda-3872568315b0</value>
+							<value>a9ebe0cd-df58-413a-bff5-249bb9d7bed2</value>
 						</attribute>
-						<reference id="id-0067-00000908" kind="DesignEntityRef" role="DesignEntityRef" guid="{3f0f375b-a200-4610-8bf4-bc76ad98e0d6}" relid="0x1" referred="id-0065-0000026d">
+						<reference id="id-0067-0000122a" kind="DesignEntityRef" role="DesignEntityRef" guid="{2c00d88b-41a1-45ac-9b9a-031fe2e584d6}" relid="0x1" referred="id-0065-0000026d">
 							<name>TypesOfMilk_ref</name>
 						</reference>
-						<reference id="id-0067-00000909" kind="DesignEntityRef" role="DesignEntityRef" guid="{613db8d7-124c-4475-af29-4a3beb3a01cc}" relid="0x2" referred="id-0067-000008d9">
-							<name>Milk (Skim)_ref</name>
+						<reference id="id-0067-0000122b" kind="DesignEntityRef" role="DesignEntityRef" guid="{d148ac06-efd9-4fbd-a524-f4918f070049}" relid="0x2" referred="id-0067-000008da">
+							<name>Milk (Whole)_ref</name>
 						</reference>
-						<reference id="id-0067-0000090a" kind="DesignEntityRef" role="DesignEntityRef" guid="{b2c51675-4844-4a93-9d7d-8a9ab90c81e9}" relid="0x3" referred="id-0067-00000376">
+						<reference id="id-0067-0000122c" kind="DesignEntityRef" role="DesignEntityRef" guid="{6248324d-f262-41e3-ae5d-91977aeb1f87}" relid="0x3" referred="id-0067-00000376">
 							<name>Orange Juice_ref</name>
 						</reference>
-						<reference id="id-0067-0000090b" kind="NullOptionRef" role="NullOptionRef" guid="{9e32833d-760e-408a-9042-ff0559b92b77}" relid="0x4" referred="id-0065-00000273">
-							<name>Bacon_null_ref</name>
+						<reference id="id-0067-0000122d" kind="NullOptionRef" role="NullOptionRef" guid="{594984d2-5a27-4471-9225-4de147451436}" relid="0x4" referred="id-0065-00000273">
+							<name>Bacon_dc_null_ref</name>
+						</reference>
+						<reference id="id-0067-0000122e" kind="DesignEntityRef" role="DesignEntityRef" guid="{470373b7-d69b-47d9-884d-5f79f967971f}" relid="0x5" referred="id-0067-000010cc">
+							<name>Water_ref</name>
 						</reference>
 					</model>
-					<model id="id-0065-00000355" kind="CWC" role="CWC" guid="{e6e706a5-9e22-4b99-b27b-b991f1e7133c}" relid="0xd" childrelidcntr="0x4">
+					<model id="id-0065-000004b3" kind="CWC" role="CWC" guid="{7bd31613-7b13-4296-b827-dd76b31e1dc1}" relid="0xd" childrelidcntr="0x5">
 						<name>cfg13</name>
-						<regnode name="PartRegs" status="undefined">
-							<value></value>
-							<regnode name="ConfigurationAspect" status="undefined">
-								<value></value>
-								<regnode name="Position" isopaque="yes">
-									<value>175,175</value>
-								</regnode>
-							</regnode>
-						</regnode>
 						<attribute kind="CfgID">
-							<value>22B1ED2C</value>
+							<value>BD872F6D</value>
 						</attribute>
 						<attribute kind="ID">
-							<value>e6e706a5-9e22-4b99-b27b-b991f1e7133c</value>
+							<value>7bd31613-7b13-4296-b827-dd76b31e1dc1</value>
 						</attribute>
-						<reference id="id-0067-0000090c" kind="DesignEntityRef" role="DesignEntityRef" guid="{efefccd3-091d-40f2-af15-9c9c822a9808}" relid="0x1" referred="id-0065-0000026d">
+						<reference id="id-0067-0000122f" kind="DesignEntityRef" role="DesignEntityRef" guid="{093a292b-a963-483f-9ce9-536734f2ecea}" relid="0x1" referred="id-0065-0000026d">
 							<name>TypesOfMilk_ref</name>
 						</reference>
-						<reference id="id-0067-0000090d" kind="DesignEntityRef" role="DesignEntityRef" guid="{4c5466a6-81dd-4d31-8c99-d527d8ce8a9b}" relid="0x2" referred="id-0067-000008da">
+						<reference id="id-0067-00001230" kind="DesignEntityRef" role="DesignEntityRef" guid="{d5a0320b-5786-44b6-8ae2-55968a56f42b}" relid="0x2" referred="id-0067-000008da">
 							<name>Milk (Whole)_ref</name>
 						</reference>
-						<reference id="id-0067-0000090e" kind="NullOptionRef" role="NullOptionRef" guid="{f700ee2e-6e21-4232-ab7f-9298db8635e0}" relid="0x3" referred="id-0065-00000271">
-							<name>Orange Juice_null_ref</name>
+						<reference id="id-0067-00001231" kind="DesignEntityRef" role="DesignEntityRef" guid="{1a7de74f-19ef-4e60-ada8-a2c580fefc0b}" relid="0x3" referred="id-0067-00000376">
+							<name>Orange Juice_ref</name>
 						</reference>
-						<reference id="id-0067-0000090f" kind="NullOptionRef" role="NullOptionRef" guid="{19e087fa-0709-4e2e-a0af-72ec2eabd4d8}" relid="0x4" referred="id-0065-00000273">
-							<name>Bacon_null_ref</name>
-						</reference>
-					</model>
-					<model id="id-0065-00000356" kind="CWC" role="CWC" guid="{d3dd35c8-821f-48b0-bf37-c93d999460c7}" relid="0xe" childrelidcntr="0x4">
-						<name>cfg14</name>
-						<regnode name="PartRegs" status="undefined">
-							<value></value>
-							<regnode name="ConfigurationAspect" status="undefined">
-								<value></value>
-								<regnode name="Position" isopaque="yes">
-									<value>154,7</value>
-								</regnode>
-							</regnode>
-						</regnode>
-						<attribute kind="CfgID">
-							<value>4BE17FC3</value>
-						</attribute>
-						<attribute kind="ID">
-							<value>d3dd35c8-821f-48b0-bf37-c93d999460c7</value>
-						</attribute>
-						<reference id="id-0067-00000910" kind="DesignEntityRef" role="DesignEntityRef" guid="{63503919-799d-43df-a173-a321a64f41f1}" relid="0x1" referred="id-0065-0000026d">
-							<name>TypesOfMilk_ref</name>
-						</reference>
-						<reference id="id-0067-00000911" kind="DesignEntityRef" role="DesignEntityRef" guid="{7a124453-4334-4dcc-b464-0b3435176c70}" relid="0x2" referred="id-0067-000008d9">
-							<name>Milk (Skim)_ref</name>
-						</reference>
-						<reference id="id-0067-00000912" kind="NullOptionRef" role="NullOptionRef" guid="{9d158e81-4e39-4961-8592-436ad0a63839}" relid="0x3" referred="id-0065-00000271">
-							<name>Orange Juice_null_ref</name>
-						</reference>
-						<reference id="id-0067-00000913" kind="NullOptionRef" role="NullOptionRef" guid="{a0ab1e1f-4d88-43c1-a867-c84049548162}" relid="0x4" referred="id-0065-00000273">
-							<name>Bacon_null_ref</name>
-						</reference>
-					</model>
-					<model id="id-0065-00000357" kind="CWC" role="CWC" guid="{deb976aa-7f7b-4e2e-8410-4f19c69d81c1}" relid="0xf" childrelidcntr="0x4">
-						<name>cfg15</name>
-						<regnode name="PartRegs" status="undefined">
-							<value></value>
-							<regnode name="ConfigurationAspect" status="undefined">
-								<value></value>
-								<regnode name="Position" isopaque="yes">
-									<value>91,91</value>
-								</regnode>
-							</regnode>
-						</regnode>
-						<attribute kind="CfgID">
-							<value>B1C968EF</value>
-						</attribute>
-						<attribute kind="ID">
-							<value>deb976aa-7f7b-4e2e-8410-4f19c69d81c1</value>
-						</attribute>
-						<reference id="id-0067-00000914" kind="DesignEntityRef" role="DesignEntityRef" guid="{d39ba43e-129b-43fb-9112-778dc9396e18}" relid="0x1" referred="id-0065-0000026d">
-							<name>TypesOfMilk_ref</name>
-						</reference>
-						<reference id="id-0067-00000915" kind="DesignEntityRef" role="DesignEntityRef" guid="{06e58936-f7fa-4981-b203-db38a0da4792}" relid="0x2" referred="id-0067-000008da">
-							<name>Milk (Whole)_ref</name>
-						</reference>
-						<reference id="id-0067-00000916" kind="NullOptionRef" role="NullOptionRef" guid="{8b5265eb-443a-4467-ae2b-69eb1c1a9b8c}" relid="0x3" referred="id-0065-00000271">
-							<name>Orange Juice_null_ref</name>
-						</reference>
-						<reference id="id-0067-00000917" kind="DesignEntityRef" role="DesignEntityRef" guid="{757ea1b7-1da2-4aa6-afa6-f9beaa526950}" relid="0x4" referred="id-0067-00000389">
+						<reference id="id-0067-00001232" kind="DesignEntityRef" role="DesignEntityRef" guid="{78efd4ef-5f99-4e05-951e-e09c4ca4a4d8}" relid="0x4" referred="id-0067-00000389">
 							<name>Bacon_ref</name>
 						</reference>
+						<reference id="id-0067-00001233" kind="DesignEntityRef" role="DesignEntityRef" guid="{9612ad55-6ab4-4c03-9630-f8a9b076eb92}" relid="0x5" referred="id-0067-000010cc">
+							<name>Water_ref</name>
+						</reference>
 					</model>
-					<model id="id-0065-00000358" kind="CWC" role="CWC" guid="{d946072c-93a3-458f-a36d-72b3097c6fd8}" relid="0x10" childrelidcntr="0x4">
+					<model id="id-0065-000004b4" kind="CWC" role="CWC" guid="{bc84e5c8-28b2-47cf-a58e-62fb6572fee9}" relid="0xe" childrelidcntr="0x5">
+						<name>cfg14</name>
+						<attribute kind="CfgID">
+							<value>2689004A</value>
+						</attribute>
+						<attribute kind="ID">
+							<value>bc84e5c8-28b2-47cf-a58e-62fb6572fee9</value>
+						</attribute>
+						<reference id="id-0067-00001234" kind="DesignEntityRef" role="DesignEntityRef" guid="{209004dd-3ef7-4b81-aebf-aa36f9204b8c}" relid="0x1" referred="id-0065-0000026d">
+							<name>TypesOfMilk_ref</name>
+						</reference>
+						<reference id="id-0067-00001235" kind="DesignEntityRef" role="DesignEntityRef" guid="{eddb72b2-092c-427e-bfea-642e3c34ee18}" relid="0x2" referred="id-0067-000008da">
+							<name>Milk (Whole)_ref</name>
+						</reference>
+						<reference id="id-0067-00001236" kind="NullOptionRef" role="NullOptionRef" guid="{342d3639-c18e-4e5f-bab5-b4211874bd4d}" relid="0x3" referred="id-0065-00000271">
+							<name>Orange Juice_null_ref</name>
+						</reference>
+						<reference id="id-0067-00001237" kind="DesignEntityRef" role="DesignEntityRef" guid="{6b0e9a6d-5ed0-4352-9e66-014c1aa6b06c}" relid="0x4" referred="id-0067-00000389">
+							<name>Bacon_ref</name>
+						</reference>
+						<reference id="id-0067-00001238" kind="DesignEntityRef" role="DesignEntityRef" guid="{7b7d12a4-85fc-47ea-be77-540621f9d0cf}" relid="0x5" referred="id-0067-000010cc">
+							<name>Water_ref</name>
+						</reference>
+					</model>
+					<model id="id-0065-000004b5" kind="CWC" role="CWC" guid="{c0289114-f741-4c66-a614-5ca6e05cfa13}" relid="0xf" childrelidcntr="0x4">
+						<name>cfg15</name>
+						<attribute kind="CfgID">
+							<value>823B2855</value>
+						</attribute>
+						<attribute kind="ID">
+							<value>c0289114-f741-4c66-a614-5ca6e05cfa13</value>
+						</attribute>
+						<reference id="id-0067-00001239" kind="NullOptionRef" role="NullOptionRef" guid="{71a21193-e964-4ad0-a005-1f51b71bb02c}" relid="0x1" referred="id-0065-0000026c">
+							<name>Milk_null_ref</name>
+						</reference>
+						<reference id="id-0067-0000123a" kind="DesignEntityRef" role="DesignEntityRef" guid="{c1878069-0900-4a05-98cd-543e90dc53a4}" relid="0x2" referred="id-0067-00000376">
+							<name>Orange Juice_ref</name>
+						</reference>
+						<reference id="id-0067-0000123b" kind="DesignEntityRef" role="DesignEntityRef" guid="{926a4e82-cfe9-425b-8de6-f8841198547d}" relid="0x3" referred="id-0067-00000389">
+							<name>Bacon_ref</name>
+						</reference>
+						<reference id="id-0067-0000123c" kind="DesignEntityRef" role="DesignEntityRef" guid="{401ea09f-df86-440b-9f64-5b302d8b8cc7}" relid="0x4" referred="id-0067-000010cc">
+							<name>Water_ref</name>
+						</reference>
+					</model>
+					<model id="id-0065-000004b6" kind="CWC" role="CWC" guid="{6a77ddba-fed0-45e3-8b04-6537662db682}" relid="0x10" childrelidcntr="0x4">
 						<name>cfg16</name>
 						<attribute kind="CfgID">
-							<value>4EBBF078</value>
+							<value>2F662E75</value>
 						</attribute>
 						<attribute kind="ID">
-							<value>d946072c-93a3-458f-a36d-72b3097c6fd8</value>
+							<value>6a77ddba-fed0-45e3-8b04-6537662db682</value>
 						</attribute>
-						<reference id="id-0067-00000918" kind="DesignEntityRef" role="DesignEntityRef" guid="{157b84c6-3646-4a44-89db-7d5c9a632f77}" relid="0x1" referred="id-0065-0000026d">
-							<name>TypesOfMilk_ref</name>
+						<reference id="id-0067-0000123d" kind="NullOptionRef" role="NullOptionRef" guid="{9c56e192-5300-49fc-9b7c-8cc97a3712d0}" relid="0x1" referred="id-0065-0000026c">
+							<name>Milk_null_ref</name>
 						</reference>
-						<reference id="id-0067-00000919" kind="DesignEntityRef" role="DesignEntityRef" guid="{97f48a5d-c630-4341-8bdc-0a3a49c58031}" relid="0x2" referred="id-0067-000008da">
-							<name>Milk (Whole)_ref</name>
+						<reference id="id-0067-0000123e" kind="NullOptionRef" role="NullOptionRef" guid="{aee78eae-c79f-4e75-aa49-0b46292b5458}" relid="0x2" referred="id-0065-00000271">
+							<name>Orange Juice_null_ref</name>
 						</reference>
-						<reference id="id-0067-0000091a" kind="DesignEntityRef" role="DesignEntityRef" guid="{1c10a5e6-98ed-47c4-8275-6161a5a4ab94}" relid="0x3" referred="id-0067-00000376">
-							<name>Orange Juice_ref</name>
+						<reference id="id-0067-0000123f" kind="DesignEntityRef" role="DesignEntityRef" guid="{1226f3f5-d3cf-4431-9212-545cad577603}" relid="0x3" referred="id-0067-00000389">
+							<name>Bacon_ref</name>
 						</reference>
-						<reference id="id-0067-0000091b" kind="NullOptionRef" role="NullOptionRef" guid="{430d8b42-16a8-43aa-b5bf-5cf5c15d0a0b}" relid="0x4" referred="id-0065-00000273">
-							<name>Bacon_null_ref</name>
+						<reference id="id-0067-00001240" kind="DesignEntityRef" role="DesignEntityRef" guid="{62c579b0-ab6e-4dbc-9638-d8f8a35e6e03}" relid="0x4" referred="id-0067-000010cc">
+							<name>Water_ref</name>
 						</reference>
 					</model>
 				</model>
@@ -30342,6 +30501,30 @@
 						<value></value>
 					</attribute>
 				</reference>
+				<reference id="id-0067-000010cc" kind="ComponentRef" role="ComponentRef" guid="{01b382de-8dc1-4caf-91df-1606472908f8}" relid="0x31" referred="id-0065-00000484">
+					<name>Water</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="DesignSpaceAspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>56,581</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="Cardinality" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="ID">
+						<value>64</value>
+					</attribute>
+					<attribute kind="InstanceGUID">
+						<value>01b382de-8dc1-4caf-91df-1606472908f8</value>
+					</attribute>
+					<attribute kind="NumAssociatedConfigs">
+						<value>16/16</value>
+					</attribute>
+				</reference>
 				<connection id="id-0068-0000004b" kind="ValueFlow" role="ValueFlow" guid="{041b0c95-8bb3-4dd1-8b6d-4f267ba67573}" relid="0xa">
 					<name>ValueFlow</name>
 					<regnode name="autorouterPref" isopaque="yes">
@@ -30613,6 +30796,72 @@
 					</regnode>
 					<connpoint role="src" target="id-0066-000000f1"/>
 					<connpoint role="dst" target="id-0067-0000037d"/>
+				</connection>
+				<connection id="id-0068-00000dd4" kind="ValueFlow" role="ValueFlow" guid="{691d390d-af9b-4623-b8eb-1b5d9b468710}" relid="0x32">
+					<name>ValueFlow</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>w</value>
+					</regnode>
+					<attribute kind="FormulaVariableName" status="meta">
+						<value></value>
+					</attribute>
+					<connpoint role="dst" target="id-0066-000000eb"/>
+					<connpoint role="src" target="id-0067-000010c6" refs="id-0067-000010cc"/>
+				</connection>
+				<connection id="id-0068-00000dd5" kind="ValueFlow" role="ValueFlow" guid="{3b78e773-1d8b-4b7f-8e82-057dc68af86f}" relid="0x33">
+					<name>ValueFlow</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>w</value>
+					</regnode>
+					<attribute kind="FormulaVariableName" status="meta">
+						<value></value>
+					</attribute>
+					<connpoint role="dst" target="id-0066-000000ec"/>
+					<connpoint role="src" target="id-0067-000010c7" refs="id-0067-000010cc"/>
+				</connection>
+				<connection id="id-0068-00000dd6" kind="ValueFlow" role="ValueFlow" guid="{7650e0ab-9e31-4958-8dda-e69099f09061}" relid="0x34">
+					<name>ValueFlow</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>w</value>
+					</regnode>
+					<attribute kind="FormulaVariableName" status="meta">
+						<value></value>
+					</attribute>
+					<connpoint role="dst" target="id-0066-000000ed"/>
+					<connpoint role="src" target="id-0067-000010c8" refs="id-0067-000010cc"/>
+				</connection>
+				<connection id="id-0068-00000dd7" kind="ValueFlow" role="ValueFlow" guid="{b77df049-0a58-4c54-95ba-4f8b169e0067}" relid="0x35">
+					<name>ValueFlow</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>w</value>
+					</regnode>
+					<attribute kind="FormulaVariableName" status="meta">
+						<value></value>
+					</attribute>
+					<connpoint role="dst" target="id-0066-000000ee"/>
+					<connpoint role="src" target="id-0067-000010c9" refs="id-0067-000010cc"/>
+				</connection>
+				<connection id="id-0068-00000dd8" kind="ValueFlow" role="ValueFlow" guid="{0ba3d93e-376c-47ba-a954-6d1bacea250e}" relid="0x36">
+					<name>ValueFlow</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>w</value>
+					</regnode>
+					<attribute kind="FormulaVariableName" status="meta">
+						<value></value>
+					</attribute>
+					<connpoint role="dst" target="id-0066-000000f0"/>
+					<connpoint role="src" target="id-0067-000010cb" refs="id-0067-000010cc"/>
+				</connection>
+				<connection id="id-0068-00000dd9" kind="ValueFlow" role="ValueFlow" guid="{8b79ae6b-938e-45c3-977a-9d1ef600f75b}" relid="0x37">
+					<name>ValueFlow</name>
+					<regnode name="autorouterPref" isopaque="yes">
+						<value>w</value>
+					</regnode>
+					<attribute kind="FormulaVariableName" status="meta">
+						<value></value>
+					</attribute>
+					<connpoint role="dst" target="id-0066-000000ef"/>
+					<connpoint role="src" target="id-0067-000010ca" refs="id-0067-000010cc"/>
 				</connection>
 			</model>
 		</folder>
