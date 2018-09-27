@@ -8,7 +8,7 @@ This OpenMETA model includes a PET with an optimizer, and uses a combination of 
 Comprehensive documentation for the Parametric Exploration capability is available in the OpenMETA Documentation:
 http://docs.metamorphsoftware.com/doc/reference_modeling/pet/pet.html
 
-It includes details on how to use specific integrations such as Python, MATLAB, and Excel.
+It includes a from-scratch tutorial as well as details on how to use specific integrations such as Python, MATLAB, and Excel.
 
 ## How to Run It
 For this example to run, you'll need to have Microsoft Excel installed on your computer.
