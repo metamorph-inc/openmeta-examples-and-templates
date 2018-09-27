@@ -22,11 +22,22 @@ For this example to run, you'll need to have Microsoft Excel installed on your c
 
 3. You will see the workflow open on the Canvas view.
    <br>To run the analysis, click on the *M* icon in the toolbar at top. 
-   _This is the *Master Interpreter* used to initiate most analysis work from OpenMETA._
+   <br>_This is the *Master Interpreter* used to initiate most analysis work from OpenMETA._
 
    ![mi](doc/master-interpreter.png)
    
 4. Click *OK* in the *Master Interpreter*'s GUI.
 
-   ![mi=ui](doc/master-interpreter-gui.png)
+   ![mi-ui](doc/master-interpreter-gui.png)
    
+5. The job will appear in the *OpenMETA Job Manager*. 
+   <br>The blue color indicates that it is now running. 
+   <br>It will turn green when the job is complete.
+
+   ![mi-rb](doc/results-browser-new-job.png)
+   
+6. Once the job is completed and turns green, double-click it to open the results directory.
+   <br>Double-click on the `output.csv` file to see the optimization trace.
+   <br>The final row represents the best solution that the optimizer found.
+   
+   ![excel](doc/excel.png)
