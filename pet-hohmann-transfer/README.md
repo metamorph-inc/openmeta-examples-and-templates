@@ -26,7 +26,7 @@ For this example to run, you'll need to have Microsoft Excel installed on your c
 
 3. You will see the workflow open on the Canvas view.
    <br>To run the analysis, click on the **M** icon in the toolbar at top. 
-   <br>_This is the *Master Interpreter* used to initiate most analysis work from OpenMETA._
+   <br>_This is the **Master Interpreter** used to initiate most analysis work from OpenMETA._
 
    ![mi](doc/master-interpreter.png)
    
