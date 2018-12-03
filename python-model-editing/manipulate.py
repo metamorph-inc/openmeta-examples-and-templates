@@ -5,13 +5,8 @@ import os.path
 import json
 import collections
 import imp
-# taken from CyPhyPython:
-#  pythoncom.py calls LoadLibrary("pythoncom27.dll"), which will load via %PATH%
-#  Anaconda's pythoncom27.dll (for one) doesn't include the correct SxS activation info, so trying to load it results in "An application has made an attempt to load the C runtime library incorrectly."
-#  load our pythoncom27.dll (which we know works) with an explicit path
 import os.path
 # FIXME: would this be better : pkg_resources.resource_filename('win32api', 'pythoncom27.dll')
-import pythoncom
 # sys.path.append(r"C:\Program Files\ISIS\Udm\bin")
 # if os.environ.has_key("UDM_PATH"):
 #     sys.path.append(os.path.join(os.environ["UDM_PATH"], "bin"))
@@ -24,8 +19,8 @@ import udm
 
 
 from win32com.client import DispatchEx
-Dispatch = DispatchEx
 import win32com.client.dynamic
+Dispatch = win32com.client.dynamic.Dispatch
 import win32com.server.util
 from pywintypes import com_error
 import json
@@ -34,12 +29,17 @@ import json
 path_project_xme = os.path.abspath("PETDirectoryPassing.xme")
 path_project_mga = os.path.abspath("PETDirectoryPassing_original.mga")
 
-parser = win32com.client.DispatchEx("Mga.MgaParser")
-parser.ParseProject(project, lib_xme)
-
-print(path_project)
 project = Dispatch("Mga.MgaProject")
-project.Open("MGA=" + path_project)
+project.Create("MGA=" + path_project_mga, "CyPhyML")
+
+parser = Dispatch("Mga.MgaParser")
+resolver = Dispatch("Mga.MgaResolver")
+resolver.IsInteractive = False
+parser.Resolver = resolver
+parser.ParseProject(project, path_project_xme)
+project.Save(project.ProjectConnStr, False)
+
+print(path_project_mga)
 
 project.BeginTransactionInNewTerr()
 try:
@@ -55,22 +55,23 @@ try:
 
     # Name has changed so update our path
     path_dv = path_dv + "_2"
-    dv = project.RootFolder.GetObjectByPathDisp(path_dv)
 
     # Change the range attribute
     print ('dv org Range: {}'.format(dv.GetStrAttrByNameDisp("Range")))
     dv.SetStrAttrByNameDisp("Range", "0.0,12.0")
     print ('dv new Range: {}'.format(dv.GetStrAttrByNameDisp("Range")))
 
+    parameterStudy = dv.ParentModel
+    pet = dv.ParentModel.ParentModel
+    directoryProducer = pet.ObjectByPath('/@DirectoryProducer')
+    directoryProducer_a = directoryProducer.ObjectByPath('/@a')
+    connectionRole = pet.Meta.GetRoleByNameDisp("VariableSweep")
+    connection = pet.CreateSimpleConnDisp(connectionRole, dv, directoryProducer_a, None, None)
+    connection.Name = connectionRole.Name
+
 finally:
     project.CommitTransaction()
 
-project.Save(project.ProjectConnStr.replace(".mga", "_altered.mga"), True)
-try:
-    project.Close(False)
-except pywintypes.com_error as e:
-    if 'Access is denied' in repr(e):
-        print('Could not save "{}". Is it open in GME?'.format(project.ProjectConnStr[4:]))
-    else:
-        raise
+project.Save(project.ProjectConnStr.replace(".mga", "_altered.mga"), False)
+project.Close(True)
 
