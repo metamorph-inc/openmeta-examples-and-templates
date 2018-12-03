@@ -72,6 +72,6 @@ try:
 finally:
     project.CommitTransaction()
 
-project.Save(project.ProjectConnStr.replace(".mga", "_altered.mga"), False)
+project.Save(project.ProjectConnStr.replace("_original.mga", "_altered.mga"), False)
 project.Close(True)
 
