@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE project SYSTEM "mga.dtd">
 
-<project guid="{1B4C93D9-B69F-40A8-872F-FC113858C86D}" cdate="Tue Jan 29 11:17:22 2019" mdate="Tue Jan 29 11:17:22 2019" version="" metaguid="{B0A55A64-CF79-0703-0300-5A66F1D508F3}" metaversion="14.13-t35" metaname="CyPhyML">
+<project guid="{884C8847-5ED5-40B3-AA53-D0AB66644112}" cdate="Tue Jan 29 11:17:22 2019" mdate="Tue Jan 29 11:17:22 2019" version="" metaguid="{B0A55A64-CF79-0703-0300-5A66F1D508F3}" metaversion="14.13-t35" metaname="CyPhyML">
 	<name>RootFolder</name>
 	<comment></comment>
 	<author></author>
@@ -23716,7 +23716,7 @@
 		</folder>
 		<folder id="id-006a-0000001a" relid="0x6" childrelidcntr="0x6" kind="DesignSpace" guid="{2136ba78-3c3e-4527-8083-3a28fa96474c}">
 			<name>DesignSpaces</name>
-			<folder id="id-006a-0000001b" relid="0x6" childrelidcntr="0x3" kind="DesignSpace" guid="{3f91e0fc-9fb5-4aa6-ac25-8b2afa961c89}">
+			<folder id="id-006a-0000001b" relid="0x6" childrelidcntr="0x4" kind="DesignSpace" guid="{3f91e0fc-9fb5-4aa6-ac25-8b2afa961c89}">
 				<name>Elements</name>
 				<model id="id-0065-00000267" kind="DesignContainer" guid="{4097e5ee-66ac-44c1-998f-2105b3ea08db}" relid="0x3" childrelidcntr="0x9">
 					<name>Rocket</name>
@@ -28432,8 +28432,56 @@
 						</connection>
 					</model>
 				</model>
+				<model id="id-0065-0000031a" kind="DesignContainer" guid="{2828292f-048b-4216-935a-a413413de76e}" relid="0x4" childrelidcntr="0x2">
+					<name>KnownFacilities</name>
+					<regnode name="icon" isopaque="yes">
+						<value>alternative_ds.png</value>
+					</regnode>
+					<attribute kind="Cardinality" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="ContainerType">
+						<value>Alternative</value>
+					</attribute>
+					<attribute kind="DecisionGroup" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="GenerationSemantics" status="meta">
+						<value>Normal</value>
+					</attribute>
+					<attribute kind="ID">
+						<value>1</value>
+					</attribute>
+					<attribute kind="NumAssociatedConfigs" status="meta">
+						<value></value>
+					</attribute>
+					<reference id="id-0067-00000410" kind="ComponentRef" role="ComponentRef" guid="{0eca0cd6-4adc-4ab8-9a27-08341ff474f8}" relid="0x2" referred="id-0065-0000031c">
+						<name>HighEndFacility</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="All" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>98,56</value>
+								</regnode>
+							</regnode>
+						</regnode>
+						<attribute kind="Cardinality" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="ID">
+							<value>4</value>
+						</attribute>
+						<attribute kind="InstanceGUID">
+							<value>0eca0cd6-4adc-4ab8-9a27-08341ff474f8</value>
+						</attribute>
+						<attribute kind="NumAssociatedConfigs" status="meta">
+							<value></value>
+						</attribute>
+					</reference>
+				</model>
 			</folder>
-			<model id="id-0065-00000266" kind="DesignContainer" guid="{8b6611a5-873d-4897-989a-e94f7917148a}" relid="0x1" childrelidcntr="0x15">
+			<model id="id-0065-00000266" kind="DesignContainer" guid="{8b6611a5-873d-4897-989a-e94f7917148a}" relid="0x1" childrelidcntr="0x18">
 				<name>Overall</name>
 				<attribute kind="Cardinality" status="meta">
 					<value></value>
@@ -28450,8 +28498,8 @@
 				<attribute kind="ID">
 					<value>1</value>
 				</attribute>
-				<attribute kind="NumAssociatedConfigs" status="meta">
-					<value></value>
+				<attribute kind="NumAssociatedConfigs">
+					<value>0/0</value>
 				</attribute>
 				<model id="id-0065-000002ad" kind="DesignContainer" role="DesignContainer" guid="{709232d6-1299-43db-9fea-2e7d1d21233d}" derivedfrom="id-0065-00000269" isinstance="no" isprimary="yes" relid="0x1" childrelidcntr="0x0">
 					<name>Facility</name>
@@ -28563,8 +28611,8 @@
 					<attribute kind="ID">
 						<value>119</value>
 					</attribute>
-					<attribute kind="NumAssociatedConfigs" status="inherited">
-						<value>3584/3584</value>
+					<attribute kind="NumAssociatedConfigs">
+						<value>0/0</value>
 					</attribute>
 					<model id="id-0065-000002ae" kind="DesignContainer" role="DesignContainer" guid="{7a46c5cc-8223-498a-8d67-3693f64c8b9a}" derivedfrom="id-0065-0000027c" isinstance="no" isprimary="no" childrelidcntr="0x1">
 						<name>Tooling</name>
@@ -28583,8 +28631,8 @@
 						<attribute kind="ID">
 							<value>120</value>
 						</attribute>
-						<attribute kind="NumAssociatedConfigs" status="inherited">
-							<value>3584/3584</value>
+						<attribute kind="NumAssociatedConfigs">
+							<value>0/0</value>
 						</attribute>
 						<model id="id-0065-000002d4" kind="DesignContainer" role="DesignContainer" guid="{d5c7db5d-0c8b-4b87-b220-cffe6db8d156}" derivedfrom="id-0065-000002d3" isinstance="no" isprimary="no" childrelidcntr="0x0">
 							<name>Molds</name>
@@ -28603,7 +28651,7 @@
 							<attribute kind="ID">
 								<value>203</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="meta">
+							<attribute kind="NumAssociatedConfigs">
 								<value></value>
 							</attribute>
 							<model id="id-0065-000002af" kind="DesignContainer" role="DesignContainer" guid="{3aadf1e3-2907-4b24-9b8c-6f386501f6ea}" derivedfrom="id-0065-00000287" isinstance="no" isprimary="no" childrelidcntr="0x0">
@@ -28638,8 +28686,8 @@
 								<attribute kind="ID">
 									<value>121</value>
 								</attribute>
-								<attribute kind="NumAssociatedConfigs" status="inherited">
-									<value>3584/3584</value>
+								<attribute kind="NumAssociatedConfigs">
+									<value></value>
 								</attribute>
 								<reference id="id-0067-0000036b" kind="ComponentRef" role="ComponentRef" guid="{d759e9aa-e2ce-42f6-8bcb-58b01777d38c}" derivedfrom="id-0067-0000034d" isinstance="no" isprimary="no" referred="id-0065-00000281" isbound="yes">
 									<name>MoldFin</name>
@@ -28652,8 +28700,8 @@
 									<attribute kind="InstanceGUID">
 										<value>d759e9aa-e2ce-42f6-8bcb-58b01777d38c</value>
 									</attribute>
-									<attribute kind="NumAssociatedConfigs" status="inherited">
-										<value>1792/3584</value>
+									<attribute kind="NumAssociatedConfigs">
+										<value>0/0</value>
 									</attribute>
 								</reference>
 							</model>
@@ -28689,8 +28737,8 @@
 								<attribute kind="ID">
 									<value>123</value>
 								</attribute>
-								<attribute kind="NumAssociatedConfigs" status="inherited">
-									<value>3584/3584</value>
+								<attribute kind="NumAssociatedConfigs">
+									<value></value>
 								</attribute>
 								<reference id="id-0067-0000036c" kind="ComponentRef" role="ComponentRef" guid="{8e7880b5-5f8e-48db-a547-298c18f3f167}" derivedfrom="id-0067-0000034e" isinstance="no" isprimary="no" referred="id-0065-0000027f" isbound="yes">
 									<name>MoldCircular</name>
@@ -28703,8 +28751,8 @@
 									<attribute kind="InstanceGUID">
 										<value>8e7880b5-5f8e-48db-a547-298c18f3f167</value>
 									</attribute>
-									<attribute kind="NumAssociatedConfigs" status="inherited">
-										<value>1792/3584</value>
+									<attribute kind="NumAssociatedConfigs">
+										<value>0/0</value>
 									</attribute>
 								</reference>
 							</model>
@@ -28734,8 +28782,8 @@
 								<attribute kind="ID">
 									<value>125</value>
 								</attribute>
-								<attribute kind="NumAssociatedConfigs" status="inherited">
-									<value>3584/3584</value>
+								<attribute kind="NumAssociatedConfigs">
+									<value></value>
 								</attribute>
 								<model id="id-0065-000002b2" kind="DesignContainer" role="DesignContainer" guid="{732fc425-d890-494f-93b4-babdc291abd9}" derivedfrom="id-0065-0000028a" isinstance="no" isprimary="no" childrelidcntr="0x0">
 									<name>MoldOgive</name>
@@ -28754,8 +28802,8 @@
 									<attribute kind="ID">
 										<value>126</value>
 									</attribute>
-									<attribute kind="NumAssociatedConfigs" status="inherited">
-										<value>1024/3584</value>
+									<attribute kind="NumAssociatedConfigs">
+										<value></value>
 									</attribute>
 									<reference id="id-0067-0000036d" kind="ComponentRef" role="ComponentRef" guid="{42b74157-915d-4f61-b3d5-d9aaf4bf7322}" derivedfrom="id-0067-00000352" isinstance="no" isprimary="no" referred="id-0065-00000280" isbound="yes">
 										<name>MoldOgive</name>
@@ -28768,8 +28816,8 @@
 										<attribute kind="InstanceGUID">
 											<value>42b74157-915d-4f61-b3d5-d9aaf4bf7322</value>
 										</attribute>
-										<attribute kind="NumAssociatedConfigs" status="inherited">
-											<value>512/3584</value>
+										<attribute kind="NumAssociatedConfigs">
+											<value>0/0</value>
 										</attribute>
 									</reference>
 								</model>
@@ -28790,8 +28838,8 @@
 									<attribute kind="ID">
 										<value>128</value>
 									</attribute>
-									<attribute kind="NumAssociatedConfigs" status="inherited">
-										<value>1024/3584</value>
+									<attribute kind="NumAssociatedConfigs">
+										<value></value>
 									</attribute>
 									<reference id="id-0067-0000036e" kind="ComponentRef" role="ComponentRef" guid="{eb98518c-b051-47e3-a8ef-0195532b03ac}" derivedfrom="id-0067-00000353" isinstance="no" isprimary="no" referred="id-0065-00000283" isbound="yes">
 										<name>MoldParabolic</name>
@@ -28804,8 +28852,8 @@
 										<attribute kind="InstanceGUID">
 											<value>eb98518c-b051-47e3-a8ef-0195532b03ac</value>
 										</attribute>
-										<attribute kind="NumAssociatedConfigs" status="inherited">
-											<value>512/3584</value>
+										<attribute kind="NumAssociatedConfigs">
+											<value>0/0</value>
 										</attribute>
 									</reference>
 								</model>
@@ -28826,8 +28874,8 @@
 									<attribute kind="ID">
 										<value>130</value>
 									</attribute>
-									<attribute kind="NumAssociatedConfigs" status="inherited">
-										<value>1024/3584</value>
+									<attribute kind="NumAssociatedConfigs">
+										<value></value>
 									</attribute>
 									<reference id="id-0067-0000036f" kind="ComponentRef" role="ComponentRef" guid="{4d702b93-fe4f-4abd-bb39-a4f6e1e320e0}" derivedfrom="id-0067-00000354" isinstance="no" isprimary="no" referred="id-0065-00000282" isbound="yes">
 										<name>MoldConical</name>
@@ -28840,8 +28888,8 @@
 										<attribute kind="InstanceGUID">
 											<value>4d702b93-fe4f-4abd-bb39-a4f6e1e320e0</value>
 										</attribute>
-										<attribute kind="NumAssociatedConfigs" status="inherited">
-											<value>512/3584</value>
+										<attribute kind="NumAssociatedConfigs">
+											<value>0/0</value>
 										</attribute>
 									</reference>
 								</model>
@@ -28864,7 +28912,7 @@
 							<attribute kind="ID">
 								<value>205</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="meta">
+							<attribute kind="NumAssociatedConfigs">
 								<value></value>
 							</attribute>
 							<model id="id-0065-000002d8" kind="DesignContainer" role="DesignContainer" guid="{1e856fd5-5da2-4c82-8a7c-dac151bedc32}" derivedfrom="id-0065-000002d7" isinstance="no" isprimary="no" childrelidcntr="0x0">
@@ -28884,7 +28932,7 @@
 								<attribute kind="ID">
 									<value>211</value>
 								</attribute>
-								<attribute kind="NumAssociatedConfigs" status="meta">
+								<attribute kind="NumAssociatedConfigs">
 									<value></value>
 								</attribute>
 								<reference id="id-0067-0000039e" kind="ComponentRef" role="ComponentRef" guid="{318f7930-92cf-4613-90e0-d4b1c26c0211}" derivedfrom="id-0067-0000039d" isinstance="no" isprimary="no" referred="id-0065-00000284" isbound="yes">
@@ -28898,8 +28946,8 @@
 									<attribute kind="InstanceGUID">
 										<value>318f7930-92cf-4613-90e0-d4b1c26c0211</value>
 									</attribute>
-									<attribute kind="NumAssociatedConfigs" status="meta">
-										<value></value>
+									<attribute kind="NumAssociatedConfigs">
+										<value>0/0</value>
 									</attribute>
 								</reference>
 							</model>
@@ -28920,7 +28968,7 @@
 								<attribute kind="ID">
 									<value>215</value>
 								</attribute>
-								<attribute kind="NumAssociatedConfigs" status="meta">
+								<attribute kind="NumAssociatedConfigs">
 									<value></value>
 								</attribute>
 								<reference id="id-0067-000003a0" kind="ComponentRef" role="ComponentRef" guid="{3f026d61-2c39-4f23-a8a1-26b2c25e4e7e}" derivedfrom="id-0067-0000039f" isinstance="no" isprimary="no" referred="id-0065-00000285" isbound="yes">
@@ -28934,8 +28982,8 @@
 									<attribute kind="InstanceGUID">
 										<value>3f026d61-2c39-4f23-a8a1-26b2c25e4e7e</value>
 									</attribute>
-									<attribute kind="NumAssociatedConfigs" status="meta">
-										<value></value>
+									<attribute kind="NumAssociatedConfigs">
+										<value>0/0</value>
 									</attribute>
 								</reference>
 							</model>
@@ -28958,8 +29006,8 @@
 						<attribute kind="ID">
 							<value>132</value>
 						</attribute>
-						<attribute kind="NumAssociatedConfigs" status="inherited">
-							<value>3584/3584</value>
+						<attribute kind="NumAssociatedConfigs">
+							<value>0/0</value>
 						</attribute>
 						<model id="id-0065-000002b6" kind="DesignContainer" role="DesignContainer" guid="{56ab6c74-9baf-4369-820a-3dd9fa97b4d5}" derivedfrom="id-0065-00000276" isinstance="no" isprimary="no" childrelidcntr="0x0">
 							<name>CureBox</name>
@@ -28978,8 +29026,8 @@
 							<attribute kind="ID">
 								<value>133</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="inherited">
-								<value>3584/3584</value>
+							<attribute kind="NumAssociatedConfigs">
+								<value></value>
 							</attribute>
 							<reference id="id-0067-00000370" kind="ComponentRef" role="ComponentRef" guid="{e609bbef-0089-42cf-b690-34a34ceec085}" derivedfrom="id-0067-00000342" isinstance="no" isprimary="no" referred="id-0065-00000270" isbound="yes">
 								<name>CureBox</name>
@@ -28992,8 +29040,8 @@
 								<attribute kind="InstanceGUID">
 									<value>e609bbef-0089-42cf-b690-34a34ceec085</value>
 								</attribute>
-								<attribute kind="NumAssociatedConfigs" status="inherited">
-									<value>1792/3584</value>
+								<attribute kind="NumAssociatedConfigs">
+									<value>0/0</value>
 								</attribute>
 							</reference>
 						</model>
@@ -29014,8 +29062,8 @@
 							<attribute kind="ID">
 								<value>135</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="inherited">
-								<value>3584/3584</value>
+							<attribute kind="NumAssociatedConfigs">
+								<value></value>
 							</attribute>
 							<reference id="id-0067-00000371" kind="ComponentRef" role="ComponentRef" guid="{751010a4-6262-428e-9c9b-1f75c7bb1106}" derivedfrom="id-0067-00000341" isinstance="no" isprimary="no" referred="id-0065-00000271" isbound="yes">
 								<name>CncMill</name>
@@ -29028,8 +29076,8 @@
 								<attribute kind="InstanceGUID">
 									<value>751010a4-6262-428e-9c9b-1f75c7bb1106</value>
 								</attribute>
-								<attribute kind="NumAssociatedConfigs" status="inherited">
-									<value>1792/3584</value>
+								<attribute kind="NumAssociatedConfigs">
+									<value>0/0</value>
 								</attribute>
 							</reference>
 						</model>
@@ -29050,8 +29098,8 @@
 							<attribute kind="ID">
 								<value>137</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="inherited">
-								<value>3584/3584</value>
+							<attribute kind="NumAssociatedConfigs">
+								<value></value>
 							</attribute>
 							<reference id="id-0067-00000372" kind="ComponentRef" role="ComponentRef" guid="{449a86da-9432-458b-941e-58c848483b06}" derivedfrom="id-0067-00000343" isinstance="no" isprimary="no" referred="id-0065-00000272" isbound="yes">
 								<name>Mill</name>
@@ -29064,8 +29112,8 @@
 								<attribute kind="InstanceGUID">
 									<value>449a86da-9432-458b-941e-58c848483b06</value>
 								</attribute>
-								<attribute kind="NumAssociatedConfigs" status="inherited">
-									<value>1792/3584</value>
+								<attribute kind="NumAssociatedConfigs">
+									<value>0/0</value>
 								</attribute>
 							</reference>
 						</model>
@@ -29086,8 +29134,8 @@
 							<attribute kind="ID">
 								<value>139</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="inherited">
-								<value>3584/3584</value>
+							<attribute kind="NumAssociatedConfigs">
+								<value></value>
 							</attribute>
 							<reference id="id-0067-00000373" kind="ComponentRef" role="ComponentRef" guid="{08c77d66-c9f2-4357-9096-119b06dfa17b}" derivedfrom="id-0067-00000344" isinstance="no" isprimary="no" referred="id-0065-00000274" isbound="yes">
 								<name>Buff</name>
@@ -29100,8 +29148,8 @@
 								<attribute kind="InstanceGUID">
 									<value>08c77d66-c9f2-4357-9096-119b06dfa17b</value>
 								</attribute>
-								<attribute kind="NumAssociatedConfigs" status="inherited">
-									<value>1792/3584</value>
+								<attribute kind="NumAssociatedConfigs">
+									<value>0/0</value>
 								</attribute>
 							</reference>
 						</model>
@@ -29122,8 +29170,8 @@
 							<attribute kind="ID">
 								<value>141</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="inherited">
-								<value>3584/3584</value>
+							<attribute kind="NumAssociatedConfigs">
+								<value></value>
 							</attribute>
 							<reference id="id-0067-00000374" kind="ComponentRef" role="ComponentRef" guid="{c79a240e-a4e0-40f7-8293-61c07ebe4555}" derivedfrom="id-0067-00000345" isinstance="no" isprimary="no" referred="id-0065-0000026f" isbound="yes">
 								<name>PressureChamber</name>
@@ -29136,8 +29184,8 @@
 								<attribute kind="InstanceGUID">
 									<value>c79a240e-a4e0-40f7-8293-61c07ebe4555</value>
 								</attribute>
-								<attribute kind="NumAssociatedConfigs" status="inherited">
-									<value>1792/3584</value>
+								<attribute kind="NumAssociatedConfigs">
+									<value>0/0</value>
 								</attribute>
 							</reference>
 						</model>
@@ -29158,8 +29206,8 @@
 							<attribute kind="ID">
 								<value>143</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="inherited">
-								<value>3584/3584</value>
+							<attribute kind="NumAssociatedConfigs">
+								<value></value>
 							</attribute>
 							<reference id="id-0067-00000375" kind="ComponentRef" role="ComponentRef" guid="{cafb4257-02c9-439a-a90e-02b6862e5b4d}" derivedfrom="id-0067-00000346" isinstance="no" isprimary="no" referred="id-0065-00000273" isbound="yes">
 								<name>Sander</name>
@@ -29172,8 +29220,8 @@
 								<attribute kind="InstanceGUID">
 									<value>cafb4257-02c9-439a-a90e-02b6862e5b4d</value>
 								</attribute>
-								<attribute kind="NumAssociatedConfigs" status="inherited">
-									<value>1792/3584</value>
+								<attribute kind="NumAssociatedConfigs">
+									<value>0/0</value>
 								</attribute>
 							</reference>
 						</model>
@@ -29194,8 +29242,8 @@
 							<attribute kind="ID">
 								<value>145</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="inherited">
-								<value>3584/3584</value>
+							<attribute kind="NumAssociatedConfigs">
+								<value></value>
 							</attribute>
 							<reference id="id-0067-00000376" kind="ComponentRef" role="ComponentRef" guid="{0d511d6c-c20e-4c2d-9b88-df3b69b25e6a}" derivedfrom="id-0067-00000347" isinstance="no" isprimary="no" referred="id-0065-0000026e" isbound="yes">
 								<name>WaterjetCutter</name>
@@ -29208,8 +29256,8 @@
 								<attribute kind="InstanceGUID">
 									<value>0d511d6c-c20e-4c2d-9b88-df3b69b25e6a</value>
 								</attribute>
-								<attribute kind="NumAssociatedConfigs" status="inherited">
-									<value>1792/3584</value>
+								<attribute kind="NumAssociatedConfigs">
+									<value>0/0</value>
 								</attribute>
 							</reference>
 						</model>
@@ -29230,7 +29278,7 @@
 							<attribute kind="ID">
 								<value>239</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="meta">
+							<attribute kind="NumAssociatedConfigs">
 								<value></value>
 							</attribute>
 							<reference id="id-0067-000003e8" kind="ComponentRef" role="ComponentRef" guid="{a294fa63-c4b8-4dd0-81fb-b08577766370}" derivedfrom="id-0067-000003e7" isinstance="no" isprimary="no" referred="id-0065-00000300" isbound="yes">
@@ -29244,8 +29292,8 @@
 								<attribute kind="InstanceGUID">
 									<value>a294fa63-c4b8-4dd0-81fb-b08577766370</value>
 								</attribute>
-								<attribute kind="NumAssociatedConfigs" status="meta">
-									<value></value>
+								<attribute kind="NumAssociatedConfigs">
+									<value>0/0</value>
 								</attribute>
 							</reference>
 						</model>
@@ -29409,8 +29457,8 @@
 					<attribute kind="ID">
 						<value>147</value>
 					</attribute>
-					<attribute kind="NumAssociatedConfigs" status="meta">
-						<value></value>
+					<attribute kind="NumAssociatedConfigs">
+						<value>0/0</value>
 					</attribute>
 					<model id="id-0065-000002be" kind="DesignContainer" role="DesignContainer" guid="{a2c3c52a-0427-4d80-ad08-be8b87279f13}" derivedfrom="id-0065-000002a5" isinstance="no" isprimary="no" childrelidcntr="0x0">
 						<name>MotorClass</name>
@@ -29429,7 +29477,7 @@
 						<attribute kind="ID">
 							<value>148</value>
 						</attribute>
-						<attribute kind="NumAssociatedConfigs" status="meta">
+						<attribute kind="NumAssociatedConfigs">
 							<value></value>
 						</attribute>
 						<reference id="id-0067-00000377" kind="ComponentRef" role="ComponentRef" guid="{9e7897f4-5d3b-4b4e-9387-1c5d34219850}" derivedfrom="id-0067-00000357" isinstance="no" isprimary="no" referred="id-0065-00000290" isbound="yes">
@@ -29443,8 +29491,8 @@
 							<attribute kind="InstanceGUID">
 								<value>9e7897f4-5d3b-4b4e-9387-1c5d34219850</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="meta">
-								<value></value>
+							<attribute kind="NumAssociatedConfigs">
+								<value>0/0</value>
 							</attribute>
 						</reference>
 						<reference id="id-0067-00000378" kind="ComponentRef" role="ComponentRef" guid="{defc1974-9c3c-4ba5-96d1-0df79906ef79}" derivedfrom="id-0067-00000355" isinstance="no" isprimary="no" referred="id-0065-0000028f" isbound="yes">
@@ -29458,8 +29506,8 @@
 							<attribute kind="InstanceGUID">
 								<value>defc1974-9c3c-4ba5-96d1-0df79906ef79</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="meta">
-								<value></value>
+							<attribute kind="NumAssociatedConfigs">
+								<value>0/0</value>
 							</attribute>
 						</reference>
 						<reference id="id-0067-00000379" kind="ComponentRef" role="ComponentRef" guid="{fe0ea350-a1fe-4bee-8c1c-acddf374ade9}" derivedfrom="id-0067-00000356" isinstance="no" isprimary="no" referred="id-0065-00000291" isbound="yes">
@@ -29473,8 +29521,8 @@
 							<attribute kind="InstanceGUID">
 								<value>fe0ea350-a1fe-4bee-8c1c-acddf374ade9</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="meta">
-								<value></value>
+							<attribute kind="NumAssociatedConfigs">
+								<value>0/0</value>
 							</attribute>
 						</reference>
 					</model>
@@ -29495,7 +29543,7 @@
 						<attribute kind="ID">
 							<value>152</value>
 						</attribute>
-						<attribute kind="NumAssociatedConfigs" status="meta">
+						<attribute kind="NumAssociatedConfigs">
 							<value></value>
 						</attribute>
 						<reference id="id-0067-0000037a" kind="ComponentRef" role="ComponentRef" guid="{5f45a656-3878-4f3f-9444-37e0356d4368}" derivedfrom="id-0067-00000359" isinstance="no" isprimary="no" referred="id-0065-00000294" isbound="yes">
@@ -29509,8 +29557,8 @@
 							<attribute kind="InstanceGUID">
 								<value>5f45a656-3878-4f3f-9444-37e0356d4368</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="meta">
-								<value></value>
+							<attribute kind="NumAssociatedConfigs">
+								<value>0/0</value>
 							</attribute>
 						</reference>
 						<reference id="id-0067-0000037b" kind="ComponentRef" role="ComponentRef" guid="{ea2cc8cf-8208-481b-bf89-c7ee6cae16f9}" derivedfrom="id-0067-00000358" isinstance="no" isprimary="no" referred="id-0065-00000293" isbound="yes">
@@ -29524,8 +29572,8 @@
 							<attribute kind="InstanceGUID">
 								<value>ea2cc8cf-8208-481b-bf89-c7ee6cae16f9</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="meta">
-								<value></value>
+							<attribute kind="NumAssociatedConfigs">
+								<value>0/0</value>
 							</attribute>
 						</reference>
 						<reference id="id-0067-0000037c" kind="ComponentRef" role="ComponentRef" guid="{783c209d-d681-4e46-af9f-ca4db69e6ae9}" derivedfrom="id-0067-0000035a" isinstance="no" isprimary="no" referred="id-0065-00000292" isbound="yes">
@@ -29539,8 +29587,8 @@
 							<attribute kind="InstanceGUID">
 								<value>783c209d-d681-4e46-af9f-ca4db69e6ae9</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="meta">
-								<value></value>
+							<attribute kind="NumAssociatedConfigs">
+								<value>0/0</value>
 							</attribute>
 						</reference>
 					</model>
@@ -29561,8 +29609,8 @@
 						<attribute kind="ID">
 							<value>156</value>
 						</attribute>
-						<attribute kind="NumAssociatedConfigs" status="meta">
-							<value></value>
+						<attribute kind="NumAssociatedConfigs">
+							<value>0/0</value>
 						</attribute>
 						<model id="id-0065-000002c1" kind="DesignContainer" role="DesignContainer" guid="{e67f8085-dff6-4e46-bdd0-b3014a461a5e}" derivedfrom="id-0065-000002ab" isinstance="no" isprimary="no" childrelidcntr="0x0">
 							<name>Type</name>
@@ -29581,7 +29629,7 @@
 							<attribute kind="ID">
 								<value>157</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="meta">
+							<attribute kind="NumAssociatedConfigs">
 								<value></value>
 							</attribute>
 							<reference id="id-0067-0000037d" kind="ComponentRef" role="ComponentRef" guid="{ec7c0f3e-82fe-4db6-94b4-9332bc4d3fd6}" derivedfrom="id-0067-0000035e" isinstance="no" isprimary="no" referred="id-0065-00000296" isbound="yes">
@@ -29595,8 +29643,8 @@
 								<attribute kind="InstanceGUID">
 									<value>ec7c0f3e-82fe-4db6-94b4-9332bc4d3fd6</value>
 								</attribute>
-								<attribute kind="NumAssociatedConfigs" status="meta">
-									<value></value>
+								<attribute kind="NumAssociatedConfigs">
+									<value>0/0</value>
 								</attribute>
 							</reference>
 							<reference id="id-0067-0000037e" kind="ComponentRef" role="ComponentRef" guid="{3d3884df-5852-485b-aaad-a1a069063660}" derivedfrom="id-0067-0000035f" isinstance="no" isprimary="no" referred="id-0065-00000297" isbound="yes">
@@ -29610,8 +29658,8 @@
 								<attribute kind="InstanceGUID">
 									<value>3d3884df-5852-485b-aaad-a1a069063660</value>
 								</attribute>
-								<attribute kind="NumAssociatedConfigs" status="meta">
-									<value></value>
+								<attribute kind="NumAssociatedConfigs">
+									<value>0/0</value>
 								</attribute>
 							</reference>
 							<reference id="id-0067-0000037f" kind="ComponentRef" role="ComponentRef" guid="{86582881-2565-4a49-8816-81145ee44556}" derivedfrom="id-0067-00000360" isinstance="no" isprimary="no" referred="id-0065-00000295" isbound="yes">
@@ -29625,8 +29673,8 @@
 								<attribute kind="InstanceGUID">
 									<value>86582881-2565-4a49-8816-81145ee44556</value>
 								</attribute>
-								<attribute kind="NumAssociatedConfigs" status="meta">
-									<value></value>
+								<attribute kind="NumAssociatedConfigs">
+									<value>0/0</value>
 								</attribute>
 							</reference>
 						</model>
@@ -29647,7 +29695,7 @@
 							<attribute kind="ID">
 								<value>161</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="meta">
+							<attribute kind="NumAssociatedConfigs">
 								<value></value>
 							</attribute>
 							<reference id="id-0067-00000380" kind="ComponentRef" role="ComponentRef" guid="{ca2e748b-086c-4a3b-b70c-787a351f1670}" derivedfrom="id-0067-0000035b" isinstance="no" isprimary="no" referred="id-0065-00000298" isbound="yes">
@@ -29670,8 +29718,8 @@
 								<attribute kind="InstanceGUID">
 									<value>ca2e748b-086c-4a3b-b70c-787a351f1670</value>
 								</attribute>
-								<attribute kind="NumAssociatedConfigs" status="meta">
-									<value></value>
+								<attribute kind="NumAssociatedConfigs">
+									<value>0/0</value>
 								</attribute>
 							</reference>
 							<reference id="id-0067-00000381" kind="ComponentRef" role="ComponentRef" guid="{4bac2066-e547-41f4-8095-b201616f18ed}" derivedfrom="id-0067-0000035d" isinstance="no" isprimary="no" referred="id-0065-0000029a" isbound="yes">
@@ -29694,8 +29742,8 @@
 								<attribute kind="InstanceGUID">
 									<value>4bac2066-e547-41f4-8095-b201616f18ed</value>
 								</attribute>
-								<attribute kind="NumAssociatedConfigs" status="meta">
-									<value></value>
+								<attribute kind="NumAssociatedConfigs">
+									<value>0/0</value>
 								</attribute>
 							</reference>
 							<reference id="id-0067-00000382" kind="ComponentRef" role="ComponentRef" guid="{98522c2d-7e1a-41ed-b1d5-114013dd2c4c}" derivedfrom="id-0067-0000035c" isinstance="no" isprimary="no" referred="id-0065-00000299" isbound="yes">
@@ -29709,8 +29757,8 @@
 								<attribute kind="InstanceGUID">
 									<value>98522c2d-7e1a-41ed-b1d5-114013dd2c4c</value>
 								</attribute>
-								<attribute kind="NumAssociatedConfigs" status="meta">
-									<value></value>
+								<attribute kind="NumAssociatedConfigs">
+									<value>0/0</value>
 								</attribute>
 							</reference>
 						</model>
@@ -29732,7 +29780,7 @@
 						<attribute kind="ID">
 							<value>165</value>
 						</attribute>
-						<attribute kind="NumAssociatedConfigs" status="meta">
+						<attribute kind="NumAssociatedConfigs">
 							<value></value>
 						</attribute>
 						<reference id="id-0067-00000383" kind="ComponentRef" role="ComponentRef" guid="{1a2acca7-a917-47e8-966b-254b8c0a6f98}" derivedfrom="id-0067-00000361" isinstance="no" isprimary="no" referred="id-0065-0000029c" isbound="yes">
@@ -29746,8 +29794,8 @@
 							<attribute kind="InstanceGUID">
 								<value>1a2acca7-a917-47e8-966b-254b8c0a6f98</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="meta">
-								<value></value>
+							<attribute kind="NumAssociatedConfigs">
+								<value>0/0</value>
 							</attribute>
 						</reference>
 						<reference id="id-0067-00000384" kind="ComponentRef" role="ComponentRef" guid="{801e0be8-7ac1-48f8-9cad-eed656f39f55}" derivedfrom="id-0067-00000362" isinstance="no" isprimary="no" referred="id-0065-0000029d" isbound="yes">
@@ -29761,8 +29809,8 @@
 							<attribute kind="InstanceGUID">
 								<value>801e0be8-7ac1-48f8-9cad-eed656f39f55</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="meta">
-								<value></value>
+							<attribute kind="NumAssociatedConfigs">
+								<value>0/0</value>
 							</attribute>
 						</reference>
 						<reference id="id-0067-00000385" kind="ComponentRef" role="ComponentRef" guid="{410ff79a-2e3e-49a5-af99-3dc128dd83c2}" derivedfrom="id-0067-00000363" isinstance="no" isprimary="no" referred="id-0065-0000029b" isbound="yes">
@@ -29776,8 +29824,8 @@
 							<attribute kind="InstanceGUID">
 								<value>410ff79a-2e3e-49a5-af99-3dc128dd83c2</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="meta">
-								<value></value>
+							<attribute kind="NumAssociatedConfigs">
+								<value>0/0</value>
 							</attribute>
 						</reference>
 					</model>
@@ -29798,7 +29846,7 @@
 						<attribute kind="ID">
 							<value>169</value>
 						</attribute>
-						<attribute kind="NumAssociatedConfigs" status="meta">
+						<attribute kind="NumAssociatedConfigs">
 							<value></value>
 						</attribute>
 						<reference id="id-0067-00000386" kind="ComponentRef" role="ComponentRef" guid="{806d24aa-db16-46ef-8a4e-8904863eec07}" derivedfrom="id-0067-00000369" isinstance="no" isprimary="no" referred="id-0065-000002a4" isbound="yes">
@@ -29812,8 +29860,8 @@
 							<attribute kind="InstanceGUID">
 								<value>806d24aa-db16-46ef-8a4e-8904863eec07</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="meta">
-								<value></value>
+							<attribute kind="NumAssociatedConfigs">
+								<value>0/0</value>
 							</attribute>
 						</reference>
 						<reference id="id-0067-00000387" kind="ComponentRef" role="ComponentRef" guid="{919e6b6a-d9f3-46ce-8fb0-f03a57ecf256}" derivedfrom="id-0067-00000368" isinstance="no" isprimary="no" referred="id-0065-000002a2" isbound="yes">
@@ -29827,8 +29875,8 @@
 							<attribute kind="InstanceGUID">
 								<value>919e6b6a-d9f3-46ce-8fb0-f03a57ecf256</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="meta">
-								<value></value>
+							<attribute kind="NumAssociatedConfigs">
+								<value>0/0</value>
 							</attribute>
 						</reference>
 						<reference id="id-0067-00000388" kind="ComponentRef" role="ComponentRef" guid="{852fd027-0400-4cfc-b73a-e5c2e193afbe}" derivedfrom="id-0067-0000036a" isinstance="no" isprimary="no" referred="id-0065-000002a1" isbound="yes">
@@ -29842,8 +29890,8 @@
 							<attribute kind="InstanceGUID">
 								<value>852fd027-0400-4cfc-b73a-e5c2e193afbe</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="meta">
-								<value></value>
+							<attribute kind="NumAssociatedConfigs">
+								<value>0/0</value>
 							</attribute>
 						</reference>
 						<reference id="id-0067-00000389" kind="ComponentRef" role="ComponentRef" guid="{635d1d45-4185-4d9e-a104-ee1e01be1004}" derivedfrom="id-0067-00000367" isinstance="no" isprimary="no" referred="id-0065-000002a3" isbound="yes">
@@ -29857,8 +29905,8 @@
 							<attribute kind="InstanceGUID">
 								<value>635d1d45-4185-4d9e-a104-ee1e01be1004</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="meta">
-								<value></value>
+							<attribute kind="NumAssociatedConfigs">
+								<value>0/0</value>
 							</attribute>
 						</reference>
 					</model>
@@ -29879,7 +29927,7 @@
 						<attribute kind="ID">
 							<value>174</value>
 						</attribute>
-						<attribute kind="NumAssociatedConfigs" status="meta">
+						<attribute kind="NumAssociatedConfigs">
 							<value></value>
 						</attribute>
 						<reference id="id-0067-0000038a" kind="ComponentRef" role="ComponentRef" guid="{5b094fd2-f32b-43cf-aaa0-33c5537b7a2e}" derivedfrom="id-0067-00000364" isinstance="no" isprimary="no" referred="id-0065-000002a0" isbound="yes">
@@ -29893,8 +29941,8 @@
 							<attribute kind="InstanceGUID">
 								<value>5b094fd2-f32b-43cf-aaa0-33c5537b7a2e</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="meta">
-								<value></value>
+							<attribute kind="NumAssociatedConfigs">
+								<value>0/0</value>
 							</attribute>
 						</reference>
 						<reference id="id-0067-0000038b" kind="ComponentRef" role="ComponentRef" guid="{a91817be-0054-4046-a614-85048ba35f99}" derivedfrom="id-0067-00000365" isinstance="no" isprimary="no" referred="id-0065-0000029f" isbound="yes">
@@ -29908,8 +29956,8 @@
 							<attribute kind="InstanceGUID">
 								<value>a91817be-0054-4046-a614-85048ba35f99</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="meta">
-								<value></value>
+							<attribute kind="NumAssociatedConfigs">
+								<value>0/0</value>
 							</attribute>
 						</reference>
 						<reference id="id-0067-0000038c" kind="ComponentRef" role="ComponentRef" guid="{2af2ca92-9bc6-4599-ae3c-80f2c1ecfea8}" derivedfrom="id-0067-00000366" isinstance="no" isprimary="no" referred="id-0065-0000029e" isbound="yes">
@@ -29923,8 +29971,8 @@
 							<attribute kind="InstanceGUID">
 								<value>2af2ca92-9bc6-4599-ae3c-80f2c1ecfea8</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="meta">
-								<value></value>
+							<attribute kind="NumAssociatedConfigs">
+								<value>0/0</value>
 							</attribute>
 						</reference>
 					</model>
@@ -30009,8 +30057,8 @@
 					<attribute kind="ID">
 						<value>193</value>
 					</attribute>
-					<attribute kind="NumAssociatedConfigs" status="meta">
-						<value></value>
+					<attribute kind="NumAssociatedConfigs">
+						<value>0/0</value>
 					</attribute>
 					<model id="id-0065-000002d0" kind="DesignContainer" role="DesignContainer" guid="{f4b7b608-5ba5-4495-8723-2f0be92dc849}" derivedfrom="id-0065-000002cd" isinstance="no" isprimary="no" childrelidcntr="0x0">
 						<name>MaxFlightRegime</name>
@@ -30029,7 +30077,7 @@
 						<attribute kind="ID">
 							<value>194</value>
 						</attribute>
-						<attribute kind="NumAssociatedConfigs" status="meta">
+						<attribute kind="NumAssociatedConfigs">
 							<value></value>
 						</attribute>
 						<reference id="id-0067-00000393" kind="ComponentRef" role="ComponentRef" guid="{29d9d6c3-8a6b-4e51-ba0c-f7a2816c391d}" derivedfrom="id-0067-0000038d" isinstance="no" isprimary="no" referred="id-0065-000002c8" isbound="yes">
@@ -30043,8 +30091,8 @@
 							<attribute kind="InstanceGUID">
 								<value>29d9d6c3-8a6b-4e51-ba0c-f7a2816c391d</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="meta">
-								<value></value>
+							<attribute kind="NumAssociatedConfigs">
+								<value>0/0</value>
 							</attribute>
 						</reference>
 						<reference id="id-0067-00000394" kind="ComponentRef" role="ComponentRef" guid="{0b349b28-874f-45e5-9c7b-867828ad9c2e}" derivedfrom="id-0067-0000038f" isinstance="no" isprimary="no" referred="id-0065-000002c7" isbound="yes">
@@ -30058,8 +30106,8 @@
 							<attribute kind="InstanceGUID">
 								<value>0b349b28-874f-45e5-9c7b-867828ad9c2e</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="meta">
-								<value></value>
+							<attribute kind="NumAssociatedConfigs">
+								<value>0/0</value>
 							</attribute>
 						</reference>
 						<reference id="id-0067-00000395" kind="ComponentRef" role="ComponentRef" guid="{034300ca-4b2f-4d7b-bd70-24c9e4984d6c}" derivedfrom="id-0067-0000038e" isinstance="no" isprimary="no" referred="id-0065-000002c9" isbound="yes">
@@ -30073,8 +30121,8 @@
 							<attribute kind="InstanceGUID">
 								<value>034300ca-4b2f-4d7b-bd70-24c9e4984d6c</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="meta">
-								<value></value>
+							<attribute kind="NumAssociatedConfigs">
+								<value>0/0</value>
 							</attribute>
 						</reference>
 					</model>
@@ -30095,7 +30143,7 @@
 						<attribute kind="ID">
 							<value>198</value>
 						</attribute>
-						<attribute kind="NumAssociatedConfigs" status="meta">
+						<attribute kind="NumAssociatedConfigs">
 							<value></value>
 						</attribute>
 						<reference id="id-0067-00000396" kind="ComponentRef" role="ComponentRef" guid="{26465e68-47a5-4d63-9d91-fb34ed4f2bdb}" derivedfrom="id-0067-00000390" isinstance="no" isprimary="no" referred="id-0065-000002cc" isbound="yes">
@@ -30109,8 +30157,8 @@
 							<attribute kind="InstanceGUID">
 								<value>26465e68-47a5-4d63-9d91-fb34ed4f2bdb</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="meta">
-								<value></value>
+							<attribute kind="NumAssociatedConfigs">
+								<value>0/0</value>
 							</attribute>
 						</reference>
 						<reference id="id-0067-00000397" kind="ComponentRef" role="ComponentRef" guid="{a955a790-1e0a-4274-9d2c-d35717408704}" derivedfrom="id-0067-00000391" isinstance="no" isprimary="no" referred="id-0065-000002ca" isbound="yes">
@@ -30124,8 +30172,8 @@
 							<attribute kind="InstanceGUID">
 								<value>a955a790-1e0a-4274-9d2c-d35717408704</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="meta">
-								<value></value>
+							<attribute kind="NumAssociatedConfigs">
+								<value>0/0</value>
 							</attribute>
 						</reference>
 						<reference id="id-0067-00000398" kind="ComponentRef" role="ComponentRef" guid="{1fd2b8fa-fbc1-4db0-9363-6ba04e090883}" derivedfrom="id-0067-00000392" isinstance="no" isprimary="no" referred="id-0065-000002cb" isbound="yes">
@@ -30139,8 +30187,8 @@
 							<attribute kind="InstanceGUID">
 								<value>1fd2b8fa-fbc1-4db0-9363-6ba04e090883</value>
 							</attribute>
-							<attribute kind="NumAssociatedConfigs" status="meta">
-								<value></value>
+							<attribute kind="NumAssociatedConfigs">
+								<value>0/0</value>
 							</attribute>
 						</reference>
 					</model>
@@ -30200,7 +30248,7 @@
 						<regnode name="DesignSpaceAspect" status="undefined">
 							<value></value>
 							<regnode name="Position" isopaque="yes">
-								<value>105,140</value>
+								<value>98,147</value>
 							</regnode>
 						</regnode>
 					</regnode>
@@ -31605,9 +31653,358 @@
 						<connpoint role="src" target="id-0067-00000401"/>
 					</connection>
 				</model>
+				<model id="id-0065-0000031d" kind="DesignContainer" role="DesignContainer" guid="{bedd1798-9f52-4de3-a95c-14c1b413738b}" derivedfrom="id-0065-0000031a" isinstance="no" isprimary="yes" relid="0x16" childrelidcntr="0x0">
+					<name>KnownFacilities</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="All" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>434,21</value>
+							</regnode>
+						</regnode>
+						<regnode name="DesignSpaceAspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>903,21</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="Cardinality" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="ContainerType" status="inherited">
+						<value>Alternative</value>
+					</attribute>
+					<attribute kind="DecisionGroup" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="GenerationSemantics" status="meta">
+						<value>Normal</value>
+					</attribute>
+					<attribute kind="ID">
+						<value>5</value>
+					</attribute>
+					<attribute kind="NumAssociatedConfigs">
+						<value></value>
+					</attribute>
+					<reference id="id-0067-00000411" kind="ComponentRef" role="ComponentRef" guid="{52a8b5d2-d137-4120-b848-fb8be5a45b2a}" derivedfrom="id-0067-00000410" isinstance="no" isprimary="no" referred="id-0065-0000031c" isbound="yes">
+						<name>HighEndFacility</name>
+						<attribute kind="Cardinality" status="meta">
+							<value></value>
+						</attribute>
+						<attribute kind="ID">
+							<value>6</value>
+						</attribute>
+						<attribute kind="InstanceGUID">
+							<value>52a8b5d2-d137-4120-b848-fb8be5a45b2a</value>
+						</attribute>
+						<attribute kind="NumAssociatedConfigs">
+							<value>0/0</value>
+						</attribute>
+					</reference>
+				</model>
+				<model id="id-0065-0000031e" kind="VisualConstraint" role="VisualConstraint" guid="{db548961-5988-4cf6-bc78-11814c714f0b}" relid="0x17" childrelidcntr="0x7">
+					<name>HighEndFacilityCapabilities</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="DesignSpaceAspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>917,140</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="Domain" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="ID">
+						<value>7</value>
+					</attribute>
+					<attribute kind="Inactive" status="meta">
+						<value>false</value>
+					</attribute>
+					<model id="id-0065-0000031f" kind="And_operator" role="And_operator" guid="{2c5212fb-d41a-40c2-a8cf-25b0087744c0}" relid="0x2" childrelidcntr="0xd">
+						<name>Has</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>301,42</value>
+								</regnode>
+							</regnode>
+						</regnode>
+						<reference id="id-0067-00000413" kind="DesignEntityRef" role="DesignEntityRef" guid="{f9dcce58-13de-4c34-a9d1-ea23687d7008}" relid="0x1" referred="id-0067-00000372">
+							<name>Mill</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="Aspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>35,21</value>
+									</regnode>
+								</regnode>
+							</regnode>
+						</reference>
+						<reference id="id-0067-00000415" kind="DesignEntityRef" role="DesignEntityRef" guid="{88f0ed58-e2fb-4850-931e-c6067728c687}" relid="0x3" referred="id-0067-00000376">
+							<name>WaterjetCutter</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="Aspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>140,21</value>
+									</regnode>
+								</regnode>
+							</regnode>
+						</reference>
+						<reference id="id-0067-00000416" kind="DesignEntityRef" role="DesignEntityRef" guid="{1118ad69-a928-4f47-b9c7-8ace707d658a}" relid="0x4" referred="id-0067-00000374">
+							<name>PressureChamber</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="Aspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>455,21</value>
+									</regnode>
+								</regnode>
+							</regnode>
+						</reference>
+						<reference id="id-0067-00000417" kind="DesignEntityRef" role="DesignEntityRef" guid="{950bd6e1-7718-45e0-95f8-79833b77004d}" relid="0x5" referred="id-0067-00000375">
+							<name>Sander</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="Aspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>245,21</value>
+									</regnode>
+								</regnode>
+							</regnode>
+						</reference>
+						<reference id="id-0067-00000418" kind="DesignEntityRef" role="DesignEntityRef" guid="{8528138d-b18a-4ac2-aa80-67676f5623f2}" relid="0x6" referred="id-0067-00000373">
+							<name>Buff</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="Aspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>350,21</value>
+									</regnode>
+								</regnode>
+							</regnode>
+						</reference>
+						<reference id="id-0067-00000419" kind="DesignEntityRef" role="DesignEntityRef" guid="{f3d751de-a4d0-4f3f-beea-c07d0aa88d47}" relid="0x7" referred="id-0067-00000370">
+							<name>CureBox</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="Aspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>35,112</value>
+									</regnode>
+								</regnode>
+							</regnode>
+						</reference>
+						<reference id="id-0067-0000041a" kind="DesignEntityRef" role="DesignEntityRef" guid="{38e27452-8c2c-4dee-8433-8c2bfb90a236}" relid="0x8" referred="id-0067-000003a0">
+							<name>Mandrel4Inch</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="Aspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>245,112</value>
+									</regnode>
+								</regnode>
+							</regnode>
+						</reference>
+						<reference id="id-0067-0000041b" kind="DesignEntityRef" role="DesignEntityRef" guid="{865560f8-2b5e-4724-83e1-f9fd98a50400}" relid="0x9" referred="id-0067-0000039e">
+							<name>Mandrel6Inch</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="Aspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>350,112</value>
+									</regnode>
+								</regnode>
+							</regnode>
+						</reference>
+						<reference id="id-0067-0000041c" kind="DesignEntityRef" role="DesignEntityRef" guid="{4ae409cf-8e75-42b5-b76d-0aea202c5804}" relid="0xa" referred="id-0067-0000036c">
+							<name>MoldCircular</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="Aspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>140,112</value>
+									</regnode>
+								</regnode>
+							</regnode>
+						</reference>
+						<reference id="id-0067-0000041d" kind="DesignEntityRef" role="DesignEntityRef" guid="{2a0f66ca-196d-4917-9861-a322388cb21d}" relid="0xb" referred="id-0067-0000036f">
+							<name>MoldConical</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="Aspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>455,112</value>
+									</regnode>
+								</regnode>
+							</regnode>
+						</reference>
+						<reference id="id-0067-0000041e" kind="DesignEntityRef" role="DesignEntityRef" guid="{e35c7142-7538-4211-ad1a-3fa101a3cc28}" relid="0xc" referred="id-0067-0000036d">
+							<name>MoldOgive</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="Aspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>140,203</value>
+									</regnode>
+								</regnode>
+							</regnode>
+						</reference>
+						<reference id="id-0067-0000041f" kind="DesignEntityRef" role="DesignEntityRef" guid="{863f8a0c-ee27-4220-b52f-fbd5ddf2618e}" relid="0xd" referred="id-0067-0000036e">
+							<name>MoldParabolic</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="Aspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>35,203</value>
+									</regnode>
+								</regnode>
+							</regnode>
+						</reference>
+					</model>
+					<model id="id-0065-00000322" kind="Not_operator" role="Not_operator" guid="{a87dcad2-18d7-4868-ab36-e8bbb79b069c}" relid="0x6" childrelidcntr="0x1">
+						<name>DoesNotHave</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>301,133</value>
+								</regnode>
+							</regnode>
+						</regnode>
+						<model id="id-0065-00000323" kind="Or_operator" role="Or_operator" guid="{d62fdc7d-105b-4065-9fef-97761e063652}" relid="0x1" childrelidcntr="0x3">
+							<name>AnyOfThese</name>
+							<regnode name="PartRegs" status="undefined">
+								<value></value>
+								<regnode name="Aspect" status="undefined">
+									<value></value>
+									<regnode name="Position" isopaque="yes">
+										<value>273,119</value>
+									</regnode>
+								</regnode>
+							</regnode>
+							<reference id="id-0067-00000420" kind="DesignEntityRef" role="DesignEntityRef" guid="{be21bb12-e1fb-459b-bb7e-83d8128cfc46}" relid="0x1" referred="id-0067-00000371">
+								<name>CncMill</name>
+								<regnode name="PartRegs" status="undefined">
+									<value></value>
+									<regnode name="Aspect" status="undefined">
+										<value></value>
+										<regnode name="Position" isopaque="yes">
+											<value>35,21</value>
+										</regnode>
+									</regnode>
+								</regnode>
+							</reference>
+							<reference id="id-0067-00000421" kind="DesignEntityRef" role="DesignEntityRef" guid="{d6e28f50-fc62-4357-a460-49bbeb06a313}" relid="0x2" referred="id-0067-000003e8">
+								<name>LaserCutter</name>
+								<regnode name="PartRegs" status="undefined">
+									<value></value>
+									<regnode name="Aspect" status="undefined">
+										<value></value>
+										<regnode name="Position" isopaque="yes">
+											<value>140,21</value>
+										</regnode>
+									</regnode>
+								</regnode>
+							</reference>
+							<reference id="id-0067-00000422" kind="DesignEntityRef" role="DesignEntityRef" guid="{5263d193-98cc-4f2b-9ffd-413372da9c8f}" relid="0x3" referred="id-0067-0000036b">
+								<name>MoldFin</name>
+								<regnode name="PartRegs" status="undefined">
+									<value></value>
+									<regnode name="Aspect" status="undefined">
+										<value></value>
+										<regnode name="Position" isopaque="yes">
+											<value>245,21</value>
+										</regnode>
+									</regnode>
+								</regnode>
+							</reference>
+						</model>
+					</model>
+					<reference id="id-0067-00000412" kind="DesignEntityRef" role="DesignEntityRef" guid="{e11d085b-5aa5-492d-bfe3-2e86b4684e8b}" relid="0x1" referred="id-0067-00000411">
+						<name>HighEndFacility</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>84,35</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</reference>
+					<connection id="id-0068-00000055" kind="Implies" role="Implies" guid="{16ea0de4-f729-44ce-be85-d78697471c36}" relid="0x4">
+						<name>Implies</name>
+						<regnode name="autorouterPref" isopaque="yes">
+							<value>Ew</value>
+						</regnode>
+						<connpoint role="dst" target="id-0065-0000031f"/>
+						<connpoint role="src" target="id-0067-00000412"/>
+					</connection>
+					<connection id="id-0068-00000056" kind="Implies" role="Implies" guid="{08cb13b0-3fa2-4dc3-bd3e-f6bed2b05012}" relid="0x7">
+						<name>Implies</name>
+						<regnode name="autorouterPref" isopaque="yes">
+							<value>Ew</value>
+						</regnode>
+						<connpoint role="dst" target="id-0065-00000322"/>
+						<connpoint role="src" target="id-0067-00000412"/>
+					</connection>
+				</model>
+				<model id="id-0065-00000324" kind="VisualConstraint" role="VisualConstraint" guid="{7bf01916-3813-427f-8fcc-5f09b1b785a1}" relid="0x18" childrelidcntr="0x1">
+					<name>SelectHighEndFacility</name>
+					<regnode name="PartRegs" status="undefined">
+						<value></value>
+						<regnode name="DesignSpaceAspect" status="undefined">
+							<value></value>
+							<regnode name="Position" isopaque="yes">
+								<value>917,217</value>
+							</regnode>
+						</regnode>
+					</regnode>
+					<attribute kind="Domain" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="ID">
+						<value>8</value>
+					</attribute>
+					<attribute kind="Inactive" status="meta">
+						<value>false</value>
+					</attribute>
+					<reference id="id-0067-00000423" kind="DesignEntityRef" role="DesignEntityRef" guid="{b0c5c515-bc69-47d3-8d45-0bb004f07a1c}" relid="0x1" referred="id-0067-00000411">
+						<name>HighEndFacility</name>
+						<regnode name="PartRegs" status="undefined">
+							<value></value>
+							<regnode name="Aspect" status="undefined">
+								<value></value>
+								<regnode name="Position" isopaque="yes">
+									<value>140,70</value>
+								</regnode>
+							</regnode>
+						</regnode>
+					</reference>
+				</model>
 			</model>
 		</folder>
-		<folder id="id-006a-0000001c" relid="0x7" childrelidcntr="0x4" kind="Components" guid="{8f76b574-03a9-4ef3-96e5-5fd986b84463}">
+		<folder id="id-006a-0000001c" relid="0x7" childrelidcntr="0x5" kind="Components" guid="{8f76b574-03a9-4ef3-96e5-5fd986b84463}">
 			<name>Components</name>
 			<folder id="id-006a-0000001d" relid="0x1" childrelidcntr="0x3" kind="Components" guid="{c9df1828-8c2b-464d-98ce-cb6fae43b2d3}">
 				<name>Facility</name>
@@ -33484,6 +33881,48 @@
 					</attribute>
 					<attribute kind="Path">
 						<value>./components/0she4fdx/</value>
+					</attribute>
+					<attribute kind="Revision" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="Supercedes" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="Version" status="meta">
+						<value></value>
+					</attribute>
+				</model>
+			</folder>
+			<folder id="id-006a-0000002f" relid="0x5" childrelidcntr="0x1" kind="Components" guid="{874ab535-3077-450f-b6e8-faf2a38369d2}">
+				<name>KnownFacility</name>
+				<model id="id-0065-0000031c" kind="Component" guid="{f87f3d5a-eb3b-43ad-9189-3545bfce1c84}" relid="0x1" childrelidcntr="0x0">
+					<name>HighEndFacility</name>
+					<attribute kind="AVMID">
+						<value>f1c610d9-1048-4aa4-9854-1a759aedc5fe</value>
+					</attribute>
+					<attribute kind="Cardinality" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="Classifications" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="Description" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="ID">
+						<value>3</value>
+					</attribute>
+					<attribute kind="InstanceGUID">
+						<value>f87f3d5a-eb3b-43ad-9189-3545bfce1c84</value>
+					</attribute>
+					<attribute kind="ManagedGUID" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="NumAssociatedConfigs" status="meta">
+						<value></value>
+					</attribute>
+					<attribute kind="Path">
+						<value>components/waoiq4ax/</value>
 					</attribute>
 					<attribute kind="Revision" status="meta">
 						<value></value>
