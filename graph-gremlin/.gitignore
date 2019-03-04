@@ -1,0 +1,17 @@
+config/
+dashboard/
+design-space/
+designs/
+export_for_dashboard_scoring.py
+index.html
+log/
+requirements/
+results/
+stats/
+test-benches/
+merged/
+metalink/
+*.mga
+*.zip
+manifest.project.json
+acms

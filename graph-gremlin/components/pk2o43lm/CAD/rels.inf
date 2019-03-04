@@ -1,0 +1,239 @@
+﻿CODING TABLE    SESSION ID      MODEL NAME
+                ----------      ----------
+
+CODING TABLE         2          GYROSCOPE_HOUSING.PRT 
+
+RELATION                           PARAMETER                 NEW VALUE
+--------                           ---------                 --- -----
+
+/*** Relations for GYROSCOPE_MOMENTUM_CONTROL:
+
+
+Initial Relations
+-----------------
+
+d5:2=gyroheight/3.0                D5:2                      5.333333e+02       
+
+Local Parameters
+----------------
+
+Symbolic constant               Current value        Properties                  
+------------------------------- -------------------- --------------------------- 
+DESCRIPTION                                          TYPE: String               
+                                                     SOURCE: User-Defined       
+                                                     ACCESS: Full               
+                                                     DESIGNATED: YES            
+                                                     DESCRIPTION:               
+
+MODELED_BY                                           TYPE: String               
+                                                     SOURCE: User-Defined       
+                                                     ACCESS: Full               
+                                                     DESIGNATED: YES            
+                                                     DESCRIPTION:               
+
+GYROHEIGHT                      1.600000e+03         TYPE: Real Number          
+                                                     SOURCE: User-Defined       
+                                                     ACCESS: Full               
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+
+Alternative Mass Property Parameters
+------------------------------------
+
+Symbolic constant               Current value        Properties                  
+------------------------------- -------------------- --------------------------- 
+PRO_MP_SOURCE                   GEOMETRY             TYPE: String               
+                                                     SOURCE: Alternate Mass Prop
+                                                     erties                     
+                                                     ACCESS: Full               
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+
+MP_DENSITY                                           TYPE: Unknown              
+                                                     SOURCE: Alternate Mass Prop
+                                                     erties                     
+                                                     ACCESS: Full               
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+
+PRO_MP_ALT_MASS                                      TYPE: Unknown              
+                                                     SOURCE: Alternate Mass Prop
+                                                     erties                     
+                                                     ACCESS: Full               
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+
+PRO_MP_ALT_VOLUME                                    TYPE: Unknown              
+                                                     SOURCE: Alternate Mass Prop
+                                                     erties                     
+                                                     ACCESS: Full               
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+
+PRO_MP_ALT_AREA                                      TYPE: Unknown              
+                                                     SOURCE: Alternate Mass Prop
+                                                     erties                     
+                                                     ACCESS: Full               
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+
+PRO_MP_ALT_COGX                                      TYPE: Unknown              
+                                                     SOURCE: Alternate Mass Prop
+                                                     erties                     
+                                                     ACCESS: Full               
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+
+PRO_MP_ALT_COGY                                      TYPE: Unknown              
+                                                     SOURCE: Alternate Mass Prop
+                                                     erties                     
+                                                     ACCESS: Full               
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+
+PRO_MP_ALT_COGZ                                      TYPE: Unknown              
+                                                     SOURCE: Alternate Mass Prop
+                                                     erties                     
+                                                     ACCESS: Full               
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+
+PRO_MP_ALT_IXX                                       TYPE: Unknown              
+                                                     SOURCE: Alternate Mass Prop
+                                                     erties                     
+                                                     ACCESS: Full               
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+
+PRO_MP_ALT_IYY                                       TYPE: Unknown              
+                                                     SOURCE: Alternate Mass Prop
+                                                     erties                     
+                                                     ACCESS: Full               
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+
+PRO_MP_ALT_IZZ                                       TYPE: Unknown              
+                                                     SOURCE: Alternate Mass Prop
+                                                     erties                     
+                                                     ACCESS: Full               
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+
+PRO_MP_ALT_IXZ                                       TYPE: Unknown              
+                                                     SOURCE: Alternate Mass Prop
+                                                     erties                     
+                                                     ACCESS: Full               
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+
+PRO_MP_ALT_IYZ                                       TYPE: Unknown              
+                                                     SOURCE: Alternate Mass Prop
+                                                     erties                     
+                                                     ACCESS: Full               
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+
+PRO_MP_ALT_IXY                                       TYPE: Unknown              
+                                                     SOURCE: Alternate Mass Prop
+                                                     erties                     
+                                                     ACCESS: Full               
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+
+PRO_MP_ALT_CSYS                 DEFAULT              TYPE: String               
+                                                     SOURCE: Alternate Mass Prop
+                                                     erties                     
+                                                     ACCESS: Full               
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+
+PRO_MP_ALT_INERTIA_ORIGIN       PRO_MP_ALT_CSYS      TYPE: String               
+                                                     SOURCE: Alternate Mass Prop
+                                                     erties                     
+                                                     ACCESS: Full               
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+
+Reported Mass Property Parameters
+---------------------------------
+
+Symbolic constant               Current value        Properties                  
+------------------------------- -------------------- --------------------------- 
+PRO_MP_MASS                                          TYPE: Unknown              
+                                                     SOURCE: Mass Properties    
+                                                     ACCESS: Locked             
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+
+PRO_MP_VOLUME                                        TYPE: Unknown              
+                                                     SOURCE: Mass Properties    
+                                                     ACCESS: Locked             
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+
+PRO_MP_DENSITY                                       TYPE: Unknown              
+                                                     SOURCE: Mass Properties    
+                                                     ACCESS: Locked             
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+
+PRO_MP_AREA                                          TYPE: Unknown              
+                                                     SOURCE: Mass Properties    
+                                                     ACCESS: Locked             
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+
+PRO_MP_COGX                                          TYPE: Unknown              
+                                                     SOURCE: Mass Properties    
+                                                     ACCESS: Locked             
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+
+PRO_MP_COGY                                          TYPE: Unknown              
+                                                     SOURCE: Mass Properties    
+                                                     ACCESS: Locked             
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+
+PRO_MP_COGZ                                          TYPE: Unknown              
+                                                     SOURCE: Mass Properties    
+                                                     ACCESS: Locked             
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+
+PRO_MP_IXX                                           TYPE: Unknown              
+                                                     SOURCE: Mass Properties    
+                                                     ACCESS: Locked             
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+
+PRO_MP_IYY                                           TYPE: Unknown              
+                                                     SOURCE: Mass Properties    
+                                                     ACCESS: Locked             
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+
+PRO_MP_IZZ                                           TYPE: Unknown              
+                                                     SOURCE: Mass Properties    
+                                                     ACCESS: Locked             
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+
+PRO_MP_IXZ                                           TYPE: Unknown              
+                                                     SOURCE: Mass Properties    
+                                                     ACCESS: Locked             
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+
+PRO_MP_IYZ                                           TYPE: Unknown              
+                                                     SOURCE: Mass Properties    
+                                                     ACCESS: Locked             
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+
+PRO_MP_IXY                                           TYPE: Unknown              
+                                                     SOURCE: Mass Properties    
+                                                     ACCESS: Locked             
+                                                     DESIGNATED: NO             
+                                                     DESCRIPTION:               
+

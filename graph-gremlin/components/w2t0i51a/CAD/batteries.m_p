@@ -1,0 +1,38 @@
+﻿                      MASS PROPERTIES OF THE PART BATTERIES
+
+                         VOLUME =  3.1814400e+08 MM^3
+                   SURFACE AREA =  1.1331200e+07 MM^2
+                        DENSITY =  2.7101966e-06 KILOGRAM / MM^3
+                           MASS =  8.6223279e+02 KILOGRAM 
+
+         CENTER OF GRAVITY with respect to _BATTERIES coordinate frame:
+X   Y   Z           0.0000000e+00  4.2636089e+02  0.0000000e+00  MM
+
+     INERTIA with respect to _BATTERIES coordinate frame:  (KILOGRAM * MM^2)
+
+INERTIA TENSOR:
+Ixx Ixy Ixz         2.9782239e+08  0.0000000e+00  0.0000000e+00
+Iyx Iyy Iyz         0.0000000e+00  3.1734621e+08  0.0000000e+00
+Izx Izy Izz         0.0000000e+00  0.0000000e+00  4.6716040e+08
+
+    INERTIA at CENTER OF GRAVITY with respect to _BATTERIES coordinate frame:
+                                                           (KILOGRAM * MM^2)    
+INERTIA TENSOR:
+Ixx Ixy Ixz         1.4108260e+08  0.0000000e+00  0.0000000e+00
+Iyx Iyy Iyz         0.0000000e+00  3.1734621e+08  0.0000000e+00
+Izx Izy Izz         0.0000000e+00  0.0000000e+00  3.1042061e+08
+
+                PRINCIPAL MOMENTS OF INERTIA:  (KILOGRAM * MM^2)
+I1  I2  I3          1.4108260e+08  3.1042061e+08  3.1734621e+08
+
+         ROTATION MATRIX from _BATTERIES orientation to PRINCIPAL AXES:
+                       1.00000        0.00000        0.00000
+                       0.00000        0.00000       -1.00000
+                       0.00000        1.00000        0.00000
+
+    ROTATION ANGLES from _BATTERIES orientation to PRINCIPAL AXES (degrees):
+angles about x  y  z   90.000          0.000          0.000 
+
+                RADII OF GYRATION with respect to PRINCIPAL AXES:
+R1  R2  R3          4.0450552e+02  6.0001624e+02  6.0667261e+02  MM
+

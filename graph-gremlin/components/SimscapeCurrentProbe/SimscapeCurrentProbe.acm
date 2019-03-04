@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SchemaVersion="2.5" ID="8386940e-dcf0-46a5-8c2c-29d0515a65db" Name="SimscapeCurrentProbe" Version="" xmlns="avm">
+  <Property xmlns:q1="avm" xsi:type="q1:PrimitiveProperty" Name="FileName" ID="param.id-0b15b67b-a31d-4002-96d5-71fb254e63ac" XPosition="1001" YPosition="364" xmlns="">
+    <Value ID="id-0b15b67b-a31d-4002-96d5-71fb254e63ac" Dimensions="" DimensionType="Scalar" DataType="String">
+      <ValueExpression xsi:type="q1:ParametricValue">
+        <AssignedValue xsi:type="q1:FixedValue">
+          <Value />
+        </AssignedValue>
+      </ValueExpression>
+    </Value>
+  </Property>
+  <Connector ConnectorComposition="" ID="id-d808117d-2526-4054-ab1a-30f3abe78b63" ApplyJoinData="" XPosition="595" YPosition="469" Notes="" Definition="" Name="simscape-negative-out" xmlns="" />
+  <Connector ConnectorComposition="" ID="id-3c444380-a115-431d-89e1-a65864913fe2" ApplyJoinData="" XPosition="98" YPosition="350" Notes="" Definition="" Name="simscape-positive-in" xmlns="" />
+  <Classifications xmlns="" />
+</Component>

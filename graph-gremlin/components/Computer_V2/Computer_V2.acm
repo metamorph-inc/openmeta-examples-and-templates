@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SchemaVersion="2.5" ID="5abff485-8759-4c0b-8131-d3b4be1c8216" Name="Computer_V2" Version="" xmlns="avm">
+  <DomainModel xmlns:q1="modelica" xsi:type="q1:ModelicaModel" Author="" Notes="" XPosition="378" YPosition="322" Name="ModelicaCtrl" Class="TbLib.Computer" xmlns="">
+    <Parameter XPosition="70" YPosition="525" Locator="p">
+      <Value ID="id-02d6ba17-81fc-479f-9028-c84cc7a11ae9">
+        <ValueExpression xmlns:q2="avm" xsi:type="q2:DerivedValue" ValueSource="id-6bb7fc37-15ca-40c6-8fd9-bb13ad9aaf75" />
+      </Value>
+    </Parameter>
+    <Parameter XPosition="63" YPosition="385" Locator="k">
+      <Value ID="id-50093c2b-26c7-4685-aa12-1e225abce68b">
+        <ValueExpression xmlns:q3="avm" xsi:type="q3:DerivedValue" ValueSource="id-f25e6a41-c8a3-46ed-8ff2-4915dc1a87da" />
+      </Value>
+    </Parameter>
+    <Parameter XPosition="77" YPosition="665" Locator="d">
+      <Value ID="id-9ff588d5-ec37-4bd6-a71d-346ce41b7062">
+        <ValueExpression xmlns:q4="avm" xsi:type="q4:DerivedValue" ValueSource="id-1a008eea-a636-45dc-bc58-7a28273c2b33" />
+      </Value>
+    </Parameter>
+    <Connector ID="id-7e6e8e95-e8f3-46bf-8a4b-e283b1ea66dd" PortMap="id-e55663d0-8cdf-4c5d-856d-727dba9d817f" Notes="" XPosition="483" Definition="" YPosition="63" Name="pin_p" Locator="pin_p" Class="Modelica.Electrical.Analog.Interfaces.PositivePin" />
+    <Connector ID="id-8ef77943-0daf-4757-8b4a-1da947765f12" PortMap="id-b151be5f-8e86-4afd-8f17-517be1e86dbc" Notes="" XPosition="490" Definition="" YPosition="462" Name="torqueReq" Locator="torque" Class="Modelica.Blocks.Interfaces.RealOutput" />
+    <Connector ID="id-01ad476c-97a1-4ad5-a106-acace2b3f143" PortMap="id-d1e5614b-ee35-49e2-8149-988e059d172f" Notes="" XPosition="77" Definition="" YPosition="119" Name="setpoint" Locator="targetAngle" Class="Modelica.Blocks.Interfaces.RealInput" />
+    <Connector ID="id-fefdb1e8-bc1e-4fd0-962e-f9f2b10192e1" PortMap="id-6e4b3aa6-1e3d-4dc7-95ed-f3a8e8e0941d" Notes="" XPosition="490" Definition="" YPosition="343" Name="flange_b" Locator="flange_b" Class="Modelica.Mechanics.Rotational.Interfaces.Flange_b" />
+    <Connector ID="id-3561134e-89da-4803-9a27-e251e317b7a7" PortMap="id-4deca737-44f3-41c0-ab1b-b2153fdcd0c1" Notes="" XPosition="483" Definition="" YPosition="203" Name="pin_n" Locator="pin_n" Class="Modelica.Electrical.Analog.Interfaces.NegativePin" />
+    <Connector ID="id-c79b9dba-f14d-44b2-a230-b2d82f0cb872" PortMap="id-8f966f22-6cdf-46a9-8b31-d8d443ab1fd0" Notes="" XPosition="483" Definition="" YPosition="553" Name="angleMeas" Locator="angleMeas" Class="Modelica.Blocks.Interfaces.RealInput" />
+  </DomainModel>
+  <DomainModel xmlns:q5="cad" xsi:type="q5:CADModel" UsesResource="id-992134d2-c4a6-4d81-bca3-b4c243e74b2d" Author="" Notes="" XPosition="217" YPosition="126" Name="Cad" ID="id-98eec40c-7489-4b7c-9fcd-5c2bd2080f60" Format="Creo" xmlns="">
+    <Datum xsi:type="q5:Plane" ID="id-1e8be400-deb7-464e-ad4f-f9d6ff3ea5d8" PortMap="id-afad208d-0653-4d1d-9be2-4a98685a8cfd" Notes="" XPosition="371" Definition="" YPosition="441" Name="Z_Normal_Center_Pln" DatumName="Z_Normal_Center_Pln" SurfaceReverseMap="" />
+    <Datum xsi:type="q5:Plane" ID="id-135795cd-bcb1-44a1-a693-439efea4aaec" PortMap="id-da517caa-b9da-48b6-b964-d464de76b3fc" Notes="" XPosition="392" Definition="" YPosition="280" Name="X_Normal_Center_Pln" DatumName="X_Normal_Center_Pln" SurfaceReverseMap="" />
+    <Datum xsi:type="q5:Plane" ID="id-03d43828-1fbd-4742-a24a-f2776b8d806f" PortMap="id-6e3e9e20-07b5-45a5-a195-d2dc6f6425a1" Notes="" XPosition="392" Definition="" YPosition="147" Name="Mount_Pln_Y" DatumName="Mount_Pln_Y" SurfaceReverseMap="" />
+    <Datum xsi:type="q5:Point" ID="id-f7408bb5-6945-4e22-b0ce-2030d9a5c6fb" PortMap="" Notes="" XPosition="609" Definition="" YPosition="189" Name="Computers_Center_Pt" DatumName="Computers_Center_Pt" />
+  </DomainModel>
+  <Property xmlns:q6="avm" xsi:type="q6:PrimitiveProperty" Name="cost" OnDataSheet="false" ID="property.id-121df159-9c0d-4fa8-b1aa-389168add1a6" XPosition="469" YPosition="476" xmlns="">
+    <Value ID="id-121df159-9c0d-4fa8-b1aa-389168add1a6" Dimensions="" DimensionType="Scalar" DataType="String">
+      <ValueExpression xsi:type="q6:FixedValue">
+        <Value>56666</Value>
+      </ValueExpression>
+    </Value>
+  </Property>
+  <Property xmlns:q7="avm" xsi:type="q7:PrimitiveProperty" Name="PID_GainD" ID="param.id-1a008eea-a636-45dc-bc58-7a28273c2b33" XPosition="112" YPosition="917" xmlns="">
+    <Value ID="id-1a008eea-a636-45dc-bc58-7a28273c2b33" Dimensions="" DimensionType="Scalar" DataType="String">
+      <ValueExpression xsi:type="q7:ParametricValue">
+        <AssignedValue xsi:type="q7:FixedValue">
+          <Value>0.1</Value>
+        </AssignedValue>
+      </ValueExpression>
+    </Value>
+  </Property>
+  <Property xmlns:q8="avm" xsi:type="q8:PrimitiveProperty" Name="Inertia" ID="param.id-a5329943-d4b5-4fdf-9342-d64c61879d0b" XPosition="112" YPosition="644" xmlns="">
+    <Value ID="id-a5329943-d4b5-4fdf-9342-d64c61879d0b" Dimensions="" DimensionType="Scalar" DataType="String">
+      <ValueExpression xsi:type="q8:ParametricValue">
+        <AssignedValue xsi:type="q8:FixedValue">
+          <Value>1</Value>
+        </AssignedValue>
+      </ValueExpression>
+    </Value>
+  </Property>
+  <Property xmlns:q9="avm" xsi:type="q9:PrimitiveProperty" Name="PID_GainP" ID="param.id-6bb7fc37-15ca-40c6-8fd9-bb13ad9aaf75" XPosition="112" YPosition="826" xmlns="">
+    <Value ID="id-6bb7fc37-15ca-40c6-8fd9-bb13ad9aaf75" Dimensions="" DimensionType="Scalar" DataType="String">
+      <ValueExpression xsi:type="q9:ParametricValue">
+        <AssignedValue xsi:type="q9:FixedValue">
+          <Value>10</Value>
+        </AssignedValue>
+      </ValueExpression>
+    </Value>
+  </Property>
+  <Property xmlns:q10="avm" xsi:type="q10:PrimitiveProperty" Name="torqueGain" ID="param.id-f25e6a41-c8a3-46ed-8ff2-4915dc1a87da" XPosition="112" YPosition="735" xmlns="">
+    <Value ID="id-f25e6a41-c8a3-46ed-8ff2-4915dc1a87da" Dimensions="" DimensionType="Scalar" DataType="String">
+      <ValueExpression xsi:type="q10:ParametricValue">
+        <AssignedValue xsi:type="q10:FixedValue">
+          <Value>10</Value>
+        </AssignedValue>
+      </ValueExpression>
+    </Value>
+  </Property>
+  <Property xmlns:q11="avm" xsi:type="q11:PrimitiveProperty" Name="EquivalentResistance" ID="param.id-e67dca1b-0b3c-4717-87eb-a4cf38253498" XPosition="567" YPosition="805" xmlns="">
+    <Value ID="id-e67dca1b-0b3c-4717-87eb-a4cf38253498" Dimensions="" DimensionType="Scalar" DataType="Real">
+      <ValueExpression xsi:type="q11:ParametricValue">
+        <AssignedValue xsi:type="q11:FixedValue">
+          <Value>1000.0</Value>
+        </AssignedValue>
+      </ValueExpression>
+    </Value>
+  </Property>
+  <ResourceDependency Name="Resource" Path="CAD\computers.prt.3" Hash="" ID="id-992134d2-c4a6-4d81-bca3-b4c243e74b2d" Notes="" XPosition="308" YPosition="28" xmlns="" />
+  <Connector ConnectorComposition="" ID="id-9e6f4848-69b0-4f58-9935-342645ea1ae9" ApplyJoinData="" XPosition="959" YPosition="931" Notes="" Definition="" Name="simscape-negative-out" xmlns="" />
+  <Connector ConnectorComposition="" ID="id-ae0a36a9-3b50-48f7-a6e2-c787d9547e12" ApplyJoinData="" XPosition="903" YPosition="847" Notes="" Definition="" Name="simscape-positive-in" xmlns="" />
+  <Connector ConnectorComposition="" ID="id-d2634dda-3cf3-4aea-9b46-fc8ccc502a1e" ApplyJoinData="" XPosition="728" YPosition="210" Notes="" Definition="" Name="shelfMount" xmlns="">
+    <Role xmlns:q12="modelica" xsi:type="q12:Connector" ID="id-4deca737-44f3-41c0-ab1b-b2153fdcd0c1" PortMap="" Notes="" XPosition="217" Definition="" YPosition="343" Name="VNeg" Locator="" Class="Modelica.Electrical.Analog.Interfaces.PositivePin" />
+    <Role xmlns:q13="modelica" xsi:type="q13:Connector" ID="id-6e4b3aa6-1e3d-4dc7-95ed-f3a8e8e0941d" PortMap="" Notes="" XPosition="217" Definition="" YPosition="434" Name="Flange_a" Locator="" Class="Modelica.Mechanics.Rotational.Interfaces.Flange_b" />
+    <Role xmlns:q14="modelica" xsi:type="q14:Connector" ID="id-e55663d0-8cdf-4c5d-856d-727dba9d817f" PortMap="" Notes="" XPosition="217" Definition="" YPosition="273" Name="VPos" Locator="" Class="Modelica.Electrical.Analog.Interfaces.PositivePin" />
+    <Role xmlns:q15="cad" xsi:type="q15:Plane" ID="id-6e3e9e20-07b5-45a5-a195-d2dc6f6425a1" PortMap="" Notes="" XPosition="224" Definition="" YPosition="98" Name="Mount_Base_Pln_Y" SurfaceReverseMap="" />
+    <Role xmlns:q16="cad" xsi:type="q16:Plane" ID="id-afad208d-0653-4d1d-9be2-4a98685a8cfd" PortMap="" Notes="" XPosition="224" Definition="" YPosition="182" Name="Mount_Center_Pln_Z" SurfaceReverseMap="" />
+    <Role xmlns:q17="cad" xsi:type="q17:Plane" ID="id-da517caa-b9da-48b6-b964-d464de76b3fc" PortMap="" Notes="" XPosition="224" Definition="" YPosition="14" Name="Mount_Center_Pln_X" SurfaceReverseMap="" />
+  </Connector>
+  <Connector ConnectorComposition="" ID="id-39d86205-cd39-4c4c-b5dc-2ed3d785afa9" ApplyJoinData="" XPosition="63" YPosition="364" Notes="" Definition="" Name="AttitudeSetpoint" xmlns="">
+    <Role xmlns:q18="modelica" xsi:type="q18:Connector" ID="id-d1e5614b-ee35-49e2-8149-988e059d172f" PortMap="" Notes="" XPosition="35" Definition="" YPosition="77" Name="Angle" Locator="" Class="Modelica.Blocks.Interfaces.RealOutput" />
+  </Connector>
+  <Connector ConnectorComposition="" ID="id-790d8eaf-7f45-4579-beba-dbb6d6e3831a" ApplyJoinData="" XPosition="63" YPosition="504" Notes="" Definition="" Name="controlBus" xmlns="">
+    <Role xmlns:q19="modelica" xsi:type="q19:Connector" ID="id-8f966f22-6cdf-46a9-8b31-d8d443ab1fd0" PortMap="" Notes="" XPosition="287" Definition="" YPosition="245" Name="angle" Locator="" Class="Modelica.Blocks.Interfaces.RealInput" />
+    <Role xmlns:q20="modelica" xsi:type="q20:Connector" ID="id-b151be5f-8e86-4afd-8f17-517be1e86dbc" PortMap="" Notes="" XPosition="287" Definition="" YPosition="126" Name="torqueReq" Locator="" Class="Modelica.Blocks.Interfaces.RealInput" />
+  </Connector>
+  <Connector ConnectorComposition="" ID="id-dd0d1a0b-1f43-4708-94ae-36f80c1a14b2" ApplyJoinData="" XPosition="721" YPosition="497" Notes="" Definition="" Name="angle" xmlns="">
+    <Role xmlns:q21="modelica" xsi:type="q21:Connector" ID="id-a472573b-4037-41ad-8ee1-655011ab2521" PortMap="id-c79b9dba-f14d-44b2-a230-b2d82f0cb872" Notes="" XPosition="35" Definition="" YPosition="77" Name="Angle" Locator="" Class="Modelica.Blocks.Interfaces.RealOutput" />
+  </Connector>
+  <Port xmlns:q22="cad" xsi:type="q22:Point" ID="id-3e6fa520-7550-47ff-afa2-893e4f03b259" PortMap="id-f7408bb5-6945-4e22-b0ce-2030d9a5c6fb" Notes="" XPosition="56" Definition="" YPosition="224" Name="Computers_Center_Pt" xmlns="" />
+  <Classifications xmlns="">Computer_v2</Classifications>
+</Component>

@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SchemaVersion="2.5" ID="ddfc5b15-2e01-4aff-9687-56f45657ce5f" Name="Gyroscope_V2" Version="" xmlns="avm">
+  <DomainModel xmlns:q1="modelica" xsi:type="q1:ModelicaModel" Author="bapty" Notes="" XPosition="364" YPosition="315" Name="ModelicGyro" Class="TbLib.Gyroscope" xmlns="">
+    <Parameter XPosition="84" YPosition="518" Locator="powergain">
+      <Value ID="id-dde3ab8f-91f7-443d-9685-23e15ddafc88">
+        <ValueExpression xmlns:q2="avm" xsi:type="q2:DerivedValue" ValueSource="id-4e240c59-345b-41f5-87bc-0bf0f3ce4c89" />
+      </Value>
+    </Parameter>
+    <Parameter XPosition="77" YPosition="399" Locator="torquegain">
+      <Value ID="id-2d2de52c-0c59-4b06-a334-f9f07681217f">
+        <ValueExpression xmlns:q3="avm" xsi:type="q3:DerivedValue" ValueSource="id-83cf5387-106d-4b64-9679-20b3469a9c17" />
+      </Value>
+    </Parameter>
+    <Parameter XPosition="91" YPosition="623" Locator="gyrosize">
+      <Value ID="id-73d8e1ff-9cba-4022-b379-925c78726672">
+        <ValueExpression xmlns:q4="avm" xsi:type="q4:DerivedValue" ValueSource="id-05e8a4e6-5733-43ff-a643-72c6260700a5" />
+      </Value>
+    </Parameter>
+    <Connector ID="id-6dcb35f6-8125-42d3-a858-9cfd35b929a4" PortMap="id-524bb90a-207f-4b00-8b09-d3998e123ede" Notes="" XPosition="490" Definition="" YPosition="294" Name="angle" Locator="angle" Class="Modelica.Blocks.Interfaces.RealOutput" />
+    <Connector ID="id-aae71196-ca7d-4e93-bdb0-0fd24f70318a" PortMap="" Notes="" XPosition="497" Definition="" YPosition="112" Name="pin_n" Locator="pin_n" Class="Modelica.Electrical.Analog.Interfaces.NegativePin" />
+    <Connector ID="id-2493bab8-1889-4aef-a382-30860d4d7bff" PortMap="id-41857c22-3f16-4f9f-9d52-11abcc67a042" Notes="" XPosition="63" Definition="" YPosition="259" Name="torqueReq" Locator="torqueReq" Class="Modelica.Blocks.Interfaces.RealInput" />
+    <Connector ID="id-e017955e-ca91-4d31-b429-fe604af326e6" PortMap="" Notes="" XPosition="490" Definition="" YPosition="28" Name="pin_p" Locator="pin_p" Class="Modelica.Electrical.Analog.Interfaces.PositivePin" />
+    <Connector ID="id-d7c2f4ab-8a1b-46d5-bf90-a6f2131bf790" PortMap="id-c4f0f728-a2b7-4f26-98d3-66737d7ba151" Notes="" XPosition="490" Definition="" YPosition="378" Name="flange_b" Locator="flange_b" Class="Modelica.Mechanics.Rotational.Interfaces.Flange_b" />
+    <Connector ID="id-a9344d44-f17e-4944-a3ea-74e78ecb0c2b" PortMap="id-8d75649f-1380-4755-8d56-40ae3e86fb20" Notes="" XPosition="490" Definition="" YPosition="210" Name="current" Locator="current" Class="Modelica.Blocks.Interfaces.RealOutput" />
+    <Connector ID="id-77e79c79-d647-4630-a9bd-cd85d8b02719" PortMap="id-c140b323-1b20-4ca1-a408-c4d66129df5e" Notes="" XPosition="490" Definition="" YPosition="623" Name="temp" Locator="temp" Class="Modelica.Blocks.Interfaces.RealOutput" />
+    <Connector ID="id-2c0a5b2f-6a8d-442a-9798-a36acb04de13" PortMap="" Notes="" XPosition="497" Definition="" YPosition="504" Name="Heat_a" Locator="Heat_a" Class="Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a" />
+  </DomainModel>
+  <DomainModel xmlns:q5="cad" xsi:type="q5:CADModel" UsesResource="id-b325bd86-9ac9-404e-9b98-fafb95316fca" Author="" Notes="" XPosition="329" YPosition="119" Name="Gyroscope_cadl" ID="id-7050e0df-e319-4aa1-96bb-433bdb606743" Format="Creo" xmlns="">
+    <Datum xsi:type="q5:Plane" ID="id-9e2f6574-af39-4548-b129-57822ed7acc1" PortMap="id-2ad5de38-27b5-4c84-9cc7-8c24ed8fc32c" Notes="" XPosition="392" Definition="" YPosition="280" Name="X_Normal_Center_Pln" DatumName="X_Normal_Center_Pln" SurfaceReverseMap="" />
+    <Datum xsi:type="q5:Plane" ID="id-0fd71f69-250e-4e0b-baa1-861c63a180c8" PortMap="" Notes="" XPosition="392" Definition="" YPosition="147" Name="Mount_Pln_Y" DatumName="Mount_Pln_Y" SurfaceReverseMap="" />
+    <Datum xsi:type="q5:Plane" ID="id-f2ac3492-98d5-45aa-87fb-db639f2c2cda" PortMap="id-9bc533de-1e7d-48f1-9992-b71a7437cce8" Notes="" XPosition="371" Definition="" YPosition="441" Name="Z_Normal_Center_Pln" DatumName="Z_Normal_Center_Pln" SurfaceReverseMap="" />
+    <Datum xsi:type="q5:Point" ID="id-d8ccb261-a807-45cc-a9b8-b90b071abf5a" PortMap="id-7f1c358f-a8bb-45ed-870e-4aec215c03be" Notes="" XPosition="749" Definition="" YPosition="168" Name="Gyroscope_Center_Pt" DatumName="Gyroscope_Center_Pt" />
+    <Parameter XPosition="336" YPosition="553" Name="gyroheight">
+      <Value ID="id-76b4db72-ffc3-4cd3-bd22-578bc18d45ee" Unit="" DataType="Real">
+        <ValueExpression xmlns:q6="avm" xsi:type="q6:DerivedValue" ValueSource="id-05e8a4e6-5733-43ff-a643-72c6260700a5" />
+      </Value>
+    </Parameter>
+  </DomainModel>
+  <Property xmlns:q7="avm" xsi:type="q7:PrimitiveProperty" Name="cost" OnDataSheet="false" ID="property.id-765326ff-4cd2-444e-8e95-1271e566ac55" XPosition="784" YPosition="28" xmlns="">
+    <Value ID="id-765326ff-4cd2-444e-8e95-1271e566ac55" Dimensions="" DimensionType="Scalar" DataType="String">
+      <ValueExpression xsi:type="q7:FixedValue">
+        <Value>77000</Value>
+      </ValueExpression>
+    </Value>
+  </Property>
+  <Property xmlns:q8="avm" xsi:type="q8:PrimitiveProperty" Name="EquivalentResistance" ID="param.id-ca6a3bc2-f8f9-4584-9ef5-0c2d2577161f" XPosition="371" YPosition="700" xmlns="">
+    <Value ID="id-ca6a3bc2-f8f9-4584-9ef5-0c2d2577161f" Dimensions="" DimensionType="Scalar" DataType="Real">
+      <ValueExpression xsi:type="q8:ParametricValue">
+        <AssignedValue xsi:type="q8:FixedValue">
+          <Value>100.0</Value>
+        </AssignedValue>
+      </ValueExpression>
+    </Value>
+  </Property>
+  <Property xmlns:q9="avm" xsi:type="q9:PrimitiveProperty" Name="gyro_size" ID="param.id-05e8a4e6-5733-43ff-a643-72c6260700a5" XPosition="42" YPosition="511" xmlns="">
+    <Value ID="id-05e8a4e6-5733-43ff-a643-72c6260700a5" Dimensions="" DimensionType="Scalar" DataType="String">
+      <ValueExpression xsi:type="q9:ParametricValue">
+        <AssignedValue xsi:type="q9:FixedValue">
+          <Value>1612</Value>
+        </AssignedValue>
+      </ValueExpression>
+    </Value>
+  </Property>
+  <Property xmlns:q10="avm" xsi:type="q10:PrimitiveProperty" Name="power_ratio" ID="param.id-4e240c59-345b-41f5-87bc-0bf0f3ce4c89" XPosition="42" YPosition="469" xmlns="">
+    <Value ID="id-4e240c59-345b-41f5-87bc-0bf0f3ce4c89" Dimensions="" DimensionType="Scalar" DataType="String">
+      <ValueExpression xsi:type="q10:ParametricValue">
+        <AssignedValue xsi:type="q10:FixedValue">
+          <Value>10</Value>
+        </AssignedValue>
+      </ValueExpression>
+    </Value>
+  </Property>
+  <Property xmlns:q11="avm" xsi:type="q11:PrimitiveProperty" Name="torque_ratio" ID="param.id-83cf5387-106d-4b64-9679-20b3469a9c17" XPosition="42" YPosition="427" xmlns="">
+    <Value ID="id-83cf5387-106d-4b64-9679-20b3469a9c17" Dimensions="" DimensionType="Scalar" DataType="String">
+      <ValueExpression xsi:type="q11:ParametricValue">
+        <AssignedValue xsi:type="q11:FixedValue">
+          <Value>130</Value>
+        </AssignedValue>
+      </ValueExpression>
+    </Value>
+  </Property>
+  <ResourceDependency Name="Resource" Path="CAD\gyroscope_momentum_control.asm.9" Hash="" ID="id-b325bd86-9ac9-404e-9b98-fafb95316fca" Notes="" XPosition="413" YPosition="21" xmlns="" />
+  <Connector ConnectorComposition="" ID="id-3a56b2c4-b53c-46be-b5db-a23fcc85372a" ApplyJoinData="" XPosition="56" YPosition="238" Notes="" Definition="" Name="controlBus" xmlns="">
+    <Role xmlns:q12="modelica" xsi:type="q12:Connector" ID="id-524bb90a-207f-4b00-8b09-d3998e123ede" PortMap="" Notes="" XPosition="287" Definition="" YPosition="245" Name="angle" Locator="" Class="Modelica.Blocks.Interfaces.RealInput" />
+    <Role xmlns:q13="modelica" xsi:type="q13:Connector" ID="id-41857c22-3f16-4f9f-9d52-11abcc67a042" PortMap="" Notes="" XPosition="287" Definition="" YPosition="126" Name="torqueReq" Locator="" Class="Modelica.Blocks.Interfaces.RealInput" />
+  </Connector>
+  <Connector ConnectorComposition="" ID="id-eb13f4ca-84a0-422d-b7a7-95e736d18c66" ApplyJoinData="" XPosition="693" YPosition="833" Notes="" Definition="" Name="simscape-negative-out" xmlns="" />
+  <Connector ConnectorComposition="" ID="id-1596f16e-6e2f-4880-b7c5-cbb2518b839c" ApplyJoinData="" XPosition="686" YPosition="700" Notes="" Definition="" Name="simscape-positive-in" xmlns="" />
+  <Connector ConnectorComposition="" ID="id-66cd0c71-75ea-47e8-bb70-5b1e47c74d47" ApplyJoinData="" XPosition="749" YPosition="182" Notes="" Definition="" Name="shelfMount" xmlns="">
+    <Role xmlns:q14="modelica" xsi:type="q14:Connector" ID="id-6d00d48c-5e6c-4a5c-a319-4138b6b96dc1" PortMap="id-aae71196-ca7d-4e93-bdb0-0fd24f70318a" Notes="" XPosition="217" Definition="" YPosition="343" Name="VNeg" Locator="" Class="Modelica.Electrical.Analog.Interfaces.PositivePin" />
+    <Role xmlns:q15="modelica" xsi:type="q15:Connector" ID="id-f3b2f54d-abd5-45ea-a577-a3927e0eece1" PortMap="id-e017955e-ca91-4d31-b429-fe604af326e6" Notes="" XPosition="217" Definition="" YPosition="273" Name="VPos" Locator="" Class="Modelica.Electrical.Analog.Interfaces.PositivePin" />
+    <Role xmlns:q16="modelica" xsi:type="q16:Connector" ID="id-cad1d06b-1884-406f-9cd3-66113a01a9e6" PortMap="id-2c0a5b2f-6a8d-442a-9798-a36acb04de13" Notes="" XPosition="217" Definition="" YPosition="518" Name="Heat_a" Locator="Heat_a" Class="Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a" />
+    <Role xmlns:q17="modelica" xsi:type="q17:Connector" ID="id-c4f0f728-a2b7-4f26-98d3-66737d7ba151" PortMap="" Notes="" XPosition="217" Definition="" YPosition="434" Name="Flange_a" Locator="" Class="Modelica.Mechanics.Rotational.Interfaces.Flange_a" />
+    <Role xmlns:q18="cad" xsi:type="q18:Plane" ID="id-f4c81e2e-7524-456b-bada-6738e5d53919" PortMap="id-0fd71f69-250e-4e0b-baa1-861c63a180c8" Notes="" XPosition="224" Definition="" YPosition="98" Name="Mount_Base_Pln_Y" SurfaceReverseMap="" />
+    <Role xmlns:q19="cad" xsi:type="q19:Plane" ID="id-9bc533de-1e7d-48f1-9992-b71a7437cce8" PortMap="" Notes="" XPosition="224" Definition="" YPosition="182" Name="Mount_Center_Pln_Z" SurfaceReverseMap="" />
+    <Role xmlns:q20="cad" xsi:type="q20:Plane" ID="id-2ad5de38-27b5-4c84-9cc7-8c24ed8fc32c" PortMap="" Notes="" XPosition="224" Definition="" YPosition="14" Name="Mount_Center_Pln_X" SurfaceReverseMap="" />
+  </Connector>
+  <Connector ConnectorComposition="" ID="id-e432af37-0e89-4ec9-9706-d6a32585d503" ApplyJoinData="" XPosition="833" YPosition="462" Notes="" Definition="" Name="i" xmlns="">
+    <Role xmlns:q21="modelica" xsi:type="q21:Connector" ID="id-8d75649f-1380-4755-8d56-40ae3e86fb20" PortMap="" Notes="" XPosition="70" Definition="" YPosition="91" Name="i" Locator="i" Class="Modelica.Blocks.Interfaces.RealOutput" />
+  </Connector>
+  <Connector ConnectorComposition="" ID="id-4ef68d5a-96e2-4406-b72c-124c157a47b6" ApplyJoinData="" XPosition="833" YPosition="567" Notes="" Definition="" Name="temp" xmlns="">
+    <Role xmlns:q22="modelica" xsi:type="q22:Connector" ID="id-c140b323-1b20-4ca1-a408-c4d66129df5e" PortMap="" Notes="" XPosition="49" Definition="" YPosition="91" Name="temp" Locator="temp" Class="Modelica.Blocks.Interfaces.RealOutput" />
+  </Connector>
+  <Port xmlns:q23="cad" xsi:type="q23:Point" ID="id-7f1c358f-a8bb-45ed-870e-4aec215c03be" PortMap="" Notes="" XPosition="91" Definition="" YPosition="140" Name="gyroscope_center_pt" xmlns="" />
+  <Classifications xmlns="" />
+</Component>
