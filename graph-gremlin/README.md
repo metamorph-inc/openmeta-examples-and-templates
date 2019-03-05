@@ -6,7 +6,7 @@ and run graph algorithms on it, using Gremlin's Python bindings.  The included
 `openmeta_to_gremlin.py` script will, when run against a component assembly
 within a testbench, generate a graph corresponding to the component assembly
 using Gremlin, then use that graph to determine the top 10 objects in the
-graph by degree complexity (this can be easily replaced with your own graph
+graph by degree centrality (this can be easily replaced with your own graph
 traversal code).
 
 Prerequisites
@@ -45,3 +45,20 @@ workflow that runs the `openmeta_to_gremlin.py` script in your model.  See the
 [OpenMETA Documentation][openmeta-tb-tutorial] for a walkthrough.
 
 [openmeta-tb-tutorial]: http://docs.metamorphsoftware.com/doc/tutorials/hello_world/hello_world_analyzing_our_company.html
+
+Results
+-------
+
+The top ten elements in the MorphSat_v3 component assembly by degree centrality,
+as computed using Gremlin:
+
+    [{u'degree': 40L, u'name': u'MorphSat_V3', u'v': v[170057]},
+     {u'degree': 36L, u'name': u'Base_Module_Frame', u'v': v[170070]},
+     {u'degree': 26L, u'name': u'Shelf1', u'v': v[172580]},
+     {u'degree': 26L, u'name': u'Shelf3', u'v': v[174951]},
+     {u'degree': 26L, u'name': u'Shelf2', u'v': v[173348]},
+     {u'degree': 26L, u'name': u'Computer', u'v': v[175719]},
+     {u'degree': 24L, u'name': u'CADModel', u'v': v[172720]},
+     {u'degree': 24L, u'name': u'CADModel', u'v': v[175091]},
+     {u'degree': 24L, u'name': u'CADModel', u'v': v[173488]},
+     {u'degree': 23L, u'name': u'Battery', u'v': v[170931]}]
