@@ -18,7 +18,7 @@ from cStringIO import StringIO
 
 import udm
 import six
-
+import csv
 
 from gremlin_python import statics
 from gremlin_python.process.anonymous_traversal import traversal
@@ -57,6 +57,12 @@ def invoke(focusObject, rootObject, componentParameters, **kwargs):
         .limit(10).toList())
 
     log(pprint.pformat(degrees))
+
+    with open(os.path.join(componentParameters["output_dir"], "centrality.csv"), "wb") as output_file:
+        writer = csv.DictWriter(output_file, ["name", "degree"], extrasaction="ignore")
+
+        writer.writeheader()
+        writer.writerows(degrees)
 
     componentParameters["runCommand"] = "cmd.exe /c echo"
 
