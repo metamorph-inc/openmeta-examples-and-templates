@@ -4,7 +4,7 @@ OpenMETA Gremlin Graph Example
 This example demonstrates how to bring an OpenMETA model into a graph database
 and run graph algorithms on it, using Gremlin's Python bindings.  The included
 `openmeta_to_gremlin.py` script will, when run against a component assembly
-within a testbench, generate a graph corresponding to the component assembly
+within a test bench, generate a graph corresponding to the component assembly
 using Gremlin, then use that graph to determine the top 10 objects in the
 graph by degree centrality (this can be easily replaced with your own graph
 traversal code).
@@ -37,10 +37,10 @@ Using
 The `openmeta_to_gremlin.py` script is designed to work with OpenMETA's
 CyPhyPython interpreter--  in `Spacecraft.xme`, there is an example testbench
 (at "Testing/GraphTB") that will run the `openmeta_to_gremlin` script.  Open
-the testbench in OpenMETA and run the Master Interpreter to run the testbench;
-the scripts output will be placed in the testbench's results folder.
+the test bench in OpenMETA and run the Master Interpreter to run the test bench;
+the script's output will be placed in the test bench's results folder.
 
-To apply the script to your own models, you'll need to create a testbench and
+To apply the script to your own models, you'll need to create a test bench and
 workflow that runs the `openmeta_to_gremlin.py` script in your model.  See the
 [OpenMETA Documentation][openmeta-tb-tutorial] for a walkthrough.
 
