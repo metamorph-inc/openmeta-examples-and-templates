@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE project SYSTEM "mga.dtd">
 
-<project guid="{C2C4C22F-87CF-4DF8-BF83-DDE8F2D0CEB1}" cdate="Wed Jun  5 13:28:42 2019" mdate="Wed Jun  5 13:28:42 2019" version="" metaguid="{B0A55A64-CF79-0703-0300-5A66F1D508F3}" metaversion="14.13-t35" metaname="CyPhyML">
+<project guid="{83144926-6FF4-48CD-8A2D-540DBA5C9333}" cdate="Wed Jun  5 13:28:42 2019" mdate="Wed Jun  5 13:28:42 2019" version="" metaguid="{B0A55A64-CF79-0703-0300-5A66F1D508F3}" metaversion="14.13-t35" metaname="CyPhyML">
 	<name>RootFolder</name>
 	<comment></comment>
 	<author></author>
@@ -8751,7 +8751,7 @@
 		</folder>
 		<folder id="id-006a-0000001d" relid="0x7" childrelidcntr="0x1" kind="DesignSpace" guid="{aeeead96-5dee-42b9-b025-cfb93d524d37}">
 			<name>DesignSpaces</name>
-			<model id="id-0065-00000267" kind="DesignContainer" guid="{51513fad-1a5a-4f66-855b-a5ac3dd4e97c}" relid="0x1" childrelidcntr="0x63">
+			<model id="id-0065-00000267" kind="DesignContainer" guid="{51513fad-1a5a-4f66-855b-a5ac3dd4e97c}" relid="0x1" childrelidcntr="0x65">
 				<name>Chipotle</name>
 				<attribute kind="Cardinality" status="meta">
 					<value></value>
@@ -15701,7 +15701,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c0c" kind="Property" role="Property" guid="{8e746455-6d73-482b-a269-ac0b0faef433}" derivedfrom="id-0067-0000073e" isinstance="no" isprimary="yes" relid="0x2" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_SourCream</name>
+									<name>cholesterol</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -15749,7 +15749,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c0d" kind="Property" role="Property" guid="{b4f87ca4-fc09-4987-b298-25bf26056dc3}" derivedfrom="id-0067-00000185" isinstance="no" isprimary="yes" relid="0x4" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_SourCream</name>
+									<name>carbs</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -15821,7 +15821,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c0e" kind="Property" role="Property" guid="{60e18c30-949c-444b-9757-26c126beb9a3}" derivedfrom="id-0067-00000187" isinstance="no" isprimary="yes" relid="0x6" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_SourCream</name>
+									<name>sugars</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -15893,7 +15893,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c0f" kind="Property" role="Property" guid="{c06af9b8-1f05-457f-b4a2-ae73088bf70e}" derivedfrom="id-0067-00000744" isinstance="no" isprimary="yes" relid="0x8" isbound="yes">
-									<name>SimpleFormula_SourCream</name>
+									<name>vegetarian</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -15941,7 +15941,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c10" kind="Property" role="Property" guid="{c123b6c7-f5f0-4aec-9530-9ea5cc693772}" derivedfrom="id-0067-00000183" isinstance="no" isprimary="yes" relid="0xa" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_SourCream</name>
+									<name>fat</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -16013,7 +16013,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c11" kind="Property" role="Property" guid="{5cf71e94-bd13-439e-b6a6-dde7fe3421e3}" derivedfrom="id-0067-0000074a" isinstance="no" isprimary="yes" relid="0xc" isbound="yes">
-									<name>SimpleFormula_SourCream</name>
+									<name>vegan</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -16061,7 +16061,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c12" kind="Property" role="Property" guid="{46c53c3b-0ae6-43f2-b076-5fe7fc18817c}" derivedfrom="id-0067-00000186" isinstance="no" isprimary="yes" relid="0xe" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_SourCream</name>
+									<name>protein</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -16133,7 +16133,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c13" kind="Property" role="Property" guid="{9329da52-9a67-4433-bd98-b5379bb81af1}" derivedfrom="id-0067-00000182" isinstance="no" isprimary="yes" relid="0x10" isbound="yes">
-									<name>SimpleFormula_SourCream</name>
+									<name>calories</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -16205,7 +16205,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c14" kind="Property" role="Property" guid="{9652f467-8a4d-4580-ac1d-c82f6b2d3dbb}" derivedfrom="id-0067-00000184" isinstance="no" isprimary="yes" relid="0x12" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_SourCream</name>
+									<name>saturatedfat</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -16418,7 +16418,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c16" kind="Property" role="Property" guid="{50886e3f-fa24-4e75-ab38-d0459660496a}" derivedfrom="id-0067-0000073e" isinstance="no" isprimary="yes" relid="0x2" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_Queso</name>
+									<name>cholesterol</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -16466,7 +16466,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c17" kind="Property" role="Property" guid="{a0700d75-5f6a-46dc-b96d-9d8fe286701c}" derivedfrom="id-0067-00000185" isinstance="no" isprimary="yes" relid="0x4" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_Queso</name>
+									<name>carbs</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -16538,7 +16538,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c18" kind="Property" role="Property" guid="{6db24fdc-a79b-41d1-8cae-b079a70bd173}" derivedfrom="id-0067-00000187" isinstance="no" isprimary="yes" relid="0x6" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_Queso</name>
+									<name>sugars</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -16610,7 +16610,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c19" kind="Property" role="Property" guid="{cceb72c8-5595-4e8e-9d89-1ad6e4598860}" derivedfrom="id-0067-00000744" isinstance="no" isprimary="yes" relid="0x8" isbound="yes">
-									<name>SimpleFormula_Queso</name>
+									<name>vegetarian</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -16658,7 +16658,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c1a" kind="Property" role="Property" guid="{fd92666e-fc11-4af9-97d9-182f28b4d42a}" derivedfrom="id-0067-00000183" isinstance="no" isprimary="yes" relid="0xa" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_Queso</name>
+									<name>fat</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -16730,7 +16730,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c1b" kind="Property" role="Property" guid="{93f13de1-c4ae-4970-ada7-ca421828aad7}" derivedfrom="id-0067-0000074a" isinstance="no" isprimary="yes" relid="0xc" isbound="yes">
-									<name>SimpleFormula_Queso</name>
+									<name>vegan</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -16778,7 +16778,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c1c" kind="Property" role="Property" guid="{b10bf48a-3fa5-4063-88f6-19e0af976267}" derivedfrom="id-0067-00000186" isinstance="no" isprimary="yes" relid="0xe" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_Queso</name>
+									<name>protein</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -16850,7 +16850,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c1d" kind="Property" role="Property" guid="{aef71a61-0ed8-4224-b8fb-1b8c75afb112}" derivedfrom="id-0067-00000182" isinstance="no" isprimary="yes" relid="0x10" isbound="yes">
-									<name>SimpleFormula_Queso</name>
+									<name>calories</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -16922,7 +16922,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c1e" kind="Property" role="Property" guid="{ccd50d2f-7f27-4f2a-b9a9-303c09c4d4de}" derivedfrom="id-0067-00000184" isinstance="no" isprimary="yes" relid="0x12" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_Queso</name>
+									<name>saturatedfat</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -17147,7 +17147,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c20" kind="Property" role="Property" guid="{34d5ae36-511c-44c2-815e-9403c2e1c580}" derivedfrom="id-0067-0000073e" isinstance="no" isprimary="yes" relid="0x2" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_TomatilloRedChiliSalsa</name>
+									<name>cholesterol</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -17195,7 +17195,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c21" kind="Property" role="Property" guid="{226f61fb-27af-4554-bdea-66b59295cddd}" derivedfrom="id-0067-00000185" isinstance="no" isprimary="yes" relid="0x4" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_TomatilloRedChiliSalsa</name>
+									<name>carbs</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -17267,7 +17267,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c22" kind="Property" role="Property" guid="{97a977e3-19fa-4d85-a660-66711b56480c}" derivedfrom="id-0067-00000187" isinstance="no" isprimary="yes" relid="0x6" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_TomatilloRedChiliSalsa</name>
+									<name>sugars</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -17339,7 +17339,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c23" kind="Property" role="Property" guid="{55f3eb16-c44c-4916-8018-f3259a398ced}" derivedfrom="id-0067-00000744" isinstance="no" isprimary="yes" relid="0x8" isbound="yes">
-									<name>SimpleFormula_TomatilloRedChiliSalsa</name>
+									<name>vegetarian</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -17387,7 +17387,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c24" kind="Property" role="Property" guid="{07894fe5-ea8f-4ac5-94f6-70983b5de013}" derivedfrom="id-0067-00000183" isinstance="no" isprimary="yes" relid="0xa" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_TomatilloRedChiliSalsa</name>
+									<name>fat</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -17459,7 +17459,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c25" kind="Property" role="Property" guid="{02343f80-2441-4786-89ed-9ed994295573}" derivedfrom="id-0067-0000074a" isinstance="no" isprimary="yes" relid="0xc" isbound="yes">
-									<name>SimpleFormula_TomatilloRedChiliSalsa</name>
+									<name>vegan</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -17507,7 +17507,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c26" kind="Property" role="Property" guid="{23073758-fb22-4699-8122-0a0d8de026b9}" derivedfrom="id-0067-00000186" isinstance="no" isprimary="yes" relid="0xe" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_TomatilloRedChiliSalsa</name>
+									<name>protein</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -17579,7 +17579,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c27" kind="Property" role="Property" guid="{af46b4ca-0e4e-4c2e-897b-94dca3e66ba8}" derivedfrom="id-0067-00000182" isinstance="no" isprimary="yes" relid="0x10" isbound="yes">
-									<name>SimpleFormula_TomatilloRedChiliSalsa</name>
+									<name>calories</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -17651,7 +17651,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c28" kind="Property" role="Property" guid="{6f78ccd4-f6ac-4c5c-9551-fd8f98d64f84}" derivedfrom="id-0067-00000184" isinstance="no" isprimary="yes" relid="0x12" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_TomatilloRedChiliSalsa</name>
+									<name>saturatedfat</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -17876,7 +17876,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c2a" kind="Property" role="Property" guid="{a5a87dea-83ef-4a44-a7b3-9607d9b3bd92}" derivedfrom="id-0067-0000073e" isinstance="no" isprimary="yes" relid="0x2" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_Guacamole</name>
+									<name>cholesterol</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -17924,7 +17924,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c2b" kind="Property" role="Property" guid="{5924270e-3a27-49f7-8049-e38b16b0fb04}" derivedfrom="id-0067-00000185" isinstance="no" isprimary="yes" relid="0x4" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_Guacamole</name>
+									<name>carbs</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -17996,7 +17996,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c2c" kind="Property" role="Property" guid="{a8333015-0826-44ef-aa35-c503577fe649}" derivedfrom="id-0067-00000187" isinstance="no" isprimary="yes" relid="0x6" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_Guacamole</name>
+									<name>sugars</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -18068,7 +18068,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c2d" kind="Property" role="Property" guid="{430e2000-bdce-47db-a500-8a5fe73fe6b5}" derivedfrom="id-0067-00000744" isinstance="no" isprimary="yes" relid="0x8" isbound="yes">
-									<name>SimpleFormula_Guacamole</name>
+									<name>vegetarian</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -18116,7 +18116,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c2e" kind="Property" role="Property" guid="{cfca4c33-31bd-4a6f-983c-7d205e5e6f15}" derivedfrom="id-0067-00000183" isinstance="no" isprimary="yes" relid="0xa" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_Guacamole</name>
+									<name>fat</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -18188,7 +18188,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c2f" kind="Property" role="Property" guid="{7716c6ed-9fce-45d5-b740-b9ba791d859c}" derivedfrom="id-0067-0000074a" isinstance="no" isprimary="yes" relid="0xc" isbound="yes">
-									<name>SimpleFormula_Guacamole</name>
+									<name>vegan</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -18236,7 +18236,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c30" kind="Property" role="Property" guid="{95899162-7007-472e-8b68-92ae5ead4c87}" derivedfrom="id-0067-00000186" isinstance="no" isprimary="yes" relid="0xe" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_Guacamole</name>
+									<name>protein</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -18308,7 +18308,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c31" kind="Property" role="Property" guid="{fc4a2e5b-a66b-46ee-9281-d6fed4a747c9}" derivedfrom="id-0067-00000182" isinstance="no" isprimary="yes" relid="0x10" isbound="yes">
-									<name>SimpleFormula_Guacamole</name>
+									<name>calories</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -18380,7 +18380,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c32" kind="Property" role="Property" guid="{5934c0b0-10e5-4516-94d7-38f226d66957}" derivedfrom="id-0067-00000184" isinstance="no" isprimary="yes" relid="0x12" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_Guacamole</name>
+									<name>saturatedfat</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -18605,7 +18605,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c34" kind="Property" role="Property" guid="{c6a3c6b8-9fea-4563-990c-d24eac102d6b}" derivedfrom="id-0067-0000073e" isinstance="no" isprimary="yes" relid="0x2" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_RoastedChiliCornSalsa</name>
+									<name>cholesterol</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -18653,7 +18653,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c35" kind="Property" role="Property" guid="{4923b976-247d-4373-8deb-ac0419cbbc7c}" derivedfrom="id-0067-00000185" isinstance="no" isprimary="yes" relid="0x4" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_RoastedChiliCornSalsa</name>
+									<name>carbs</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -18725,7 +18725,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c36" kind="Property" role="Property" guid="{0957bcd3-f72d-438c-9d55-03aee9fa20de}" derivedfrom="id-0067-00000187" isinstance="no" isprimary="yes" relid="0x6" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_RoastedChiliCornSalsa</name>
+									<name>sugars</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -18797,7 +18797,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c37" kind="Property" role="Property" guid="{ad39bd46-8711-452a-acd4-a350e7569948}" derivedfrom="id-0067-00000744" isinstance="no" isprimary="yes" relid="0x8" isbound="yes">
-									<name>SimpleFormula_RoastedChiliCornSalsa</name>
+									<name>vegetarian</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -18845,7 +18845,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c38" kind="Property" role="Property" guid="{91e829b1-a69b-452b-b4bc-f02cca5b2260}" derivedfrom="id-0067-00000183" isinstance="no" isprimary="yes" relid="0xa" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_RoastedChiliCornSalsa</name>
+									<name>fat</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -18917,7 +18917,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c39" kind="Property" role="Property" guid="{27e69cc5-b44f-45cf-9ef9-e80ed4e5bd92}" derivedfrom="id-0067-0000074a" isinstance="no" isprimary="yes" relid="0xc" isbound="yes">
-									<name>SimpleFormula_RoastedChiliCornSalsa</name>
+									<name>vegan</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -18965,7 +18965,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c3a" kind="Property" role="Property" guid="{919a744e-e066-443c-989a-79adc147b27b}" derivedfrom="id-0067-00000186" isinstance="no" isprimary="yes" relid="0xe" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_RoastedChiliCornSalsa</name>
+									<name>protein</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -19037,7 +19037,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c3b" kind="Property" role="Property" guid="{f16a61e4-f5a2-496a-bfd4-450d9c3cd153}" derivedfrom="id-0067-00000182" isinstance="no" isprimary="yes" relid="0x10" isbound="yes">
-									<name>SimpleFormula_RoastedChiliCornSalsa</name>
+									<name>calories</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -19109,7 +19109,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c3c" kind="Property" role="Property" guid="{25fde78b-9a52-441d-ab38-26fe38c8fafe}" derivedfrom="id-0067-00000184" isinstance="no" isprimary="yes" relid="0x12" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_RoastedChiliCornSalsa</name>
+									<name>saturatedfat</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -19334,7 +19334,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c3e" kind="Property" role="Property" guid="{13c4f866-da45-41d8-9e84-a2d41ac1e15c}" derivedfrom="id-0067-0000073e" isinstance="no" isprimary="yes" relid="0x2" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_FreshTomatoSalsa</name>
+									<name>cholesterol</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -19382,7 +19382,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c3f" kind="Property" role="Property" guid="{e9829541-04e7-4962-a632-b0eef3791d29}" derivedfrom="id-0067-00000185" isinstance="no" isprimary="yes" relid="0x4" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_FreshTomatoSalsa</name>
+									<name>carbs</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -19454,7 +19454,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c40" kind="Property" role="Property" guid="{0360a812-1e7d-41d5-8621-1045bf684938}" derivedfrom="id-0067-00000187" isinstance="no" isprimary="yes" relid="0x6" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_FreshTomatoSalsa</name>
+									<name>sugars</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -19526,7 +19526,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c41" kind="Property" role="Property" guid="{fa211880-cb21-4d3f-af59-6d065eb57387}" derivedfrom="id-0067-00000744" isinstance="no" isprimary="yes" relid="0x8" isbound="yes">
-									<name>SimpleFormula_FreshTomatoSalsa</name>
+									<name>vegetarian</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -19574,7 +19574,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c42" kind="Property" role="Property" guid="{57bda215-8555-4264-ac80-431b228f583a}" derivedfrom="id-0067-00000183" isinstance="no" isprimary="yes" relid="0xa" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_FreshTomatoSalsa</name>
+									<name>fat</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -19646,7 +19646,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c43" kind="Property" role="Property" guid="{7be7bfc5-bf2a-4bc6-95ea-b02d63aa7b4d}" derivedfrom="id-0067-0000074a" isinstance="no" isprimary="yes" relid="0xc" isbound="yes">
-									<name>SimpleFormula_FreshTomatoSalsa</name>
+									<name>vegan</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -19694,7 +19694,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c44" kind="Property" role="Property" guid="{a387ad24-d0cf-4e0e-a930-c7fcf1253c71}" derivedfrom="id-0067-00000186" isinstance="no" isprimary="yes" relid="0xe" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_FreshTomatoSalsa</name>
+									<name>protein</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -19766,7 +19766,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c45" kind="Property" role="Property" guid="{62e08ff8-a4fd-4840-b425-40569220a4b5}" derivedfrom="id-0067-00000182" isinstance="no" isprimary="yes" relid="0x10" isbound="yes">
-									<name>SimpleFormula_FreshTomatoSalsa</name>
+									<name>calories</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -19838,7 +19838,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c46" kind="Property" role="Property" guid="{cd3b6b70-821f-4343-9a7c-8e32691cde26}" derivedfrom="id-0067-00000184" isinstance="no" isprimary="yes" relid="0x12" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_FreshTomatoSalsa</name>
+									<name>saturatedfat</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -20063,7 +20063,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c48" kind="Property" role="Property" guid="{9003dfc2-25fa-4cce-ab96-118a831b6e2b}" derivedfrom="id-0067-0000073e" isinstance="no" isprimary="yes" relid="0x2" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_MontereyJackCheese</name>
+									<name>cholesterol</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -20111,7 +20111,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c49" kind="Property" role="Property" guid="{8773bf0c-b0d4-4c59-96c3-22ed3934c25c}" derivedfrom="id-0067-00000185" isinstance="no" isprimary="yes" relid="0x4" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_MontereyJackCheese</name>
+									<name>carbs</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -20183,7 +20183,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c4a" kind="Property" role="Property" guid="{a6e92f44-24c4-4b00-9724-4276ab7882b7}" derivedfrom="id-0067-00000187" isinstance="no" isprimary="yes" relid="0x6" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_MontereyJackCheese</name>
+									<name>sugars</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -20255,7 +20255,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c4b" kind="Property" role="Property" guid="{95897625-b9cb-41ac-88bf-79ab6a2ff203}" derivedfrom="id-0067-00000744" isinstance="no" isprimary="yes" relid="0x8" isbound="yes">
-									<name>SimpleFormula_MontereyJackCheese</name>
+									<name>vegetarian</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -20303,7 +20303,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c4c" kind="Property" role="Property" guid="{2fc02783-9fd2-43f5-adce-091fbe261465}" derivedfrom="id-0067-00000183" isinstance="no" isprimary="yes" relid="0xa" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_MontereyJackCheese</name>
+									<name>fat</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -20375,7 +20375,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c4d" kind="Property" role="Property" guid="{98a62293-2d19-4eef-88f8-329ada0e6802}" derivedfrom="id-0067-0000074a" isinstance="no" isprimary="yes" relid="0xc" isbound="yes">
-									<name>SimpleFormula_MontereyJackCheese</name>
+									<name>vegan</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -20423,7 +20423,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c4e" kind="Property" role="Property" guid="{ac4746ba-48c2-432d-a792-3c1fd10b4ebd}" derivedfrom="id-0067-00000186" isinstance="no" isprimary="yes" relid="0xe" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_MontereyJackCheese</name>
+									<name>protein</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -20495,7 +20495,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c4f" kind="Property" role="Property" guid="{30896791-e3f8-4872-abae-b58b2b88d78d}" derivedfrom="id-0067-00000182" isinstance="no" isprimary="yes" relid="0x10" isbound="yes">
-									<name>SimpleFormula_MontereyJackCheese</name>
+									<name>calories</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -20567,7 +20567,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c50" kind="Property" role="Property" guid="{7d91eea9-0db7-421f-9a59-195b8fc14fd5}" derivedfrom="id-0067-00000184" isinstance="no" isprimary="yes" relid="0x12" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_MontereyJackCheese</name>
+									<name>saturatedfat</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -20792,7 +20792,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c52" kind="Property" role="Property" guid="{30cc98d9-e6e8-430a-9ac6-973489cfdc05}" derivedfrom="id-0067-0000073e" isinstance="no" isprimary="yes" relid="0x2" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_RomaineLettuce</name>
+									<name>cholesterol</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -20840,7 +20840,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c53" kind="Property" role="Property" guid="{a8b3048d-a4f4-4a77-b965-0d0027c92e94}" derivedfrom="id-0067-00000185" isinstance="no" isprimary="yes" relid="0x4" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_RomaineLettuce</name>
+									<name>carbs</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -20912,7 +20912,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c54" kind="Property" role="Property" guid="{60d31e17-5980-4737-9428-17b60509382c}" derivedfrom="id-0067-00000187" isinstance="no" isprimary="yes" relid="0x6" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_RomaineLettuce</name>
+									<name>sugars</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -20984,7 +20984,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c55" kind="Property" role="Property" guid="{8dda4080-70e6-4fb2-ac4d-dab214dc9000}" derivedfrom="id-0067-00000744" isinstance="no" isprimary="yes" relid="0x8" isbound="yes">
-									<name>SimpleFormula_RomaineLettuce</name>
+									<name>vegetarian</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -21032,7 +21032,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c56" kind="Property" role="Property" guid="{e47ac1e5-816b-449c-9ef1-28241e85b78e}" derivedfrom="id-0067-00000183" isinstance="no" isprimary="yes" relid="0xa" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_RomaineLettuce</name>
+									<name>fat</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -21104,7 +21104,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c57" kind="Property" role="Property" guid="{95c8838f-2a73-4ed4-90bf-f60e9581631e}" derivedfrom="id-0067-0000074a" isinstance="no" isprimary="yes" relid="0xc" isbound="yes">
-									<name>SimpleFormula_RomaineLettuce</name>
+									<name>vegan</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -21152,7 +21152,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c58" kind="Property" role="Property" guid="{01f8b774-7bbe-451b-be14-76e6c4d65857}" derivedfrom="id-0067-00000186" isinstance="no" isprimary="yes" relid="0xe" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_RomaineLettuce</name>
+									<name>protein</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -21224,7 +21224,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c59" kind="Property" role="Property" guid="{2951b9c6-aca2-40e5-82c9-53efa111b0bf}" derivedfrom="id-0067-00000182" isinstance="no" isprimary="yes" relid="0x10" isbound="yes">
-									<name>SimpleFormula_RomaineLettuce</name>
+									<name>calories</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -21296,7 +21296,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c5a" kind="Property" role="Property" guid="{8ca38343-2189-4d9f-90bf-fafdb6ab71de}" derivedfrom="id-0067-00000184" isinstance="no" isprimary="yes" relid="0x12" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_RomaineLettuce</name>
+									<name>saturatedfat</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -21521,7 +21521,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c5c" kind="Property" role="Property" guid="{6c7aab69-d80b-4f06-9652-9141c0859913}" derivedfrom="id-0067-0000073e" isinstance="no" isprimary="yes" relid="0x2" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_TomatilloGreenChiliSalsa</name>
+									<name>cholesterol</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -21569,7 +21569,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c5d" kind="Property" role="Property" guid="{4ab511a4-f51d-44fe-beb1-ed6aee972a47}" derivedfrom="id-0067-00000185" isinstance="no" isprimary="yes" relid="0x4" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_TomatilloGreenChiliSalsa</name>
+									<name>carbs</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -21641,7 +21641,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c5e" kind="Property" role="Property" guid="{42f6476b-9f9d-41ae-a82a-6de3f681c5ce}" derivedfrom="id-0067-00000187" isinstance="no" isprimary="yes" relid="0x6" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_TomatilloGreenChiliSalsa</name>
+									<name>sugars</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -21713,7 +21713,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c5f" kind="Property" role="Property" guid="{7b542560-8253-4ec5-8f66-9cda6d72ae93}" derivedfrom="id-0067-00000744" isinstance="no" isprimary="yes" relid="0x8" isbound="yes">
-									<name>SimpleFormula_TomatilloGreenChiliSalsa</name>
+									<name>vegetarian</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -21761,7 +21761,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c60" kind="Property" role="Property" guid="{3f3ad096-06d1-4522-8ed1-72ef2149c78d}" derivedfrom="id-0067-00000183" isinstance="no" isprimary="yes" relid="0xa" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_TomatilloGreenChiliSalsa</name>
+									<name>fat</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -21833,7 +21833,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c61" kind="Property" role="Property" guid="{1f0d36d2-0658-4303-9a14-77176ae288fc}" derivedfrom="id-0067-0000074a" isinstance="no" isprimary="yes" relid="0xc" isbound="yes">
-									<name>SimpleFormula_TomatilloGreenChiliSalsa</name>
+									<name>vegan</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -21881,7 +21881,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c62" kind="Property" role="Property" guid="{37254cde-2611-48a4-a8ae-c3c9ba6956a4}" derivedfrom="id-0067-00000186" isinstance="no" isprimary="yes" relid="0xe" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_TomatilloGreenChiliSalsa</name>
+									<name>protein</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -21953,7 +21953,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c63" kind="Property" role="Property" guid="{7d4dfc69-b414-4bdd-b24b-552f157187fa}" derivedfrom="id-0067-00000182" isinstance="no" isprimary="yes" relid="0x10" isbound="yes">
-									<name>SimpleFormula_TomatilloGreenChiliSalsa</name>
+									<name>calories</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -22025,7 +22025,7 @@
 									</attribute>
 								</reference>
 								<reference id="id-0067-00003c64" kind="Property" role="Property" guid="{b99ae0b7-9b25-4986-8225-e30dc5583861}" derivedfrom="id-0067-00000184" isinstance="no" isprimary="yes" relid="0x12" referred="id-0065-0000035a" isbound="yes">
-									<name>SimpleFormula_TomatilloGreenChiliSalsa</name>
+									<name>saturatedfat</name>
 									<regnode name="PartRegs" status="undefined">
 										<value></value>
 										<regnode name="All" status="undefined">
@@ -26930,127 +26930,31 @@
 						<value>1</value>
 					</attribute>
 				</atom>
-				<atom id="id-0066-00000a2c" kind="SimpleFormula" role="SimpleFormula" guid="{5a1cfe3d-13c8-497c-9315-00405d6acf80}" relid="0x52">
-					<name>SimpleFormula</name>
-					<regnode name="PartRegs" status="undefined">
-						<value></value>
-						<regnode name="All" status="undefined">
-							<value></value>
-							<regnode name="Position" isopaque="yes">
-								<value>896,70</value>
-							</regnode>
-						</regnode>
-						<regnode name="DesignSpaceAspect" status="undefined">
-							<value></value>
-							<regnode name="Position" isopaque="yes">
-								<value>854,259</value>
-							</regnode>
-						</regnode>
-						<regnode name="SimulinkAspect" status="undefined">
-							<value></value>
-							<regnode name="Position" isopaque="yes">
-								<value>896,70</value>
-							</regnode>
-						</regnode>
-						<regnode name="SolidModeling" status="undefined">
-							<value></value>
-							<regnode name="Position" isopaque="yes">
-								<value>896,70</value>
-							</regnode>
-						</regnode>
-						<regnode name="SystemCAspect" status="undefined">
-							<value></value>
-							<regnode name="Position" isopaque="yes">
-								<value>896,70</value>
-							</regnode>
-						</regnode>
-						<regnode name="ValueFlowAspect" status="undefined">
-							<value></value>
-							<regnode name="Position" isopaque="yes">
-								<value>896,70</value>
-							</regnode>
-						</regnode>
-					</regnode>
-					<attribute kind="ID" status="meta">
-						<value></value>
-					</attribute>
-					<attribute kind="Method" status="meta">
-						<value>Addition</value>
-					</attribute>
-				</atom>
-				<atom id="id-0066-00000a2e" kind="CustomFormula" role="CustomFormula" guid="{b6df2ad1-2799-458a-be72-1ec2a8c33000}" relid="0x5d">
-					<name>CustomFormula</name>
-					<regnode name="PartRegs" status="undefined">
-						<value></value>
-						<regnode name="All" status="undefined">
-							<value></value>
-							<regnode name="Position" isopaque="yes">
-								<value>987,315</value>
-							</regnode>
-						</regnode>
-						<regnode name="DesignSpaceAspect" status="undefined">
-							<value></value>
-							<regnode name="Position" isopaque="yes">
-								<value>1015,336</value>
-							</regnode>
-						</regnode>
-						<regnode name="SimulinkAspect" status="undefined">
-							<value></value>
-							<regnode name="Position" isopaque="yes">
-								<value>987,315</value>
-							</regnode>
-						</regnode>
-						<regnode name="SolidModeling" status="undefined">
-							<value></value>
-							<regnode name="Position" isopaque="yes">
-								<value>987,315</value>
-							</regnode>
-						</regnode>
-						<regnode name="SystemCAspect" status="undefined">
-							<value></value>
-							<regnode name="Position" isopaque="yes">
-								<value>987,315</value>
-							</regnode>
-						</regnode>
-						<regnode name="ValueFlowAspect" status="undefined">
-							<value></value>
-							<regnode name="Position" isopaque="yes">
-								<value>987,315</value>
-							</regnode>
-						</regnode>
-					</regnode>
-					<attribute kind="Expression">
-						<value>Fat / TotalWeight</value>
-					</attribute>
-					<attribute kind="ID" status="meta">
-						<value></value>
-					</attribute>
-				</atom>
-				<atom id="id-0066-00000a2f" kind="PropertyConstraint" role="PropertyConstraint" guid="{01f8c35b-84a9-4896-9cc9-e7cf796431e6}" relid="0x62">
+				<atom id="id-0066-00000a31" kind="Constraint" role="Constraint" guid="{7eb7849a-6a47-4f93-beab-0cdbf57c401c}" relid="0x65">
 					<name>Keto</name>
 					<regnode name="PartRegs" status="undefined">
 						<value></value>
 						<regnode name="DesignSpaceAspect" status="undefined">
 							<value></value>
 							<regnode name="Position" isopaque="yes">
-								<value>994,476</value>
+								<value>861,434</value>
 							</regnode>
 						</regnode>
 					</regnode>
+					<attribute kind="Context">
+						<value>constraint Chipotle_Keto_constraint() {
+
+Fat() / (Carbs() + Fat() + Protein()) &gt;= 0.8
+}</value>
+					</attribute>
 					<attribute kind="Domain" status="meta">
 						<value></value>
 					</attribute>
-					<attribute kind="ID" status="meta">
-						<value>0</value>
+					<attribute kind="ID">
+						<value>100</value>
 					</attribute>
 					<attribute kind="Inactive" status="meta">
 						<value>false</value>
-					</attribute>
-					<attribute kind="TargetType">
-						<value>Must Equal or Exceed</value>
-					</attribute>
-					<attribute kind="TargetValue">
-						<value>0.80000000000000004</value>
 					</attribute>
 				</atom>
 				<reference id="id-0067-000001c0" kind="Property" role="Property" guid="{431e13c1-4d03-43b5-bc55-59933b6c49c3}" relid="0x3">
@@ -27863,162 +27767,6 @@
 						<value></value>
 					</attribute>
 				</reference>
-				<reference id="id-0067-00003c65" kind="Property" role="Property" guid="{20acce13-0165-404e-8b3e-6c58b411af3d}" relid="0x51">
-					<name>TotalWeight</name>
-					<regnode name="PartRegs" status="undefined">
-						<value></value>
-						<regnode name="All" status="undefined">
-							<value></value>
-							<regnode name="Position" isopaque="yes">
-								<value>889,119</value>
-							</regnode>
-						</regnode>
-						<regnode name="DesignSpaceAspect" status="undefined">
-							<value></value>
-							<regnode name="Position" isopaque="yes">
-								<value>959,266</value>
-							</regnode>
-						</regnode>
-						<regnode name="SimulinkAspect" status="undefined">
-							<value></value>
-							<regnode name="Position" isopaque="yes">
-								<value>889,119</value>
-							</regnode>
-						</regnode>
-						<regnode name="SolidModeling" status="undefined">
-							<value></value>
-							<regnode name="Position" isopaque="yes">
-								<value>889,119</value>
-							</regnode>
-						</regnode>
-						<regnode name="SystemCAspect" status="undefined">
-							<value></value>
-							<regnode name="Position" isopaque="yes">
-								<value>889,119</value>
-							</regnode>
-						</regnode>
-						<regnode name="ValueFlowAspect" status="undefined">
-							<value></value>
-							<regnode name="Position" isopaque="yes">
-								<value>889,119</value>
-							</regnode>
-						</regnode>
-					</regnode>
-					<attribute kind="ComputationType" status="meta">
-						<value>Addition</value>
-					</attribute>
-					<attribute kind="DataType" status="meta">
-						<value>String</value>
-					</attribute>
-					<attribute kind="DefaultValue" status="meta">
-						<value></value>
-					</attribute>
-					<attribute kind="Description" status="meta">
-						<value></value>
-					</attribute>
-					<attribute kind="Dimension" status="meta">
-						<value></value>
-					</attribute>
-					<attribute kind="Disable" status="meta">
-						<value>false</value>
-					</attribute>
-					<attribute kind="ID">
-						<value>id-20acce13-0165-404e-8b3e-6c58b411af3d</value>
-					</attribute>
-					<attribute kind="IsProminent" status="meta">
-						<value>false</value>
-					</attribute>
-					<attribute kind="ManagedGUID" status="meta">
-						<value></value>
-					</attribute>
-					<attribute kind="Tolerance" status="meta">
-						<value></value>
-					</attribute>
-					<attribute kind="Type" status="meta">
-						<value></value>
-					</attribute>
-					<attribute kind="Value" status="meta">
-						<value></value>
-					</attribute>
-				</reference>
-				<reference id="id-0067-00003c67" kind="Property" role="Property" guid="{c36047ff-79c2-4dc5-9aa8-1a2cf4827187}" relid="0x5e">
-					<name>ProportionFat</name>
-					<regnode name="PartRegs" status="undefined">
-						<value></value>
-						<regnode name="All" status="undefined">
-							<value></value>
-							<regnode name="Position" isopaque="yes">
-								<value>889,119</value>
-							</regnode>
-						</regnode>
-						<regnode name="DesignSpaceAspect" status="undefined">
-							<value></value>
-							<regnode name="Position" isopaque="yes">
-								<value>952,399</value>
-							</regnode>
-						</regnode>
-						<regnode name="SimulinkAspect" status="undefined">
-							<value></value>
-							<regnode name="Position" isopaque="yes">
-								<value>889,119</value>
-							</regnode>
-						</regnode>
-						<regnode name="SolidModeling" status="undefined">
-							<value></value>
-							<regnode name="Position" isopaque="yes">
-								<value>889,119</value>
-							</regnode>
-						</regnode>
-						<regnode name="SystemCAspect" status="undefined">
-							<value></value>
-							<regnode name="Position" isopaque="yes">
-								<value>889,119</value>
-							</regnode>
-						</regnode>
-						<regnode name="ValueFlowAspect" status="undefined">
-							<value></value>
-							<regnode name="Position" isopaque="yes">
-								<value>889,119</value>
-							</regnode>
-						</regnode>
-					</regnode>
-					<attribute kind="ComputationType" status="meta">
-						<value>Addition</value>
-					</attribute>
-					<attribute kind="DataType" status="meta">
-						<value>String</value>
-					</attribute>
-					<attribute kind="DefaultValue" status="meta">
-						<value></value>
-					</attribute>
-					<attribute kind="Description" status="meta">
-						<value></value>
-					</attribute>
-					<attribute kind="Dimension" status="meta">
-						<value></value>
-					</attribute>
-					<attribute kind="Disable" status="meta">
-						<value>false</value>
-					</attribute>
-					<attribute kind="ID">
-						<value>id-c36047ff-79c2-4dc5-9aa8-1a2cf4827187</value>
-					</attribute>
-					<attribute kind="IsProminent" status="meta">
-						<value>false</value>
-					</attribute>
-					<attribute kind="ManagedGUID" status="meta">
-						<value></value>
-					</attribute>
-					<attribute kind="Tolerance" status="meta">
-						<value></value>
-					</attribute>
-					<attribute kind="Type" status="meta">
-						<value></value>
-					</attribute>
-					<attribute kind="Value" status="meta">
-						<value></value>
-					</attribute>
-				</reference>
 				<connection id="id-0068-00000117" kind="ValueFlow" role="ValueFlow" guid="{1270db0f-b947-455b-b3a5-61d91a969b64}" relid="0x41">
 					<name>ValueFlow</name>
 					<regnode name="autorouterPref" isopaque="yes">
@@ -28133,85 +27881,6 @@
 					</regnode>
 					<connpoint role="src" target="id-0066-00000a2b"/>
 					<connpoint role="dst" target="id-0067-000007d9"/>
-				</connection>
-				<connection id="id-0068-000030f1" kind="ValueFlow" role="ValueFlow" guid="{a3fcb91e-b7e9-4c1e-b55f-0551f6739e30}" relid="0x53">
-					<name>ValueFlow</name>
-					<attribute kind="FormulaVariableName" status="meta">
-						<value></value>
-					</attribute>
-					<connpoint role="src" target="id-0066-00000a2c"/>
-					<connpoint role="dst" target="id-0067-00003c65"/>
-				</connection>
-				<connection id="id-0068-000030f6" kind="ValueFlow" role="ValueFlow" guid="{99d07dce-0fa4-4e2b-841b-d62a660d483e}" relid="0x58">
-					<name>ValueFlow</name>
-					<regnode name="autorouterPref" isopaque="yes">
-						<value>En</value>
-					</regnode>
-					<attribute kind="FormulaVariableName" status="meta">
-						<value></value>
-					</attribute>
-					<connpoint role="dst" target="id-0066-00000a2c"/>
-					<connpoint role="src" target="id-0067-000001c2"/>
-				</connection>
-				<connection id="id-0068-000030f7" kind="ValueFlow" role="ValueFlow" guid="{497996b0-81dd-4e63-ba8b-d04d56a8a27f}" relid="0x59">
-					<name>ValueFlow</name>
-					<regnode name="autorouterPref" isopaque="yes">
-						<value>Ew</value>
-					</regnode>
-					<attribute kind="FormulaVariableName" status="meta">
-						<value></value>
-					</attribute>
-					<connpoint role="dst" target="id-0066-00000a2c"/>
-					<connpoint role="src" target="id-0067-000001c5"/>
-				</connection>
-				<connection id="id-0068-000030f8" kind="ValueFlow" role="ValueFlow" guid="{702dd4c5-ac47-4600-95ca-b80237f66f8c}" relid="0x5a">
-					<name>ValueFlow</name>
-					<regnode name="autorouterPref" isopaque="yes">
-						<value>Es</value>
-					</regnode>
-					<attribute kind="FormulaVariableName" status="meta">
-						<value></value>
-					</attribute>
-					<connpoint role="dst" target="id-0066-00000a2c"/>
-					<connpoint role="src" target="id-0067-000001c1"/>
-				</connection>
-				<connection id="id-0068-000030f9" kind="ValueFlow" role="ValueFlow" guid="{b8b5b6b0-9a80-40f1-8d7e-be4cde0fd81e}" relid="0x5f">
-					<name>ValueFlow</name>
-					<regnode name="autorouterPref" isopaque="yes">
-						<value>n</value>
-					</regnode>
-					<attribute kind="FormulaVariableName" status="meta">
-						<value></value>
-					</attribute>
-					<connpoint role="dst" target="id-0066-00000a2e"/>
-					<connpoint role="src" target="id-0067-00003c65"/>
-				</connection>
-				<connection id="id-0068-000030fa" kind="ValueFlow" role="ValueFlow" guid="{d0892325-2ab0-41ac-9a79-820151d73924}" relid="0x60">
-					<name>ValueFlow</name>
-					<regnode name="autorouterPref" isopaque="yes">
-						<value>Ew</value>
-					</regnode>
-					<attribute kind="FormulaVariableName" status="meta">
-						<value></value>
-					</attribute>
-					<connpoint role="dst" target="id-0066-00000a2e"/>
-					<connpoint role="src" target="id-0067-000001c2"/>
-				</connection>
-				<connection id="id-0068-000030fb" kind="ValueFlow" role="ValueFlow" guid="{a00b96e6-26ac-4363-926f-db4217c2ba22}" relid="0x61">
-					<name>ValueFlow</name>
-					<regnode name="autorouterPref" isopaque="yes">
-						<value>n</value>
-					</regnode>
-					<attribute kind="FormulaVariableName" status="meta">
-						<value></value>
-					</attribute>
-					<connpoint role="src" target="id-0066-00000a2e"/>
-					<connpoint role="dst" target="id-0067-00003c67"/>
-				</connection>
-				<connection id="id-0068-000030fc" kind="PropertyConstraintBinding" role="PropertyConstraintBinding" guid="{1a27ec40-1bcb-494b-ad19-7b538050c0cc}" relid="0x63">
-					<name>PropertyConstraintBinding</name>
-					<connpoint role="src" target="id-0066-00000a2f"/>
-					<connpoint role="dst" target="id-0067-00003c67"/>
 				</connection>
 			</model>
 		</folder>
