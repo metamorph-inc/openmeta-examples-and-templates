@@ -7,6 +7,8 @@ the runtime of PET blocks and of Testbench workflows contained within PETs.
 PET Block Profiling with run_mdao
 ---------------------------------
 
+**Note**: PET block profiling requires OpenMETA 0.22.0 or newer.
+
 OpenMDAO contains a built-in profiling tool which measures the runtime of
 individual instances of PET components and produces graphs of the results; this
 tool is exposed by run_mdao, but is not enabled (for performance reasons) when
