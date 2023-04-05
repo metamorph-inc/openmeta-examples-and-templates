@@ -7,33 +7,33 @@ from common import read_limits, check_limits_and_add_to_report_json
 #from common import VirtualVehicleMakeMetrics as VVM
 
 def main():
-    print "in main....."
+    print("in main.....")
     sampleRate = 0.10
     startAnalysisTime = 50
     
     f = open('rawdata.csv', 'w')
     mat_file_name = sys.argv[1]
-    print "Mat file name is "+mat_file_name
+    print("Mat file name is "+mat_file_name)
     if not os.path.exists(mat_file_name):
-        print "Given result file does not exist: ",mat_file_name
+        print("Given result file does not exist: ",mat_file_name)
         raise IOError('Given result file does not exist: {0}'.format(sys.argv[1]))
     else:
-        print "line 10....",os.getcwd()
+        print("line 10....",os.getcwd())
         dstpath = os.path.join(os.getcwd(), 'matfiles')
-        print "dstPath is ",dstpath
+        print("dstPath is ",dstpath)
         if not os.path.isdir(dstpath):
             os.makedirs(dstpath)
         numFiles = len(os.listdir(dstpath))
         dstname = '_' + str(numFiles) + mat_file_name
-        print  "dstname ",dstname
+        print("dstname ",dstname)
         #shutil.copyfile(mat_file_name, os.path.join(dstpath, dstname))
-        print "line30"
+        print("line30")
 
 
-    print "Line 24: Opened "+mat_file_name
+    print("Line 24: Opened "+mat_file_name)
     ## First limit part
     #limit_dict, filter = read_limits()
-    print "done limits"
+    print("done limits")
     filter = []
     ## End of first limit part
 
@@ -48,36 +48,36 @@ def main():
     pp = PostProcess(mat_file_name, filter)
     vars_available = pp.get_names()
     dumpList = []
-    print vars_available[1]
+    print(vars_available[1])
     endings = ["SpacecraftBehavior.angleMeas", "SpacecraftBehavior.setpoint", "SpacecraftBehavior.vSys", "Frame.temp", "Gyroscope.temp", "Gyroscope.current", "Battery.temp", "transmitting.active", "onOrbit.active"]
     for vv in vars_available:
         for ending in endings:
             if vv.endswith(ending):
-                print "add to dumpList: "+vv
+                print("add to dumpList: "+vv)
                 dumpList.append(vv)
                 break;
 
     pp.print_time()
-    print "Last time is "+str(pp.get_max_time()) 
+    print("Last time is "+str(pp.get_max_time())) 
     sampData = []    
     for vv in dumpList:
         ndat = pp.resample_data(vv,sampleRate)
-        print "got ndat size=",len(ndat)
+        print("got ndat size=",len(ndat))
         sampData.append(ndat)
-        print 'sampdata=',len(sampData),'cols',len(sampData[0]),'rows'
+        print('sampdata=',len(sampData),'cols',len(sampData[0]),'rows')
 
         
     i = 0
-    print "dumping raw data headers"
+    print("dumping raw data headers")
     for c,vv in enumerate(dumpList):
-        print vv,c
+        print(vv,c)
         f.write( vv+',')
     f.write( "\n")
-    print "dump data"
-    print len(sampData),'cols',len(sampData[0])
+    print("dump data")
+    print(len(sampData),'cols',len(sampData[0]))
     while i < len(sampData[0]):
         if i % 1000 == 0:
-            print "line ",i
+            print("line ",i)
         for c,vv in enumerate(dumpList):
             f.write(str(sampData[c][i])+',')
         f.write( "\n")
@@ -102,7 +102,7 @@ def main():
             voltBusIdx = c
         if vv.endswith("Gyroscope.current"):
             currGyroIdx = c
-            print "gyro idx ",currGyroIdx
+            print("gyro idx ",currGyroIdx)
         if vv.endswith("Gyroscope.temp"):
             gyroTempIdx = c
         if vv.endswith("Frame.temp"):
@@ -126,7 +126,7 @@ def main():
     if actAngleIdx != -1 and setAngleIdx != -1:
         i = int(startAnalysisTime/sampleRate)
         first = i       
-        print "scanning angles from ",i," to " ,len(sampData[setAngleIdx])
+        print("scanning angles from ",i," to " ,len(sampData[setAngleIdx]))
         while i < len(sampData[setAngleIdx]):
             angErr = abs(sampData[setAngleIdx][i] - sampData[actAngleIdx][i])
             if angErr > maxErr:
@@ -148,12 +148,12 @@ def main():
  
     if currGyroIdx != -1:
         i = int(startAnalysisTime/sampleRate)  
-        print "scanning Gyro currents from ",i," to " ,len(sampData[currGyroIdx])        
+        print("scanning Gyro currents from ",i," to " ,len(sampData[currGyroIdx]))        
         while i < len(sampData[currGyroIdx]):
             vts = abs(sampData[currGyroIdx][i])        
             if vts > maxGyroCurr:
                 maxGyroCurr = vts
-                print vts
+                print(vts)
             i = i + 1
  
     if baseTempIdx != -1:
@@ -177,7 +177,7 @@ def main():
     if transmittingIdx != -1 and onOrbitIdx != -1:
         i = int(startAnalysisTime/sampleRate)
         first = i       
-        print "scanning angles from ",i," to " ,len(sampData[transmittingIdx])
+        print("scanning angles from ",i," to " ,len(sampData[transmittingIdx]))
         while i < len(sampData[transmittingIdx]):
             if sampData[transmittingIdx][i] == 1:
                 transmittingSteps += 1
@@ -199,11 +199,11 @@ def main():
 
     if os.path.isfile(json_filename):
         with open(json_filename, "r") as json_file:
-            print "reading json"
+            print("reading json")
             json_data = json.load(json_file)
 
-    print "json_data is....."
-    print json_data
+    print("json_data is.....")
+    print(json_data)
     
     for metric in json_data['Metrics']: 
         if metric["Name"] == "angleMaxError": 
@@ -224,8 +224,8 @@ def main():
             metric["Value"] = str(maxGyroTemp)            
         if metric["Name"] == "transmittingPercentage": 
             metric["Value"] = str(transmittingPercentage)              
-    print "dumping to ",json_filename
-    print json_data    
+    print("dumping to ",json_filename)
+    print(json_data)    
     with open(json_filename, "w") as json_file:
         json.dump(json_data, json_file, indent=4)
 
@@ -294,17 +294,17 @@ def main():
     #update_metrics_in_report_json(metrics)
     ## end of Second limit part
     os.chdir(cwd)
-    print "done main"
+    print("done main")
 
 if __name__ == '__main__':
     root_dir = os.getcwd()
     
-    print "Starting in "+root_dir
+    print("Starting in "+root_dir)
     try:
-        print "Starting Main...."
+        print("Starting Main....")
         main()
     except:
-        print "exception occurred..."
+        print("exception occurred...")
         os.chdir(root_dir)
         import traceback
         trace = traceback.format_exc()

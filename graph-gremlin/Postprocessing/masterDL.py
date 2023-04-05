@@ -88,20 +88,20 @@ def main():
     #                  vehicleMass
     #---------------------------------------------------------------------------------
     wheelF_Force = pp.get_data_by_index(wheelF_Force_uri, -1)
-    print "Front wheel load: %d" %wheelF_Force
+    print("Front wheel load: %d" %wheelF_Force)
     wheelR_Force = pp.get_data_by_index(wheelR_Force_uri, -1)
-    print "Rear wheel load: %d" %wheelR_Force
+    print("Rear wheel load: %d" %wheelR_Force)
     vehicleMass = 2*( wheelF_Force + wheelR_Force)/9.81
     #---------------------------------------------------------------------------------
     #                 Distance traveled
     #---------------------------------------------------------------------------------
     distanceTraveled = pp.get_data_by_index(pos_uri, -1)
-    print "Distance traveled: %d" %distanceTraveled
+    print("Distance traveled: %d" %distanceTraveled)
     #---------------------------------------------------------------------------------
     #                  minumum following distance
     #---------------------------------------------------------------------------------
     minDistance = pp.get_local_min(currentDistance_uri, startIndex, -1)
-    print "minDistance is : %f" %minDistance
+    print("minDistance is : %f" %minDistance)
     minDistanceIndex = pp.get_local_min_index(currentDistance_uri, startIndex, -1)
     #print "minDistanceIndex is: %d" %minDistanceIndex
     minDistanceVelocity = pp.get_data_by_index(vel_uri, minDistanceIndex)
@@ -109,16 +109,16 @@ def main():
     #                 initial and final velocity
     #---------------------------------------------------------------------------------
     V0 = pp.get_data_by_index(vel_uri, 0)
-    print "initial velocity: %f" %V0
+    print("initial velocity: %f" %V0)
     Vf = pp.get_data_by_index(vel_uri, -1)
-    print "final velocity: %f" %Vf
+    print("final velocity: %f" %Vf)
     #---------------------------------------------------------------------------------
     #                  requiredTorque
     #---------------------------------------------------------------------------------
     forceExerted = vehicleMass*(Vf**2-V0**2)/(2*distanceTraveled) # Fd = (1/2)m(V^2) Work formula solve for force
-    print "forece Exerted if uniform: %d" %forceExerted
+    print("forece Exerted if uniform: %d" %forceExerted)
     requiredTorque = forceExerted*(.5*(pp.get_data_by_index(wheelF_RollRadius_uri, -1) + pp.get_data_by_index(wheelR_RollRadius_uri, -1)))
-    print "requiredTorque if uniform: %d" %requiredTorque
+    print("requiredTorque if uniform: %d" %requiredTorque)
     #---------------------------------------------------------------------------------
     #                  Rise time, Overshoot, Settling time, RMS Error
     #                  Setpoint Crossings for REGULAR CRUISE CONTROL
@@ -137,19 +137,19 @@ def main():
         SETPOINT = v_desired_uri # this data is constant
         CURRENT = vel_uri
 
-    print SETPOINT
+    print(SETPOINT)
     #--the negative 1 gets the last/only value in the array.--
     riseTime =pp.calculate_rise_time(CURRENT, SETPOINT, start_time, tolerance, rise_tol)[-1]
     #calculate_rise_time(self, actual_name, setpoint_name, start_time = 0, tolerance = 0.01, rise_tol = 0.05, changes_allowed = 100, num_index = 1)
-    print "rise time: %d" %riseTime
+    print("rise time: %d" %riseTime)
     #--the zero gets the first value in the array.--
     Overshoot = (100*pp.calculate_overshoot(CURRENT, SETPOINT, start_time)[-1])
-    print "Percent Overshoot: %f" %Overshoot
+    print("Percent Overshoot: %f" %Overshoot)
     SettlingTime = pp.calculate_settling_time(CURRENT, SETPOINT, start_time, tolerance, settle_tol)[-1]
     #calculate_settling_time(self, actual_name, setpoint_name, start_time = 0, tolerance = 0.01, settle_tol = 0.05, changes_allowed = 100, num_index = 2):
-    print "SettlingTime: %f" %SettlingTime
+    print("SettlingTime: %f" %SettlingTime)
     RMS_error = pp.calculate_rmse(CURRENT, SETPOINT,startIndex)
-    print "RMS_error: %d" %RMS_error
+    print("RMS_error: %d" %RMS_error)
     #numSetPointCrossings = pp.calculate_settling_crossing(CURRENT, SETPOINT, start_time)[-1]
     #print "numSetPointCrossings: %d" %numSetPointCrossings
     # don't know what this function was doing but it wasn't what i was after.
@@ -185,7 +185,7 @@ def main():
             #print CurrentArray[i]
             numSetPointCrossings += 1
 
-    print "numSetPointCrossings: %d" %numSetPointCrossings
+    print("numSetPointCrossings: %d" %numSetPointCrossings)
     #distance_desired = pp.short_array(distance_targetDistance_uri, start_time, -1)
     #---------------------------------------------------------------------------------
     #                  Rolling average Acceleration and Jerk
@@ -211,7 +211,7 @@ def main():
 #            Gear = i
 #    print shiftIndex
     #-------------SETUP----------------------------------
-    print 'Measure Acceleration'
+    print('Measure Acceleration')
     time_array = pp.time_array()
     #print type(time_array)
     #print "time is: %d " %time_array[100]
@@ -253,8 +253,8 @@ def main():
     maxAccel = np.amax(avg_Accel)
     maxJerk = np.amax(avg_Jerk)
     #print type(maxAccel) # added this because I had the wrong type for the print statement.
-    print "Max average acceleration: %f" %maxAccel
-    print "Max average Jerk: %f" %maxJerk
+    print("Max average acceleration: %f" %maxAccel)
+    print("Max average Jerk: %f" %maxJerk)
 
             #print "next time is: %d" %next_time
 #    time = start_time
@@ -311,7 +311,7 @@ def main():
         Potential_Design = -1
     else: Potential_Design = 1
 
-    print "Potential_Design: %d" %Potential_Design
+    print("Potential_Design: %d" %Potential_Design)
 
     #---------------------------------------------------------------------------------
     #                  Metrics
@@ -337,7 +337,7 @@ def main():
 
                     #'chassisType':{'value': chassisType, 'unit' :''},
                     })
-    print metrics
+    print(metrics)
     cwd = os.getcwd()
     os.chdir('..')
     # print 'Plot saved to : {0}'.format(pp.save_as_svg(vehicle_speed,
@@ -347,7 +347,7 @@ def main():
                                                       # 'kph'))
 
     numSamples = int(endTime/time_inc)
-    print numSamples
+    print(numSamples)
     #pp.store_data_to_csv(jerk_uri, '{0}.csv'.format(jerk_uri), 0, time_inc, numSamples)
     #pp.store_data_to_csv(a_uri, '{0}.csv'.format(a_uri), 0, time_inc, numSamples)
     #pp.store_data_to_csv(pp.time_array, '{0}.csv'.format(pp.time_array), 0, time_inc, numSamples)

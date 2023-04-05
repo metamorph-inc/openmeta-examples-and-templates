@@ -3,6 +3,7 @@ import collections
 
 from openmdao.api import IndepVarComp, Component, Problem, Group, FileRef
 import numpy as np
+import six
 
 
 class GenerateAssortedData(Component):
@@ -40,9 +41,9 @@ class GenerateAssortedData(Component):
         unknowns["string_out"] = "m = " + str(m) + "; n = " + str(n)
         unknowns["stringarray_out"] = [str(m), str(n)]
         unknowns["npstringarray_out"] = np.array([str(m), str(n)])
-        unknowns["unicode_out"] = "m = " + unicode(m) + "; n = " + unicode(n)
-        unknowns["unicodearray_out"] = [unicode(m), unicode(n)]
-        unknowns["npunicodearray_out"] = np.array([unicode(m), unicode(n)])
+        unknowns["unicode_out"] = "m = " + six.text_type(m) + "; n = " + six.text_type(n)
+        unknowns["unicodearray_out"] = [six.text_type(m), six.text_type(n)]
+        unknowns["npunicodearray_out"] = np.array([six.text_type(m), six.text_type(n)])
         unknowns["bool_out"] = m > n
         unknowns["dict_strkey_homo_out"]["apples"], unknowns["dict_strkey_homo_out"]["oranges"] = m, n
         unknowns["dict_unikey_homo_out"]["apples"], unknowns["dict_unikey_homo_out"]["oranges"] = m, n

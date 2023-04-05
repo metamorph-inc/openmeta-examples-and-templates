@@ -14,7 +14,7 @@ Prerequisites
 
   * Install Gremlin's Python bindings into OpenMETA's Python:
 
-        "C:\Program Files (x86)\META\bin\Python27\Scripts\python.exe" -m pip install --user gremlinpython futures
+        "C:\Program Files (x86)\META\bin\Python311\python.exe" -m pip install --user gremlinpython futures
 
   * Download and extract [Gremlin Server][tinkerpop-web].  The Gremlin server
     can be configured to access any graph database supported by Tinkerpop, but

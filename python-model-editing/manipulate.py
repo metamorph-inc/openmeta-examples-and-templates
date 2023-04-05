@@ -10,7 +10,7 @@ import os.path
 # sys.path.append(r"C:\Program Files\ISIS\Udm\bin")
 # if os.environ.has_key("UDM_PATH"):
 #     sys.path.append(os.path.join(os.environ["UDM_PATH"], "bin"))
-import _winreg as winreg
+import six.moves.winreg as winreg
 import pywintypes
 with winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, r"Software\META") as software_meta:
     meta_path, _ = winreg.QueryValueEx(software_meta, "META_PATH")
@@ -49,17 +49,17 @@ try:
         raise ValueError("Couldn't find DV '{}'".format(path_dv))
 
     # Manipulate the name
-    print ('dv org Name: {}'.format(dv.Name))
+    print('dv org Name: {}'.format(dv.Name))
     dv.Name = 'a_2'
-    print ('dv new Name: {}'.format(dv.Name))
+    print('dv new Name: {}'.format(dv.Name))
 
     # Name has changed so update our path
     path_dv = path_dv + "_2"
 
     # Change the range attribute
-    print ('dv org Range: {}'.format(dv.GetStrAttrByNameDisp("Range")))
+    print('dv org Range: {}'.format(dv.GetStrAttrByNameDisp("Range")))
     dv.SetStrAttrByNameDisp("Range", "0.0,12.0")
-    print ('dv new Range: {}'.format(dv.GetStrAttrByNameDisp("Range")))
+    print('dv new Range: {}'.format(dv.GetStrAttrByNameDisp("Range")))
 
     parameterStudy = dv.ParentModel
     pet = dv.ParentModel.ParentModel

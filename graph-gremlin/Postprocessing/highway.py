@@ -8,7 +8,7 @@ if __name__ == '__main__':
     try:
         mat_file_name = sys.argv[1]
         if not os.path.exists(mat_file_name):
-            print 'Given result file does not exist: {0}'.format(sys.argv[1])
+            print('Given result file does not exist: {0}'.format(sys.argv[1]))
             os._exit(3)
 
         ## First limit part
@@ -30,11 +30,11 @@ if __name__ == '__main__':
         tank_volume = pp.last_value('design.FuelTankVolume')
         distance_covered_m = pp.integrate('driver_Land_Profile.driver_control.error_current.u2')
         
-        print "start_fraction     : {0}".format(start_fraction)
-        print "end_fraction       : {0}".format(end_fraction)
-        print "tank_volume        : {0}".format(tank_volume)
-        print "distance_covered_m : {0}".format(distance_covered_m)
-        print "end_time           : {0}".format(pp.time[-1])
+        print("start_fraction     : {0}".format(start_fraction))
+        print("end_fraction       : {0}".format(end_fraction))
+        print("tank_volume        : {0}".format(tank_volume))
+        print("distance_covered_m : {0}".format(distance_covered_m))
+        print("end_time           : {0}".format(pp.time[-1]))
         
         metrics.update({'FuelConsumed': {'value': (start_fraction - end_fraction) * tank_volume, 'unit': 'L'}})
         metrics.update({'DistanceCovered': {'value': distance_covered_m, 'unit': 'm'}})
@@ -52,7 +52,7 @@ if __name__ == '__main__':
 
         os.chdir(cwd)
     except Exception as err:
-        print err.message
+        print(err.message)
         if os.name == 'nt':
             import win32api
             win32api.TerminateProcess(win32api.GetCurrentProcess(), 1)

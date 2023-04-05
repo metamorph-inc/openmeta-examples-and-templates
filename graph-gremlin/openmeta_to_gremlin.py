@@ -5,7 +5,7 @@ import os
 #sys.path.append(r"C:\Program Files\ISIS\Udm\bin")
 #if os.environ.has_key("UDM_PATH"):
 #    sys.path.append(os.path.join(os.environ["UDM_PATH"], "bin"))
-import _winreg as winreg
+import six.moves.winreg as winreg
 with winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, r"Software\META") as software_meta:
     meta_path, _ = winreg.QueryValueEx(software_meta, "META_PATH")
 sys.path.append(os.path.join(meta_path, 'bin'))
@@ -85,7 +85,7 @@ def make_graph(focusObject):
             for (attribute_name, attribute_value) in six.iteritems(list_object_attributes(gme_node)):
                 new_node_traversal = new_node_traversal.property(attribute_name, attribute_value)
 
-            new_node = new_node_traversal.next()
+            new_node = next(new_node_traversal)
 
             if(parent_gremlin_node != None):
                 g.V(parent_gremlin_node).addE('contains').to(new_node).iterate()
@@ -108,8 +108,8 @@ def make_graph(focusObject):
 
             (src_obj, dst_obj) = get_association_ends(gme_node)
 
-            src_node = g.V().has("id", src_obj.id).next();
-            dst_node = g.V().has("id", dst_obj.id).next();
+            src_node = next(g.V().has("id", src_obj.id));
+            dst_node = next(g.V().has("id", dst_obj.id));
 
             new_edge_traversal = g.V(src_node).addE(node_type)
 
@@ -226,7 +226,7 @@ def get_full_path(o):
     return '/'.join(["{0} ({1})".format(name, typeName) for (name, typeName) in path])
 
 if __name__ == "__main__":
-    import _winreg as winreg
+    import six.moves.winreg as winreg
     with winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, r"Software\META") as software_meta:
         meta_path, _ = winreg.QueryValueEx(software_meta, "META_PATH")
 

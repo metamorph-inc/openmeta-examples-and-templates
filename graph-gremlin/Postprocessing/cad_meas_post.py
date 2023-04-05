@@ -24,13 +24,13 @@ class postprocess:
 # returns the data in an array
     def print_data(self, result, name):
         data = self.data_array(result, name)
-        print 'name of data: '
-        print name
-        print 'here is the data: (with index)'
-        print '[' ,
+        print('name of data: ')
+        print(name)
+        print('here is the data: (with index)')
+        print('[', end=' ')
         for i in xrange(data.size-1):
-            print str(i) + ':', str(data[i]) + ',',
-        print str(i+1) + ':', str(data[i+1]) + ']'
+            print(str(i) + ':', str(data[i]) + ',', end=' ')
+        print(str(i+1) + ':', str(data[i+1]) + ']')
         return data
     
 # gets array of time
@@ -46,7 +46,7 @@ class postprocess:
 # returns the time/time intervals in an array
     def print_time(self, result):
         time = time_array(self, result)
-        print 'here are time intervals:', time
+        print('here are time intervals:', time)
     
         return time 
 
@@ -424,9 +424,9 @@ if __name__ == '__main__':
                 #print ss
                 #print coords[idx]
     for ss in tags: 
-        print ss
+        print(ss)
         idx = tags.index(ss)
-        print coords[idx]
+        print(coords[idx])
     # coordinate system  [2] = tip to tail ; [0] = top to bottom;  [1] = left to right       
     fin_chord0 = coords[tags.index("F0_ILE")][2] - coords[tags.index("F0_ITE")][2]
     fin_chord1 = coords[tags.index("F0_OLE")][2] - coords[tags.index("F0_OTE")][2]
@@ -464,23 +464,23 @@ if __name__ == '__main__':
     for i in [0,1,2]:
         missile_cg[i] = abs(coords[tags.index('dome_tip')][i] - coords[tags.index('CG')][i])
     
-    print "Fin Chord Base   = " + str(fin_chord0)
-    print "Fin Chord Tip    = " + str(fin_chord1)
-    print "Fin Length       = " + str(fin_len)
-    print "Fin sweep        = " + str(fin_sweep)          
-    print "Canard Chord Base= " + str(canard_chord0)
-    print "Canard Chord Tip = " + str(canard_chord1)
-    print "Canard Length    = " + str(canard_len)   
-    print "Canard sweep     = " + str(canard_sweep)
-    print "aft length       = " + str(aft_len) 
-    print "aft diameter     = " + str(aft_diameter)
-    print "aft exitdiameter = " + str(aft_exitdiameter)
-    print "Missile_diameter     = " + str(missile_diameter)    
-    print "Missile_length     = " + str(missile_length)
-    print "Missile_cg         = " + str(missile_cg)
-    print "bnose              = " + str(bnose)
-    print "dnose              = " + str(dnose)
-    print "lnose              = " + str(lnose)    
+    print("Fin Chord Base   = " + str(fin_chord0))
+    print("Fin Chord Tip    = " + str(fin_chord1))
+    print("Fin Length       = " + str(fin_len))
+    print("Fin sweep        = " + str(fin_sweep))          
+    print("Canard Chord Base= " + str(canard_chord0))
+    print("Canard Chord Tip = " + str(canard_chord1))
+    print("Canard Length    = " + str(canard_len))   
+    print("Canard sweep     = " + str(canard_sweep))
+    print("aft length       = " + str(aft_len)) 
+    print("aft diameter     = " + str(aft_diameter))
+    print("aft exitdiameter = " + str(aft_exitdiameter))
+    print("Missile_diameter     = " + str(missile_diameter))    
+    print("Missile_length     = " + str(missile_length))
+    print("Missile_cg         = " + str(missile_cg))
+    print("bnose              = " + str(bnose))
+    print("dnose              = " + str(dnose))
+    print("lnose              = " + str(lnose))    
     for metric in json_data['Metrics']: 
         if metric["Name"] == "fin_chordroot": 
             metric["Value"] = str(fin_chord0)
@@ -541,52 +541,52 @@ if __name__ == '__main__':
 
     for param in json_data['Parameters']: 
             if param["Name"] == "Clean":
-                print  "CLEANING UP CAD FILES!!!!"
+                print("CLEANING UP CAD FILES!!!!")
                 cleanup = True
                 dir = "."
                 files = os.listdir(dir)
                 for file in files:
-                    print "Check :"+file
+                    print("Check :"+file)
                     if file.find(".prt.")!= -1 or file.find(".PRT.")!= -1 or file.find(".asm")!= -1 or file.find(".ASM")!= -1 or file.find("trail")!= -1:
-                        print "Zapping "+os.path.join(dir,file)
+                        print("Zapping "+os.path.join(dir,file))
                         try: 
                             os.remove(os.path.join(dir,file))
                         except : 
-                            print "Failed to zap:"+os.path.join(dir,file)
+                            print("Failed to zap:"+os.path.join(dir,file))
                 dir = "log"                        
-                print  "CLEANING UP LOG FILES!!!!"
+                print("CLEANING UP LOG FILES!!!!")
                 files = os.listdir(dir)
                 for file in files:
-                    print "Zapping "+os.path.join(dir,file)
+                    print("Zapping "+os.path.join(dir,file))
                     try: 
                         os.remove(os.path.join(dir,file))
                     except : 
-                        print "Failed to zap:"+os.path.join(dir,file)
+                        print("Failed to zap:"+os.path.join(dir,file))
                 dir = "AP203_E2_SEPARATE_PART_FILES"                        
-                print  "CLEANING UP AP203 STEP FILES!!!!"
+                print("CLEANING UP AP203 STEP FILES!!!!")
                 try: 
                     files = os.listdir(dir)
                     for file in files:
-                        print "Zapping "+os.path.join(dir,file)
+                        print("Zapping "+os.path.join(dir,file))
                         os.remove(os.path.join(dir,file))
                 except : 
-                    print "Failed to zap:"+os.path.join(dir,file)
+                    print("Failed to zap:"+os.path.join(dir,file))
                 dir = "AP203_E2_SINGLE_FILE"                        
-                print  "CLEANING UP AP203 STEP FILES!!!!"
+                print("CLEANING UP AP203 STEP FILES!!!!")
                 try: 
                     files = os.listdir(dir)
                     for file in files:
-                        print "Zapping "+os.path.join(dir,file)
+                        print("Zapping "+os.path.join(dir,file))
                         os.remove(os.path.join(dir,file))
                 except : 
-                    print "Failed to zap:"+os.path.join(dir,file)
+                    print("Failed to zap:"+os.path.join(dir,file))
             
     with open(json_filename, "w") as json_file:
         json.dump(json_data, json_file, indent=4)
 
     try:
         fbat = open('my_output.txt', 'w')
-    except Exception, e:
+    except Exception as e:
         log("Could not open  {0}: {1}".format(outputfilename_bat_path, str(e)))
     #fbat.write('set ERROR_CODE=0\n')    	
     #fbat.write('{0}\n'. format(str(result_mat)) )    	
@@ -603,7 +603,7 @@ if __name__ == '__main__':
         cwd = os.getcwd()
 
     except Exception as err:
-        print err.message
+        print(err.message)
         if os.name == 'nt':
             import win32api
             win32api.TerminateProcess(win32api.GetCurrentProcess(), 1)

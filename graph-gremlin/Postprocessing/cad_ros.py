@@ -28,13 +28,13 @@ class postprocess:
 # returns the data in an array
     def print_data(self, result, name):
         data = self.data_array(result, name)
-        print 'name of data: '
-        print name
-        print 'here is the data: (with index)'
-        print '[' ,
+        print('name of data: ')
+        print(name)
+        print('here is the data: (with index)')
+        print('[', end=' ')
         for i in xrange(data.size-1):
-            print str(i) + ':', str(data[i]) + ',',
-        print str(i+1) + ':', str(data[i+1]) + ']'
+            print(str(i) + ':', str(data[i]) + ',', end=' ')
+        print(str(i+1) + ':', str(data[i+1]) + ']')
         return data
     
 # gets array of time
@@ -50,7 +50,7 @@ class postprocess:
 # returns the time/time intervals in an array
     def print_time(self, result):
         time = time_array(self, result)
-        print 'here are time intervals:', time
+        print('here are time intervals:', time)
     
         return time 
 
@@ -420,13 +420,13 @@ if __name__ == '__main__':
 
     for mes in r.iter('MetricComponents'):
         for me in mes:
-            print me.tag,me.get('Name'),me.get('Type')
+            print(me.tag,me.get('Name'),me.get('Type'))
             lnk = ET.SubElement(robot,"link",name=me.get('Name'))
             #lnk.set("name",me.get('Name'))
             if me.get('Type') == "PART":
                 for cg in me.iter('CG'):
                     cgloc = cg.get('X')+" "+cg.get('Y')+" "+cg.get('Z')
-                    print "CG=",cgloc
+                    print("CG=",cgloc)
                 orig =  ET.SubElement(lnk,'origin')
                 orig.text = cgloc
                 #orig.value= cgloc
@@ -435,7 +435,7 @@ if __name__ == '__main__':
                     for scalar in scalars.iter("Scalar"):
                         if scalar.get("Name") == "Mass" :
                             myMass = scalar.get('Value')
-                print "Mass: "+myMass
+                print("Mass: "+myMass)
 
                 for it in me.iter('InertiaTensor'):
                     if it.get('At') == 'CENTER_OF_GRAVITY':
@@ -454,15 +454,15 @@ if __name__ == '__main__':
                                 x= 0
                                 for vv in row.iter('Column'):
                                     #print rl
-                                    print "VALUE",vv.get("Value")
+                                    print("VALUE",vv.get("Value"))
                                     matrix[x][y] = vv.get("Value")
                                     rl.append(vv.get('Value'))
                                     x = x + 1
-                                print "RL=",rl
+                                print("RL=",rl)
                                 #row.set('value',str(rl))
                                 inertArray.append(rl)
                                 y = y + 1
-                        print "InertArray: ",inertArray
+                        print("InertArray: ",inertArray)
                         aa= ET.SubElement(ine,"ixx")
                         aa.text = str(matrix[0][0])
                         #aa.set("value",matrix[0][0])
@@ -485,15 +485,15 @@ if __name__ == '__main__':
     t = ET.parse('ComputedValues.xml')
     r = t.getroot()
     for comps in r.iter('Components'):
-        print comps.tag
+        print(comps.tag)
         for comp in comps:
-            print comp.tag
+            print(comp.tag)
             for mets in comp:
                 for me in mets:
                     mename = me.get('MetricName')
                     metype = me.get('Type')
                     meval = me.get('ArrayValue')
-                    print me.tag,mename,metype,meval
+                    print(me.tag,mename,metype,meval)
                     if mename != None:
                         if mename.find('Joint') >= 0:
                             jpt =  ET.SubElement(lnk,'JointPoint')
@@ -504,16 +504,16 @@ if __name__ == '__main__':
     output_file.write( '<?xml version="1.0"?>' )
     output_file.write( ET.tostring( robot) ) 
     output_file.close()
-    print "robot stuff here....."
-    print robot
+    print("robot stuff here.....")
+    print(robot)
     #ET.dump(robot)
     for xx in robot:
-        print "<1>",xx,xx.get('name')
+        print("<1>",xx,xx.get('name'))
         for oo in xx:
-            print "<2>",oo,oo.get("text")
+            print("<2>",oo,oo.get("text"))
             for dd in oo:
-                print "<3>",dd,dd.get("text")
+                print("<3>",dd,dd.get("text"))
                 for ee in dd:
-                    print "<4>",ee,ee.text
+                    print("<4>",ee,ee.text)
 
     ET.dump(robot)

@@ -31,13 +31,13 @@ class postprocess:
 # returns the data in an array
     def print_data(self, result, name):
         data = self.data_array(result, name)
-        print 'name of data: '
-        print name
-        print 'here is the data: (with index)'
-        print '[' ,
+        print('name of data: ')
+        print(name)
+        print('here is the data: (with index)')
+        print('[', end=' ')
         for i in xrange(data.size-1):
-            print str(i) + ':', str(data[i]) + ',',
-        print str(i+1) + ':', str(data[i+1]) + ']'
+            print(str(i) + ':', str(data[i]) + ',', end=' ')
+        print(str(i+1) + ':', str(data[i+1]) + ']')
         return data
     
 # gets array of time
@@ -53,7 +53,7 @@ class postprocess:
 # returns the time/time intervals in an array
     def print_time(self, result):
         time = time_array(self, result)
-        print 'here are time intervals:', time
+        print('here are time intervals:', time)
     
         return time 
 
@@ -449,12 +449,12 @@ def parallel_axis(Ic, m, d):
     dMat[0] = np.array([b**2 + c**2, -a * b, -a * c])
     dMat[1] = np.array([-a * b, c**2 + a**2, -b * c])
     dMat[2] = np.array([-a * c, -b * c, a**2 + b**2])
-    print "Ic"
-    print type(Ic)
-    print "m"
-    print type(m)
-    print "type dMat"
-    print type(dMat)
+    print("Ic")
+    print(type(Ic))
+    print("m")
+    print(type(m))
+    print("type dMat")
+    print(type(dMat))
     mdMat = np.multiply(m,dMat)
     return Ic + m * dMat
 	
@@ -487,15 +487,15 @@ if __name__ == '__main__':
     compNames = []
     compLocs = []
     for comps in r.iter('Components'):
-        print comps.tag
+        print(comps.tag)
         for comp in comps:
-            print comp.tag
+            print(comp.tag)
             for mets in comp:
                 for me in mets:
                     mename = me.get('MetricName')
                     metype = me.get('Type')
                     meval = me.get('ArrayValue')
-                    print me.tag,mename,metype,meval
+                    print(me.tag,mename,metype,meval)
                     if mename != None:
                         if mename.find('Gyro') >= 0:
                             #jpt =  ET.SubElement(lnk,'JointPoint')
@@ -507,14 +507,14 @@ if __name__ == '__main__':
                             for v in vals:
                                 gyro_location.append(float(v))
                         if len(mename) > 1: 
-                            print "METRIC_NAME: "+mename
+                            print("METRIC_NAME: "+mename)
                             comp_location = []
                             vals = meval.split(';')
                             for v in vals:
                                 comp_location.append(float(v))
                             compLocs.append(comp_location)
                             compNames.append(mename)
-                            print comp_location
+                            print(comp_location)
                       
  
 	
@@ -525,7 +525,7 @@ if __name__ == '__main__':
 
     for mes in r.iter('MetricComponents'):
         for me in mes:
-            print me.tag,me.get('Name'),me.get('Type')
+            print(me.tag,me.get('Name'),me.get('Type'))
             #lnk = ET.SubElement(robot,"link",name=me.get('Name'))
             #lnk.set("name",me.get('Name'))
             if me.get('Type') == "ASSEMBLY":
@@ -534,7 +534,7 @@ if __name__ == '__main__':
                 for cg in me.iter('CG'):
                     cgloc = cg.get('X')+" "+cg.get('Y')+" "+cg.get('Z')
                     cgvars = [float(cg.get('X')), float(cg.get('Y')),  float(cg.get('Z')) ]
-                    print "CG=",cgloc
+                    print("CG=",cgloc)
 
 
                 if "Spacecraft" in assyName:
@@ -559,33 +559,33 @@ if __name__ == '__main__':
                                     x= 0
                                     for vv in row.iter('Column'):
                                         #print rl
-                                        print "VALUE",vv.get("Value")
+                                        print("VALUE",vv.get("Value"))
                                         matrix[x][y] = float(vv.get("Value"))
                                         rl.append(vv.get('Value'))
                                         x = x + 1
-                                    print "RL=",rl
+                                    print("RL=",rl)
                                     #row.set('value',str(rl))
                                     inertArray.append(rl)
                                     y = y + 1
-                            print "InertArray: ",inertArray
+                            print("InertArray: ",inertArray)
                             outlogf.write("Spacecraft Inertial Tensor at CG = \n" + str(matrix)+'\n')
                             
     # add_table_line("CG",cgloc)
     spaceInert = np.array(matrix)
-    print "SpaceIntert----------------------------\n"
-    print type(spaceInert)
-    print spaceInert
+    print("SpaceIntert----------------------------\n")
+    print(type(spaceInert))
+    print(spaceInert)
     try:
         gyroLoc = np.array(gyro_location)
-        print "GyroLoc----------------------------------\n"
-        print gyroLoc  
+        print("GyroLoc----------------------------------\n")
+        print(gyroLoc)  
         inertiaScale = 1.0 / 1000000.0
         spaceMass = float(myMass)    
         parAx = parallel_axis(spaceInert,spaceMass,gyroLoc)
         parAx = parAx * inertiaScale
         outlogf.write("Spacecraft Transformed Inertial Tensor at CG = \n" + str(parAx)+'\n')
-        print parAx
-        print compLocs
+        print(parAx)
+        print(compLocs)
         distMat = np.zeros([5,5])
         add_table_line("Mass",myMass)
         add_table_line("InertialTensor",abs(parAx[0,0])+abs(parAx[1,1])+abs(parAx[2,2]))
@@ -593,7 +593,7 @@ if __name__ == '__main__':
         add_table_line("Iyy",parAx[1,1])
         add_table_line("Izz",parAx[2,2])
     except:
-        print "Error: No Gyro, intertia, or mass.  No intertial matrix created"
+        print("Error: No Gyro, intertia, or mass.  No intertial matrix created")
     
     for i,fr in enumerate(compNames):
        for j,to in enumerate(compNames):
@@ -611,13 +611,13 @@ if __name__ == '__main__':
         try:
             if metric["Name"] == "Mass": 
                 metric["Value"] = str(myMass)
-                print "Mass set to "+str(myMass)
+                print("Mass set to "+str(myMass))
             if metric["Name"] == "SpacecraftMass": 
                 metric["Value"] = str(myMass)
-                print "Mass set to "+str(myMass)
+                print("Mass set to "+str(myMass))
             if metric["Name"] == "Ixx": 
                 metric["Value"] = str(parAx[0,0])
-                print "Ixx set to "+str(parAx[0,0])
+                print("Ixx set to "+str(parAx[0,0]))
             if metric["Name"] == "Iyy": 
                 metric["Value"] = str(parAx[1,1])
             if metric["Name"] == "Izz": 
@@ -631,7 +631,7 @@ if __name__ == '__main__':
             if metric["Name"] == "InertialTensorInvariant": 
                 metric["Value"] = str(abs(parAx[0,0])+abs(parAx[1,1])+abs(parAx[2,2]))
         except:
-            print "Missing variables"
+            print("Missing variables")
         
                  
         
@@ -641,59 +641,59 @@ if __name__ == '__main__':
                 # print metName
                 if metric["Name"] == metName:
                     try:
-                        print metName+" set to "+str(distMat[i-1,j-1])
+                        print(metName+" set to "+str(distMat[i-1,j-1]))
                         metric["Value"] = str(distMat[i-1,j-1])
                     except:
-                        print "Warning: Distance Matrix unavailable for component pair "+metName
+                        print("Warning: Distance Matrix unavailable for component pair "+metName)
                         
         for param in json_data['Parameters']: 
             if param["Name"] == "Clean":
-                print  "CLEANING UP CAD FILES!!!!"
+                print("CLEANING UP CAD FILES!!!!")
                 cleanup = True
                 dir = "."
                 files = os.listdir(dir)
                 for file in files:
-                    print "Check :"+file
+                    print("Check :"+file)
                     if file.find(".prt.")!= -1 or file.find(".PRT.")!= -1 or file.find(".asm")!= -1 or file.find(".ASM")!= -1 or file.find("trail")!= -1:
-                        print "Zapping "+os.path.join(dir,file)
+                        print("Zapping "+os.path.join(dir,file))
                         try: 
                             os.remove(os.path.join(dir,file))
                         except : 
-                            print "Failed to zap:"+os.path.join(dir,file)
+                            print("Failed to zap:"+os.path.join(dir,file))
                 dir = "log"                        
-                print  "CLEANING UP LOG FILES!!!!"
+                print("CLEANING UP LOG FILES!!!!")
                 files = os.listdir(dir)
                 for file in files:
-                    print "Zapping "+os.path.join(dir,file)
+                    print("Zapping "+os.path.join(dir,file))
                     try: 
                         os.remove(os.path.join(dir,file))
                     except : 
-                        print "Failed to zap:"+os.path.join(dir,file)
+                        print("Failed to zap:"+os.path.join(dir,file))
                 dir = "AP203_E2_SEPARATE_PART_FILES"                        
-                print  "CLEANING UP AP203 STEP FILES!!!!"
+                print("CLEANING UP AP203 STEP FILES!!!!")
                 try: 
                     files = os.listdir(dir)
                     for file in files:
-                        print "Zapping "+os.path.join(dir,file)
+                        print("Zapping "+os.path.join(dir,file))
                         os.remove(os.path.join(dir,file))
                 except : 
-                    print "Failed to zap:"+os.path.join(dir,file)
+                    print("Failed to zap:"+os.path.join(dir,file))
                 dir = "AP203_E2_SINGLE_FILE"                        
-                print  "CLEANING UP AP203 STEP FILES!!!!"
+                print("CLEANING UP AP203 STEP FILES!!!!")
                 try: 
                     files = os.listdir(dir)
                     for file in files:
-                        print "Zapping "+os.path.join(dir,file)
+                        print("Zapping "+os.path.join(dir,file))
                         os.remove(os.path.join(dir,file))
                 except : 
-                    print "Failed to zap:"+os.path.join(dir,file)
+                    print("Failed to zap:"+os.path.join(dir,file))
                     
         with open(json_filename, "w") as json_file:
             json.dump(json_data, json_file, indent=4)
     try:
-        print distMat
+        print(distMat)
     except:
-        print "Warning: No DISTMAT"
+        print("Warning: No DISTMAT")
     
     close_table()
                     

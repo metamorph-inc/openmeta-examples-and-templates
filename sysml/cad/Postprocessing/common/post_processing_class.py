@@ -33,15 +33,15 @@ class PostProcess:
 
         # convert lists into numpy arrays
         self.result = {}
-        for item in result_lists.iteritems():
+        for item in result_lists.items():
             self.result.update({item[0]: np.array(item[1])})
 
         #print self.result.keys()
         self.time = self.result['time']
-        print "postprocess init done"
+        print("postprocess init done")
 
     def get_names(self):
-        return self.result.keys()
+        return list(self.result.keys())
 
     def get_max_time(self):
         return self.time[self.time.size-1]
@@ -59,7 +59,7 @@ class PostProcess:
             A = self.result[name]
             return A
         except KeyError:
-            print 'ERROR: cannot find [' + name + '] in Modelica results'
+            print('ERROR: cannot find [' + name + '] in Modelica results')
             return []
 
     def print_data(self, name):
@@ -71,13 +71,13 @@ class PostProcess:
         returns with the time.
         """
         data = self.data_array(name)
-        print 'name of data: '
-        print name
-        print 'here is the data: (with index)'
-        print '[',
+        print('name of data: ')
+        print(name)
+        print('here is the data: (with index)')
+        print('[', end=' ')
         for i in xrange(data.size - 1):
-            print str(i) + ':', str(data[i]) + ',',
-        print str(i + 1) + ':', str(data[i + 1]) + ']'
+            print(str(i) + ':', str(data[i]) + ',', end=' ')
+        print(str(i + 1) + ':', str(data[i + 1]) + ']')
 
         return data
 
@@ -94,7 +94,7 @@ class PostProcess:
         """
 
         time = self.time
-        print 'here are time intervals:', time
+        print('here are time intervals:', time)
 
         return time
 
@@ -150,16 +150,16 @@ class PostProcess:
 
         Returns the data and the index of the data
         """
-        print 'resample_data',time_inc
+        print('resample_data',time_inc)
         i = 0
         iout = 0
         tim = self.time
         data_arr = self.data_array(name)
-        print "Line 157"
+        print("Line 157")
         ct = tim[0]
         tt = ct + time_inc
         newdat = []
-        print "iterate over times at incr=",time_inc
+        print("iterate over times at incr=",time_inc)
         while i < tim.size-1:
             while tim[i] < tt and i < tim.size - 1:
                 i += 1
@@ -179,7 +179,7 @@ class PostProcess:
             tt = tt + time_inc
             iout = iout + 1
         #print newdat
-        print "resampled result size=",len(newdat)
+        print("resampled result size=",len(newdat))
         return newdat
         
         
@@ -632,17 +632,17 @@ class PostProcess:
         start_index = 0
         global_max = -np.Inf
         cnt = 0
-        print 'check_max_limit'
+        print('check_max_limit')
         while start_index > -1:
             index = self.find_first_max_violation(name, value, start_index)
             if index > -1:
                 end_index = self.find_first_min_violation(name, value, index)
                 d_t = self.delta_t(index, end_index)
-                print 'Found violation at t={0} lasting : {1}'.format(self.time[index], d_t)
+                print('Found violation at t={0} lasting : {1}'.format(self.time[index], d_t))
                 if d_t > 0.5:
                     limit_exceeded = True
                     local_max = self.get_local_max(name, index, end_index)
-                    print 'Local maximum : {0}'.format(local_max)
+                    print('Local maximum : {0}'.format(local_max))
                     if local_max > global_max:
                         global_max = local_max
                 start_index = end_index
@@ -651,8 +651,8 @@ class PostProcess:
 
             cnt += 1
             if cnt == MAX_ITERATIONS:
-                print 'Limit checking for variable {0} aborted after {1} iterations' \
-                    .format(name, MAX_ITERATIONS)
+                print('Limit checking for variable {0} aborted after {1} iterations' \
+                    .format(name, MAX_ITERATIONS))
                 sys.exit(1)
 
         if limit_exceeded:
@@ -667,17 +667,17 @@ class PostProcess:
         start_index = 0
         global_min = np.Inf
         cnt = 0
-        print 'check_min_limit'
+        print('check_min_limit')
         while start_index > -1:
             index = self.find_first_min_violation(name, value, start_index)
             if index > -1:
                 end_index = self.find_first_max_violation(name, value, index)
                 d_t = self.delta_t(index, end_index)
-                print 'Found violation at t={0} lasting : {1} s'.format(self.time[index], d_t)
+                print('Found violation at t={0} lasting : {1} s'.format(self.time[index], d_t))
                 if d_t > 0.5:
                     limit_exceeded = True
                     local_min = self.get_local_min(name, index, end_index)
-                    print 'Local minimum : {0}'.format(local_min)
+                    print('Local minimum : {0}'.format(local_min))
                     if local_min < global_min:
                         global_min = local_min
                 start_index = end_index
@@ -686,8 +686,8 @@ class PostProcess:
 
             cnt += 1
             if cnt == MAX_ITERATIONS:
-                print 'Limit checking for variable {0} aborted after {1} iterations' \
-                    .format(name, MAX_ITERATIONS)
+                print('Limit checking for variable {0} aborted after {1} iterations' \
+                    .format(name, MAX_ITERATIONS))
                 sys.exit(1)
 
         if limit_exceeded:
@@ -727,7 +727,7 @@ def update_metrics_in_report_json(metrics, report_file='testbench_manifest.json'
     if 'Metrics' in result_json:
         for metric in result_json['Metrics']:
             if 'Name' in metric and 'Value' in metric:
-                if metric['Name'] in metrics.keys():
+                if metric['Name'] in list(metrics.keys()):
                     new_value = metrics[metric['Name']]['value']
                     new_unit = metrics[metric['Name']]['unit']
                     if new_unit is not None:
@@ -737,13 +737,13 @@ def update_metrics_in_report_json(metrics, report_file='testbench_manifest.json'
                 else:
                     pass
             else:
-                print 'Metric item : {0} does not have right format'.format(metric)
+                print('Metric item : {0} does not have right format'.format(metric))
                 pass
                 # update json file with the new values
         with open(report_file, 'wb') as file_out:
             json.dump(result_json, file_out, indent=4)
     else:
-        print 'Report file {0} does not have any Metrics defined..'
+        print('Report file {0} does not have any Metrics defined..')
         pass
 
 
@@ -785,7 +785,7 @@ def read_limits():
         limit_item['LimitName'] = limit_var_name
 
     filter = list(filter)
-    print "Variables for limit-checking : {0}".format(filter)
+    print("Variables for limit-checking : {0}".format(filter))
 
     return limit_dict, filter
 
@@ -801,9 +801,9 @@ def check_limits_and_add_to_report_json(pp, limit_dict):
         limit_value = limit_item['Value']
         limit_type = limit_item['Type']
 
-        print "--== {0} ==--".format(modelica_uri)
-        print "Type of Limit : {0}".format(limit_type)
-        print "Limit : {0} ".format(limit_value)
+        print("--== {0} ==--".format(modelica_uri))
+        print("Type of Limit : {0}".format(limit_type))
+        print("Limit : {0} ".format(limit_value))
         if limit_type == 'min':
             limit_exceeded, actual_value = pp.check_min_limit(modelica_uri, limit_value)
             limit_item['LimitExceeded'] = limit_exceeded
@@ -835,7 +835,7 @@ def check_limits_and_add_to_report_json(pp, limit_dict):
             limit_item['ActualValue'] = actual_value
 
         limit_item['Value'] = str(limit_value)
-        print "Violation : {0}".format(limit_item["LimitExceeded"])
+        print("Violation : {0}".format(limit_item["LimitExceeded"]))
 
     with open('testbench_manifest.json', 'r') as f_in:
         sum_rep_json = json.load(f_in)
@@ -845,4 +845,4 @@ def check_limits_and_add_to_report_json(pp, limit_dict):
     with open('testbench_manifest.json', 'wb') as f_out:
         json.dump(sum_rep_json, f_out, indent=4)
 
-    print "Limits updated"
+    print("Limits updated")

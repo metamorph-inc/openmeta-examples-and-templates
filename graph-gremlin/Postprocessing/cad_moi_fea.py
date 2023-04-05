@@ -34,13 +34,13 @@ class postprocess:
 # returns the data in an array
     def print_data(self, result, name):
         data = self.data_array(result, name)
-        print 'name of data: '
-        print name
-        print 'here is the data: (with index)'
-        print '[' ,
+        print('name of data: ')
+        print(name)
+        print('here is the data: (with index)')
+        print('[', end=' ')
         for i in xrange(data.size-1):
-            print str(i) + ':', str(data[i]) + ',',
-        print str(i+1) + ':', str(data[i+1]) + ']'
+            print(str(i) + ':', str(data[i]) + ',', end=' ')
+        print(str(i+1) + ':', str(data[i+1]) + ']')
         return data
     
 # gets array of time
@@ -56,7 +56,7 @@ class postprocess:
 # returns the time/time intervals in an array
     def print_time(self, result):
         time = time_array(self, result)
-        print 'here are time intervals:', time
+        print('here are time intervals:', time)
     
         return time 
 
@@ -452,12 +452,12 @@ def parallel_axis(Ic, m, d):
     dMat[0] = np.array([b**2 + c**2, -a * b, -a * c])
     dMat[1] = np.array([-a * b, c**2 + a**2, -b * c])
     dMat[2] = np.array([-a * c, -b * c, a**2 + b**2])
-    print "Ic"
-    print type(Ic)
-    print "m"
-    print type(m)
-    print "type dMat"
-    print type(dMat)
+    print("Ic")
+    print(type(Ic))
+    print("m")
+    print(type(m))
+    print("type dMat")
+    print(type(dMat))
     mdMat = np.multiply(m,dMat)
     return Ic + m * dMat
 	
@@ -473,16 +473,16 @@ if __name__ == '__main__':
     json_filename = os.path.join(output_dir, 'testbench_manifest.json')
     import json
     json_data = {}
-    print "open file: ",json_filename
+    print("open file: ",json_filename)
     if os.path.isfile(json_filename):
         with open(json_filename, "r") as json_file:
             json_data = json.load(json_file)
-            print "file found"
+            print("file found")
 
 
     
     doDump = False
-    print json_data
+    print(json_data)
     for pp in json_data['Parameters']: 
         # print metric["Name"]
         if pp["Name"] == "Debug": 
@@ -492,11 +492,11 @@ if __name__ == '__main__':
     if doDump:
         dd = random.randint(1,10000)
         newpath = r'check'+str(dd) 
-        print 'Debug Defined, Saving to '+newpath
+        print('Debug Defined, Saving to '+newpath)
         if not os.path.exists(newpath):
             os.makedirs(newpath) 
         for fil in glob.glob(r'./*.*'): 
-            print fil        
+            print(fil)        
             shutil.copy(fil,newpath)
         nestpath = newpath+r'/datcom' 
 
